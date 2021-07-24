@@ -1,5 +1,8 @@
 <?php
 
+#include "/lernplattform/model/lerneinheiten/lerninhalt_model.php";
+#include "/lernplattform/features/kind/lerneinheit_waehlen/lerneinheit_waehlen_view.php";
+
 include "../../../model/lerneinheiten/lerninhalt_model.php";
 include "./lerneinheit_waehlen_view.php";
 

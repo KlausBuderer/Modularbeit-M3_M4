@@ -1,6 +1,6 @@
 <?php
 
-include_once "Creator.php";
+include_once "creator.php";
 include_once "einxeins.php";
 include_once "dreisatz.php";
 

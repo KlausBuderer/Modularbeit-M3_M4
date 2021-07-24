@@ -7,12 +7,12 @@
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
         <li class="nav-item sidebar-button">
-            <a class="nav-link active" href="/modularbeit/lernplattform/includes/kinder_uebersicht_template.php">
+            <a class="nav-link active" href="/lernplattform/includes/kinder_uebersicht_template.php">
               Übersicht <span class="sr-only"></span>
             </a>
           </li>
           <li class="nav-item sidebar-button">
-            <a class="nav-link active" href="/modularbeit/lernplattform/includes/mathe_uebersicht_template.php">
+            <a class="nav-link active" href="/lernplattform/includes/mathe_uebersicht_template.php">
               Mathematik <span class="sr-only"></span>
             </a>
           </li>

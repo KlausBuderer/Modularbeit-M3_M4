@@ -3,7 +3,7 @@
 
 include_once "produceble.php";
 include_once "aufgabe.php";
-include_once "getLerninhalt.php";
+include_once "getlerninhalt.php";
 
 class Dreisatz implements Produceble{
 
@@ -27,7 +27,7 @@ return $this->getAufgaben();
 //Holt die Daten aus der Datenbank und gibt ein Array mit Aufgaben zurück
 private function getAufgaben(){
 
-$getData = new GetLerninhalt($this->stufe, "dreisatz");
+$getData = new GetLerninhalt($this->stufe, "ma_le_dreisatz");
 
 return $getData->selectLerninhalt();
 

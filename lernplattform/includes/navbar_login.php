@@ -2,7 +2,7 @@
 <nav class="navbar sticky-top navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/modularbeit/lernplattform/includes/images/alarm.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="/lernplattform/includes/images/alarm.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
       Mediengutschein
     </a>
 
@@ -12,8 +12,8 @@
             Username
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Einstellungen</a></li>
-            <li><a class="dropdown-item" href="#">Abmelden</a></li>
+            <li><a class="dropdown-item" href="/userspice/users/user_settings.php">Einstellungen</a></li>
+            <li><a class="dropdown-item" href="/userspice/users/logout.php">Abmelden</a></li>
           </ul>
       </div>
         

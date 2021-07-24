@@ -3,10 +3,6 @@ require_once('header.php');
 require_once('navbar_login.php');
 require_once('sidebar.php');
 ?>
-
-
-
-
     <div class="album py-5 bs-wight">
         <div class="container">
 
@@ -14,12 +10,12 @@ require_once('sidebar.php');
         <h1 class="text-center fw-lighter display-2">Mathematik</h1>
         <hr>
 
-            <form action="../features/kind/lerneinheit_waehlen/lerneinheit_waehlen_controller.php" method="Post">
+            <form action="/lernplattform/features/kind/lerneinheit_waehlen/lerneinheit_waehlen_controller.php" method="Post">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                <img src="/lernplattform/includes/images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
 
                                 <div class="card-body">
                                     <p class="card-text">Ein X Eins</p>
@@ -50,7 +46,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="/lernplattform/includes/images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Dreisatzrechnung</p>
@@ -81,7 +77,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="/lernplattform/includes/images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Einheiten</p>

@@ -1,6 +1,6 @@
-/* $(function() {
+$(function() {
   //Hauptfunktion
-}); */
+});
 
 var x = 0;
 var y = 0;
