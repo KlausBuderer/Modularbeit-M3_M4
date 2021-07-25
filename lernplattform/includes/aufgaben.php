@@ -37,12 +37,12 @@ require_once('sidebar.php');
         <h2>Frage <span id="qno"></span></h2>
         <p id="question_text">...?</p>
         <div class="row">
-          <div class="col-md-6"><p><button id="answer_a_btn" class="answer btn btn-primary btn-lg w-100 antwortButton" role="button">A</A:blank><span id="answer_a">!</span></button></p></div>
-          <div class="col-md-6"><p><button id="answer_c_btn" class="answer btn btn-default btn-lg w-100 antwortButton" role="button">B<span id="answer_c">.</span></button></p></div>
+          <div class="col-md-6"><p><button id="answer_a_btn" class="answer btn btn-primary btn-lg w-100 antwortButton" role="button">A: </A:blank><span id="answer_a">!</span></button></p></div>
+          <div class="col-md-6"><p><button id="answer_c_btn" class="answer btn btn-default btn-lg w-100 antwortButton" role="button">B: <span id="answer_b">.</span></button></p></div>
         </div>
         <div class="row">
-          <div class="col-md-6"><p><button id="answer_b_btn" class="answer btn btn-default btn-lg w-100 antwortButton" role="button">C<span id="answer_b">?</span></button></p></div>
-          <div class="col-md-6"><p><button id="answer_d_btn" class="answer btn btn-default btn-lg w-100 antwortButton" role="button">D<span id="answer_d">;</span></button></p></div>
+          <div class="col-md-6"><p><button id="answer_b_btn" class="answer btn btn-default btn-lg w-100 antwortButton" role="button">C: <span id="answer_c">?</span></button></p></div>
+          <div class="col-md-6"><p><button id="answer_d_btn" class="answer btn btn-default btn-lg w-100 antwortButton" role="button">D: <span id="answer_d">;</span></button></p></div>
         </div>
         <div class="row">
           <div class="col-md-10"></div>
