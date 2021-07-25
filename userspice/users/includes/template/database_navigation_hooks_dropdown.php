@@ -12,6 +12,6 @@ $dropdownString = str_replace('{{messages}}',lang("MENU_MSGS_MGR"),$dropdownStri
 $dropdownString = str_replace('{{logs}}',lang("MENU_LOGS_MGR"),$dropdownString);
 $dropdownString = str_replace('{{logout}}',lang("MENU_LOGOUT"),$dropdownString);
 }
-$dropdownString = str_replace('{{forgot}}',lang("SIGNIN_FORGOTPASS"),$dropdownString);
-$dropdownString = str_replace('{{resend}}',lang("VER_RESEND"),$dropdownString);
-$dropdownString = str_replace('{{help}}',lang("MENU_HELP"),$dropdownString);
+//$dropdownString = str_replace('{{forgot}}',lang("SIGNIN_FORGOTPASS"),$dropdownString);
+//$dropdownString = str_replace('{{resend}}',lang("VER_RESEND"),$dropdownString);
+//$dropdownString = str_replace('{{help}}',lang("MENU_HELP"),$dropdownString);

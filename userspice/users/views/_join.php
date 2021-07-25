@@ -73,6 +73,50 @@ Special thanks to John Bovey for the password strenth feature.
         <input  class="form-control" type="text" name="email" id="email" placeholder="<?=lang("GEN_EMAIL");?>" value="<?php if (!$form_valid && !empty($_POST)){ echo $email;} ?>"
         required autocomplete="email">
       </div>
+    
+      <div class="form-group">
+        <label for="birthday" id="birthday-label"><?=lang("GEN_BIRTHDAY");?>*</label>
+	
+        <input type="date" class="form-control" id="birthday" name="birthday" placeholder="<?=lang("GEN_BIRTHDAY");?>" value="<?php 
+         
+         $birthday = birthday;
+         $min = 18;
+         if (strtotime($birthday. ' + '. $min. ' years') < strtotime(date('Y-m-d')))
+         {
+           echo $min;
+         }
+         elseif (!$form_valid && !empty($_POST ))
+         {
+           echo $birthday;
+         }
+              ?>"
+        required autofocus autocomplete="birthday">
+	  </div>
+
+<!-- BACKUP BIRTHDAY -->        
+      <!--
+      <div class="form-group">
+        <label for="birthday" id="birthday-label"><?=lang("GEN_BIRTHDAY");?>*</label>
+	
+        <input type="date" class="form-control" id="birthday" name="birthday" placeholder="<?=lang("GEN_BIRTHDAY");?>" value="<?php 
+        // $min = 18;
+        // if (!$form_valid && !empty($_POST )){ echo $birthday;} ?>"
+        required autofocus autocomplete="birthday">
+	  </div>
+
+    
+    ** Beispiel zum implementieren:
+		$min = 18;
+			$birthday = "1980-10-03";
+				if(strtotime($birthday. ' + '. $min. ' years') > strtotime(date('Y-m-d'))){
+					echo 'Du bist über '.$min;
+				}else{
+						echo 'Schade, versuch es nochmal wenn du über '.$min.' bist.';
+	}  
+	
+-->
+
+
 
       <div class="form-group">
         <?php
