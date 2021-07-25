@@ -36,7 +36,21 @@ $lang = array();
 $lang = array_merge($lang,array(
 "THIS_LANGUAGE"	=>"Deutsch",
 "THIS_CODE"			=>"de-DE",
-"MISSING_TEXT"	=>"Missing Text",
+"MISSING_TEXT"	=>"Fehlender Text",
+));
+
+//Database Menus
+$lang = array_merge($lang,array(
+"MENU_HOME"			=> "Hauptseite",
+"MENU_HELP"			=> "Hilfe",
+"MENU_ACCOUNT"	=> "Konto",
+"MENU_DASH"			=> "Admin-Dashboard",
+"MENU_USER_MGR"	=> "Benutzer Management",
+"MENU_PAGE_MGR"	=> "Seiten Management",
+"MENU_PERM_MGR"	=> "Zugriffsmanagement",
+"MENU_MSGS_MGR"	=> "Nachrichten Manager",
+"MENU_LOGS_MGR"	=> "System Logs",
+"MENU_LOGOUT"		=> "Ausloggen",	   
 ));
 // Signup
 $lang = array_merge($lang,array(
@@ -89,7 +103,8 @@ $lang = array_merge($lang,array(
 		"GEN_VERIFY"			=> "Überprüfen",
 		"GEN_SESSION"			=> "Sitzung",
 		"GEN_SESSIONS"		=> "Sitzungen",
-		"GEN_EMAIL"				=> "Email",
+		"GEN_EMAIL"				=> "E-Mail",
+		"GEN_BIRTHDAY"			=> "Geburtstagsdatum",
 		"GEN_FNAME"				=> "Vorname",
 		"GEN_LNAME"				=> "Nachname",
 		"GEN_UNAME"				=> "Benutzername",
@@ -122,7 +137,7 @@ $lang = array_merge($lang,array(
 	$lang = array_merge($lang,array(
 		"VAL_SAME"				=> "muss gleich sein",
 		"VAL_EXISTS"			=> "existiert bereits. Bitte wähle einen anderen",
-		"VAL_DB"					=> "Database Error",
+		"VAL_DB"					=> "Databank Fehler",
 		"VAL_NUM"					=> "muss eine Nummer sein",
 		"VAL_INT"					=> "muss eine Ganzzahl sein",
 		"VAL_EMAIL"				=> "muss eine valide email Adresse sein",
@@ -268,7 +283,7 @@ $lang = array_merge($lang,array(
 		"EML_CHK"				=> "Ihre Anfrage wurde erhalten. Prüfen Sie bitte Ihr Posteingang, um die Verifizierung auszuführen. Prüfen Sie Bitte Ihren Spam-Ordner, falls Sie die Email im Posteingang nicht finden können. Gültigkeit des Verifizierunglinks: ",
 		"EML_MAT"				=> "Email-Adressen stimmen nicht überein.",
 		"EML_HELLO"			=> "Hallo von ",
-		"EML_HI"				=> "Hi ",
+		"EML_HI"				=> "Guten Tag ",
 		"EML_AD_HAS"		=> "Ein Administrator hat ihr Passwort zurückgesetz.",
 		"EML_AC_HAS"		=> "Ein Administrator hat ihren Account angelegt.",
 		"EML_REQ"				=> "Sie müssen ihr Passwort über den oben angegebenen Link setzen.",
@@ -325,7 +340,7 @@ $lang = array_merge($lang,array(
 	//Errors
 	$lang = array_merge($lang,array(
 		"ERR_FAIL_ACT"		=> "Aktive Sitzung konnte nicht geschlossen werden, Fehler: ",
-		"ERR_EMAIL"				=> "Email wurde nicht gesendet. Bitte Administrator kontaktieren.",
+		"ERR_EMAIL"				=> "E-mail wurde nicht gesendet. Bitte Administrator kontaktieren.",
 		"ERR_EM_DB"				=> "Diese Emailadresse existiert in unserer Datenbank nicht.",
 		"ERR_TC"					=> "AGB bitte lesen und akzeptieren",
 		"ERR_CAP"					=> "Captcha-Test nicht bestanden, Roboter!",
@@ -335,6 +350,17 @@ $lang = array_merge($lang,array(
 		"ERR_EM_VER"			=>  "Email&uuml;berpr&uuml;fung ist nicht aktiviert. Bitte Systemadministrator kontaktieren.",
 		"ERR_EMAIL_STR"		=> "Etwas stimmt nicht. Emailadresse bitte überprüfen. Entschuldigung sie die Unannehmlichkeit.",
 		));
+
+
+
+
+
+
+
+
+
+
+
 
 	//Maintenance Page
 	$lang = array_merge($lang,array(
@@ -346,19 +372,6 @@ $lang = array_merge($lang,array(
 		"MAINT_PLEASE" 	=> "Sie haben Userspice erfolgreich installiert!<br>Die Kurzanleitung befindet sich unter ",
 		));
 
-	//Database Menus
-	$lang = array_merge($lang,array(
-		"MENU_HOME"            => "Startseite",
-		"MENU_HELP"            => "Hilfe",
-		"MENU_ACCOUNT"    		 => "Konto",
-		"MENU_DASH"            => "Adminbereich",
-		"MENU_USER_MGR"				 => "Benutzerverwaltung",
-		"MENU_PAGE_MGR"   		 => "Seitenverwaltung",
-		"MENU_PERM_MGR"    		 => "Zugriffsverwaltung",
-		"MENU_MSGS_MGR"    		 => "Nachrichtenverwaltung",
-		"MENU_LOGS_MGR"        => "Systembericht",
-		"MENU_LOGOUT"          => "Abmelden",
-		));
 
 		//dataTables Added in 4.4.08
 		//NOTE: do not change the words like _START_ between the two _ symbols!
@@ -379,6 +392,23 @@ $lang = array_merge($lang,array(
 		"DAT_ASC"           => "Aktivieren Sie diese Option, um die Spalte aufsteigend zu sortieren.",
 		"DAT_DESC"          => "Aktivieren Sie diese Option, um die Spalte absteigend zu sortieren.",
 		));
+
+///////////////////////////////////////////////////////////////
+
+//Backend Translations for UserSpice
+$lang = array_merge($lang,array(
+"BE_DASH"    			=> "Dashboard",
+"BE_SETTINGS"     => "Einstellung",
+"BE_GEN"					=> "Allgemeines",
+"BE_REG"					=> "Registration",
+"BE_CUS"					=> "Benutzereinstellung",
+"BE_DASH_ACC"			=> "Dashboard Zugriff",
+"BE_TOOLS"				=> "Werkzeuge",
+"BE_BACKUP"				=> "Sicherung",
+"BE_UPDATE"				=> "Aktualisierung",
+"BE_CRON"				  => "Cron-Jobs",
+"BE_IP"				  	=> "IP-Manager",
+));
 
 		//LEAVE THIS LINE AT THE BOTTOM.  It allows users/lang to override these keys
 		if(file_exists($abs_us_root.$us_url_root."usersc/lang/".$lang["THIS_CODE"].".php")){
