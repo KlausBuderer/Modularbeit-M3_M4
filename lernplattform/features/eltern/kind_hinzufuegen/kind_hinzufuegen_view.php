@@ -8,7 +8,7 @@
     <body>
         <div class='container'>
             <h1>Neues Kind erfassen</h1>
-            <p>Hier haben Sie die Möglichkeit Ihr Kind zu erfassen.</p>
+            <p>Hier haben Sie die MÃ¶glichkeit Ihr Kind zu erfassen.</p>
             
             <form action="kind_hinzufuegen_controller.php" method="post">
                 <div>
