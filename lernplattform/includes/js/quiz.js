@@ -52,7 +52,7 @@ var questions = data;
 
 //Entnimmt eine zufällige Frage aus dem Array und gibt sie aus
 function showNextQuestion() {
-  if (x === 100 || y === 100) {
+  if (wegSpieler === 100 || wegComputer === 100) {
     showEnd();
     currentQuestionNo = 0;
   }

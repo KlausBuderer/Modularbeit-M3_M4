@@ -2,8 +2,11 @@ $(function() {
   //Hauptfunktion
 });
 
-var x = 0;
-var y = 0;
+var wegSpieler = 0;
+var wegComputer = 0;
+var anzahlRichtigeAntworten = 0;
+var anzahlFragen = 0;
+var abbruch = false;
 
 
 $(".start").click(function() {
@@ -19,6 +22,9 @@ function startQuiz() {
   $("#continue_btn").hide();
   $("#Spieler").css("margin-left", "0px");
   $("#Computer").css("margin-left", "0px");
+  anzahlRichtigeAntworten = 0;
+  anzahlFragen = 0;
+  abbruch = false;
 }
 
 $("#answer_a_btn").click(function() {
@@ -54,10 +60,17 @@ $("#answer_commit_btn").click(function() {
 
 });
 
+$("#abbrechen").click(function() {
+showEnd();
+abbruch = true;
+});
+
+
 $(".restart").click(function() {
   $(".quiz_end").fadeOut(function() {
-    x = 0;
-    y = 0;
+    wegSpieler = 0;
+    wegComputer = 0;
+    anzahlRichtigeAntworten = 0;
     startQuiz(); 
   });
 });
@@ -65,8 +78,8 @@ $(".restart").click(function() {
 $(".end").click(function() {
   $(".quiz_end").fadeOut(function() {
     saveState(); 
-    x = 0;
-    y = 0;
+    wegSpieler = 0;
+    wegComputer = 0;
   });
 });
 
@@ -82,15 +95,18 @@ function validateAnswer() {
     $(".answer.btn-primary").removeClass("btn-primary");
     $(".answer.btn-default").removeClass("btn-default");
     $("#"+selectedAnswerId).addClass("btn-success");
-    x += 10;
-    $("#Spieler").css("margin-left", x + "%");
+    wegSpieler += 10;
+    anzahlRichtigeAntworten += 1;
+    anzahlFragen++ ;
+    $("#Spieler").css("margin-left", wegSpieler + "%");
     points += rightAnswerPoints;
   } else {
     $(".answer.btn-primary").removeClass("btn-primary");
     $(".answer.btn-default").removeClass("btn-default");
     $("#"+selectedAnswerId).addClass("btn-danger");
-    y += 10;
-    $("#Computer").css("margin-left", y + "%");
+    wegComputer += 10;
+    anzahlFragen++ ;
+    $("#Computer").css("margin-left", wegComputer + "%");
   }
   $("#continue_btn").show();
 }
@@ -114,24 +130,27 @@ function deselectAnswer(id) {
 
 function showEnd() {
   $("#question").fadeOut(function() {
-    $("#endpoints").text(points);
-    $("#possiblepoints").text(rightAnswerPoints * questions.length);
+    $("#endpoints").text(anzahlRichtigeAntworten);
+    $("#possiblepoints").text(anzahlFragen);
     $(".quiz_end").fadeIn();  
+    $("#anzRichtig").val(anzahlRichtigeAntworten);
+    $("#anzFragen").val(anzahlFragen);
+    $("#abbruch").val(abbruch);
   });  
 }
 
 
 
 function bewegeSpieler(){
-x += 20;
+wegSpieler += 20;
 spieler = document.getElementById('Spieler').style;
-spieler.left = x + "px";
+spieler.left = wegSpieler + "px";
 }
 
 function bewegeComputer(){
 
-  y += 20;
-  document.getElementById('Computer').style.left= x + "px";
+  wegComputer += 20;
+  document.getElementById('Computer').style.left= wegSpieler + "px";
   console.log("x");
   }
 

@@ -4,11 +4,6 @@ require_once('header.php');
 require_once('navbar_login.php');
 require_once('sidebar.php');
 
-#include_once('/lernplattform/includes/config.php');
-#require_once('/lernplattform/includes/header.php');
-#require_once('/lernplattform/includes/navbar_login.php');
-#require_once('/lernplattform/includes/sidebar.php');
-
 
 /*  function console_log($data){
   echo '<script>';
@@ -34,6 +29,9 @@ require_once('sidebar.php');
       </div>
       
       <div id="question" class="question container-fluid bg-light text-dark p-5" style="display:none;" >
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button id="abbrechen" class="btn btn-primary me-md-2" type="button">X</button>
+        </div>
         <h2>Frage <span id="qno"></span></h2>
         <p id="question_text">...?</p>
         <div class="row">
@@ -54,10 +52,18 @@ require_once('sidebar.php');
       </div>
       
       <div id="over" class="container-fluid bg-light text-dark p-5 quiz_end" style="display: none;">
-        <h1>Quiz Vorbei!</h1>
-        <p>Dein Punktestand ist: <span id="endpoints">0</span> von <span id="possiblepoints">0</span></p>
-        <p><button class="restart btn btn-primary btn-lg" role="button">Nochmal starten</button></p>
-        <p><a href="/lernplattform/includes/kinder_uebersicht_template.php" class="end btn btn-primary btn-lg" role="button">Beenden</a></p>
+        <h1>Lerneinheit vorbei!</h1>
+        <p>Du hast: <span id="endpoints">0</span> von <span id="possiblepoints">0</span> richtig beantwortet!</p>
+        <p><button  class="restart btn btn-primary btn-lg" role="button">Nochmal starten</button></p>
+          <form action="/lernplattform/features/kind/lernfortschritt_speichern/lernfortschritt_speichern_controller.php" method="post">
+            <input type="text" name="anzRichtig" id="anzRichtig" style="display:none;" value="test">
+            <input type="text" name="anzFragen" id="anzFragen" style="display:none;" value="test">
+            <input type="text" name="abbruch" id="abbruch" style="display:none;" value="test">
+            <input type="text" name="stufe" id="stufe" style="display:none;" value="1">
+            <input type="text" name="lerneinheit" id="lerneinheit" style="display:none;" value="test">
+            <input type="text" name="lernmodul" id="lernmodul" style="display:none;" value="einxeins">
+            <p><button type="submit" name="beenden" class="end btn btn-primary btn-lg">Beenden</button></p>
+          </form>
       </div>
     </div>
 
