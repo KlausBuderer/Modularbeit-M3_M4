@@ -17,7 +17,6 @@ jobs:
         server: sl233.web.hostpoint.ch
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-           
-           
-          
-          
+        ARGS: --exclude-glob=**/.git*
+              --exlucde-glob=**/.git*/**
+        
