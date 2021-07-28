@@ -17,13 +17,13 @@
             </a>
           </li>
           <li class="nav-item sidebar-button">
-            <a class="nav-link" href="#">
-              Deutsch
+            <a class="nav-link" href="/lernplattform/includes/realien_uebersicht_template.php">
+              Realien
             </a>
           </li>
           <li class="nav-item sidebar-button">
             <a class="nav-link" href="#">
-             Realien
+             Deutsch
             </a>
           </li>
           <li class="nav-item sidebar-button">
