@@ -12,12 +12,9 @@ jobs:
       uses: actions/checkout@v2
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        server: sl233.web.hostpoint.ch
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-           
-           
-          
-          
+        host: sl233.web.hostpoint.ch
+        user: github@modularbeit.ch
+        password: githubABBTS2021
+        options: "--delete --asci"    
