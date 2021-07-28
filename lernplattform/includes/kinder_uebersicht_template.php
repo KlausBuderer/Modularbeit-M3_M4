@@ -35,7 +35,7 @@ require_once('sidebar.php');
                         <p class="card-text">Werde ein Meister oder eine Meisterin in Realien</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Öffnen</button>
+                            <a href="/lernplattform/includes/realien_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
                             </div>
                         </div>
                     </div>

@@ -24,7 +24,6 @@ function startQuiz() {
   $("#Computer").css("margin-left", "0px");
   anzahlRichtigeAntworten = 0;
   anzahlFragen = 0;
-  abbruch = false;
 }
 
 $("#answer_a_btn").click(function() {
@@ -135,10 +134,19 @@ function showEnd() {
     $(".quiz_end").fadeIn();  
     $("#anzRichtig").val(anzahlRichtigeAntworten);
     $("#anzFragen").val(anzahlFragen);
-    $("#abbruch").val(abbruch);
+    $("#abbruch").val(pruefeAbbruch());
+
+   
   });  
 }
 
+function pruefeAbbruch(){
+   if (wegSpieler < 100 && wegComputer <100) {
+      return true;
+    } else {
+      return false;
+    }
+}
 
 
 function bewegeSpieler(){

@@ -3,7 +3,7 @@
 include_once "produceble.php";
 include_once "aufgabe.php";
 
-class EinXEins implements Produceble{
+class PlusMinus implements Produceble{
 
 private $stufe;
 private $range;
@@ -52,13 +52,28 @@ private function createQuestion(){
     $right = "";
 
     $ans = ["","","",""];
+    $operators = ["+","-"];
+    $operator = $operators[random_int(0,1)];
+
 
     $factor1 = random_int(2,$this->range);
-    $factor2 = random_int(2,$this->range);
-    $result = $factor1 * $factor2 . "";
-    $wrong1 = ($factor1 + 1) * $factor2 . "";
-    $wrong2 = ($factor2 - 1) * $factor1 . "";
-    $wrong3 = $factor1  + $factor2 . "";
+    $factor2 = random_int($factor1,$this->range);
+
+    if($operator == '+'){
+    $result = $factor1 + $factor2 . "";
+    $wrong1 = ($factor1 + 1) + $factor2 . "";
+    $wrong2 = ($factor2 - 1) + $factor1 . "";
+    $wrong3 = $factor1  * $factor2 . "";
+
+
+    }else{
+    $result = $factor2 - $factor1 . "";
+    $wrong1 = ($factor2 + 1) - $factor1 . "";
+    $wrong2 = ($factor2 - 1) - $factor1 . "";
+    $wrong3 = $factor1  + 2 + $factor2 . "";
+
+
+    }
 
 
     //Zufällige Plazierung der richtigen Antwort
@@ -89,7 +104,7 @@ private function createQuestion(){
     }
     
     // Schreibe die Aufgabe
-    $question = $factor1 . ' x ' . $factor2;
+    $question = $factor2 . ' ' . $operator . ' ' . $factor1;
 
     //Platziere die falschen Antworten
     if ($ans[0] == "") {

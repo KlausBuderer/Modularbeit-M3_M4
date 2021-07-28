@@ -7,7 +7,7 @@ require_once('sidebar.php');
         <div class="container">
 
 
-        <h1 class="text-center fw-lighter display-2">Mathematik</h1>
+        <h1 class="text-center fw-lighter display-2">Realien</h1>
         <hr>
 
             <form action="/lernplattform/features/kind/lerneinheit_waehlen/lerneinheit_waehlen_controller.php" method="Post">
@@ -15,10 +15,10 @@ require_once('sidebar.php');
 
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                <img src="images/realien.png" style="height: 18rem;" class="card-img-top">
 
                                 <div class="card-body">
-                                    <p class="card-text">Ein X Eins</p>
+                                    <p class="card-text">Hauptstädte Länder</p>
                                         <label for="customRange1" class="form-label">Stufe</label><br>
                                         <div class="container">
                                             <div class="row">
@@ -33,10 +33,10 @@ require_once('sidebar.php');
                                                 </div>
                                             </div>
                                         </div>
-                                        <input name="stufe1" value="0" type="range" class="form-range" min="1" max="3" id="1">
+                                        <input name="stufe" value="0" type="range" class="form-range" min="1" max="3" id="1">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                        <button type="submit" name="einxeins"  class="btn btn-sm btn-outline-secondary">Starten</button>
+                                        <button type="submit" name="hauptstaedte_laender"  class="btn btn-sm btn-outline-secondary">Starten</button>
                                         </div>
                                     </div>
                                 </div>

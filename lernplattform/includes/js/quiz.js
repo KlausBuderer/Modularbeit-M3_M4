@@ -2,53 +2,15 @@ var currentQuestionNo = 0;
 var points = 0;
 var rightAnswerPoints = 10;
 var currentQuestion;
-
+var questions;
+var indexArray = [];
 
 $( document ).ready(function() {
   console.log( data );
   console.log(questions);
+  questions = data;
+  $("#stufe").val(questions[0].stufe); 
 });
-
-var questions = data;
-
-/* [
-  {
-    "id":"1",
-    "question" : "Was macht man mit einer Programmiersprache?",
-     
-      "A":"Wandern",
-      "B":"Kochen",
-      "C":"Programmieren",
-      "D":"Zeichnen",
-     
-    
-    "right":"C"
-  },
-  {
-    "id":"1",
-    "question" : "Was macht man mit einer Programmiersprache?",
-     
-      "A":"Wandern",
-      "B":"Kochen",
-      "C":"Programmieren",
-      "D":"Zeichnen",
-     
-    
-    "right":"C"
-  },
-  {
-    "id":"1",
-    "question" : "Was macht man mit einer Programmiersprache?",
-     
-      "A":"Wandern",
-      "B":"Kochen",
-      "C":"Programmieren",
-      "D":"Zeichnen",
-     
-    
-    "right":"C"
-  }
-]; */
 
 //Entnimmt eine zufällige Frage aus dem Array und gibt sie aus
 function showNextQuestion() {
@@ -64,7 +26,7 @@ function showNextQuestion() {
   $("#answer_b").text(currentQuestion.B);
   $("#answer_c").text(currentQuestion.C);
   $("#answer_d").text(currentQuestion.D); 
-  
+
   $(".answer").removeClass("btn-primary btn-danger btn-success btn-default");
   $(".answer").addClass("btn-default");
 }
@@ -75,5 +37,8 @@ function getRightAnswer() {
 
 //Generieren einer Random Nummer
 function getRandomNo (max){
-  return Math.floor(Math.random() * max)
+
+     return Math.floor(Math.random() * max); 
+    
+  
 }

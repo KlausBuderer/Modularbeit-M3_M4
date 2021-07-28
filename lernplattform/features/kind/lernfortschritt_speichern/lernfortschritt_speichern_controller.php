@@ -1,5 +1,6 @@
 <?php
 include "../../../model/lerneinheiten/setLernfortschritt.php";
+include "../../../model/lerneinheiten/addPointsToUser.php";
 include "./lernfortschritt_speichern_view.php";
 
 if(isset($_POST["beenden"])){
@@ -11,17 +12,22 @@ if(isset($_POST["beenden"])){
     $lernmodul = $_POST["lernmodul"];
 }
 
+$erzieltePunkte = 5; 
+$punkteGuthaben = 50; 
+$mediengutscheine = 0.5;
 
+//Lernfortschritt abspeichern
 $setLernfortschritt = new SetLernfortschritt($anzRichtig, $anzFragen, $abbruch, $stufe, $lerneinheit, $lernmodul);
 
 $setLernfortschritt->setLernfortschritt();
 
- console_log($anzRichtig);
- console_log($anzFragen);
- console_log($abbruch);
- console_log($stufe);
- console_log($lerneinheit);
- console_log($lernmodul);
+//Punkte User zuweisen und Mediengutschein berechnen
+$addPointsToUser = new AddPointsToUser();
+
+$view = new Lernfortschritt_speichern_View($erzieltePunkte, $punkteGuthaben, $mediengutscheine);
+$view->ausgabe();
+
+//$ler
 
   function console_log($data){
   echo '<script>';

@@ -26,16 +26,13 @@ public function __construct($anzRichtige, $anzFragen, $abbruch, $stufe, $lernein
     $this->lerneinheit = $lerneinheit;
     $this->lernmodul = $lernmodul;
 
-    if($abbruch == true){
-        $this->abbruch = "X";
-    }else{
-        $this->abbruch = "0";
-    }
-
-   
+    //Pruefen ob Lerneinheit abgebrochen wurde
+    $this->abbruch = $abbruch;
     
+  
     $this->date = $this->getDate();
 
+    //Pruefen ob Lerneinheit erfolgreich abgeschlossen wurde
     if($this->lerneinheitErfolgreich() == true){
         $this->punkte = $this->calcPunkte();
     }
@@ -52,11 +49,6 @@ public function setLernfortschritt()
   VALUES ('$this->userId', '$this->date', '$this->lerneinheit', '$this->anzFragen', '$this->anzRichtige', '$this->abbruch', '$this->stufe', '$this->punkte', '$this->lernmodul');";
   $result = mysqli_query($conn, $sql);
 
-  console_log($conn);
-  console_log($sql);
- 
- 
-
 }
 
 //Berechnung der erreichten Punkte
@@ -68,15 +60,15 @@ $stufe = $this->stufe;
 $result = 0;
 
 // 100 * stufe / Anzahl Fragen * 2 gerundet auf Ganzzahlen
-$result(round(100 * $stufe  / ($Fragen * 2)));
-
+$result = round(100 * $stufe  / ($Fragen * 2));
+console_log($result);
 return $result;
 }
 
 //Prüfen ob Lerneinheit erfolgreich absolviert wurde
 private function lerneinheitErfolgreich(){
 
-    if ($this->anzRichtige === 10){
+    if ($this->anzRichtige == 10){
         return true;
     }else{
         return false;

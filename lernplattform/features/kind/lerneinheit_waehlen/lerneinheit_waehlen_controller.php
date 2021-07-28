@@ -24,20 +24,25 @@ if(isset($_POST["dreisatz"])){
     $modul = "mathe";
 }
 
-if(isset($_POST["einheiten"])){
-    $lerninhalt = "einheiten";
+if(isset($_POST["plus_minus"])){
+    $lerninhalt = "plus_minus";
     $stufe = $_POST["stufe3"];
     $modul = "mathe";
 }
 
-
+if(isset($_POST["hauptstaedte_laender"])){
+    $lerninhalt = "hauptstaedte_laender";
+    $stufe = $_POST["stufe"];
+    $modul = "realien";
+    console_log('Kontroller aufgerufen');
+}
 
 if(!$lerninhalt == ""){
 
 //Instanziere die Klasse um die Lerneinheit zu generieren und übergebe die Parameter an die Methode 
 $producedLerneinheit = new LerninhaltModel($stufe,$lerninhalt, $modul);
 //Instanziere das View und übergebe das Array mit den Lerneinheiten
-$view = new LerneinheitWaehlenView($producedLerneinheit->createLerninhalt());
+$view = new LerneinheitWaehlenView($producedLerneinheit->createLerninhalt(), $modul, $lerninhalt, $stufe);
 $view->ausgabe();
 
 //console_log($producedLerneinheit->createLerninhalt());

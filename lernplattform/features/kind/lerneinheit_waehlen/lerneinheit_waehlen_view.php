@@ -3,17 +3,21 @@
 class LerneinheitWaehlenView{
 
 public $lerneinheit = [];
+public $lerninhalt;
+public $stufe;
+public $modul;
 
-public function __construct($lerneinheit)
+public function __construct($lerneinheit, $modul, $lerninhalt, $stufe)
 {
+    $this->lerninhalt = $lerninhalt;
+    $this->stufe = $stufe;
+    $this->modul = $modul;
     $this->lerneinheit = $lerneinheit;
 }
 
 public function ausgabe(){
-    include "../../../includes/aufgaben.php";
-    
-    
 
+    include "../../../includes/aufgaben.php";
 }
 
 

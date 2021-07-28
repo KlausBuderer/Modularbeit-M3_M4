@@ -4,17 +4,10 @@ require_once('header.php');
 require_once('navbar_login.php');
 require_once('sidebar.php');
 
-
-/*  function console_log($data){
-  echo '<script>';
-  echo 'console.log('.json_encode($data). ')';
-  echo '</script>';
-
- } */
-  //console_log($this->lerneinheit); 
-
   $lerneinheit = $this->lerneinheit;
-
+  $lerninhalt = $this->lerninhalt;
+  $modul = $this->modul;
+  $stufe = $this->stufe;
 ?>
 
 <div class="container">
@@ -60,8 +53,8 @@ require_once('sidebar.php');
             <input type="text" name="anzFragen" id="anzFragen" style="display:none;" value="test">
             <input type="text" name="abbruch" id="abbruch" style="display:none;" value="test">
             <input type="text" name="stufe" id="stufe" style="display:none;" value="1">
-            <input type="text" name="lerneinheit" id="lerneinheit" style="display:none;" value="test">
-            <input type="text" name="lernmodul" id="lernmodul" style="display:none;" value="einxeins">
+            <input type="text" name="lerneinheit" id="lerneinheit" style="display:none;" value="<?php echo $modul;?>">
+            <input type="text" name="lernmodul" id="lernmodul" style="display:none;" value="<?php echo $lerninhalt;?>">
             <p><button type="submit" name="beenden" class="end btn btn-primary btn-lg">Beenden</button></p>
           </form>
       </div>

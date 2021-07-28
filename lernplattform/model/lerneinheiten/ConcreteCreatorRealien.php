@@ -1,11 +1,10 @@
 <?php
 
 include_once "creator.php";
-include_once "einxeins.php";
-include_once "dreisatz.php";
-include_once "plus_minus.php";
+include_once "hauptstaedtelaender.php";
 
-class ConcreteCreatorMathe extends Creator{
+
+class ConcreteCreatorRealien extends Creator{
 
 private $lerneinheit;
 private $stufe;
@@ -25,19 +24,13 @@ public function produceLerninhalt(){
     $lerninhalt = [];
 
     switch ($lerneinheit) {
-        case 'einxeins':
+        case 'hauptstaedte_laender':
             # code...
-            $lerninhalt = $this->produce(new EinXEins($stufe));
-            
-            
+            $this->console_log('Concrete Creator aufgerufen');
+            $lerninhalt = $this->produce(new HauptstaedteLaender($stufe));
+
             break;
-        case 'dreisatz':
-            $lerninhalt = $this->produce(new Dreisatz($stufe));
-            break;
-        case 'plus_minus':
-            # code...
-            $lerninhalt = $this->produce(new PlusMinus($stufe));
-            break;
+
         
         default:
         

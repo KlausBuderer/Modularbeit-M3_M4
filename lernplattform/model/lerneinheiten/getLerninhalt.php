@@ -34,7 +34,7 @@ $conn = $connection->buildConnection();
    // Fetch Data from Database
     $sql = "SELECT * from $this->tabelle;";
     $result = mysqli_query($conn, $sql);
-
+    $this->console_log($sql);
 
     while($row = mysqli_fetch_assoc($result)){
 
@@ -46,7 +46,7 @@ $conn = $connection->buildConnection();
         $answerC = $row['C'];
         $answerD = $row['D'];
 
-        $aufgabe =  new Aufgabe($ID, $question, $rightAnswer, $answerA, $answerB,  $answerC,  $answerD);
+        $aufgabe =  new Aufgabe($ID, $question, $rightAnswer, $answerA, $answerB,  $answerC,  $answerD, $this->stufe);
         $aufgabeArray = $aufgabe->getEncoded();
         $this->console_log($aufgabeArray);
         

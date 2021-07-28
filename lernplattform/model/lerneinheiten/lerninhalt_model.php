@@ -1,6 +1,7 @@
 <?php
 
 include_once "concretecreatormathe.php";
+include_once "concretecreatorrealien.php";
 
 class LerninhaltModel{
 
@@ -28,7 +29,10 @@ public function createLerninhalt(){
             //Erstellt den Lerninhalt für Mathe
             $lerninhalt = $this->getLerninhalt(new ConcreteCreatorMathe($stufe, $lerneinheit));
             break;
-        
+        case 'realien':
+            //Erstellt den Lerninhalt für Realien
+            $lerninhalt = $this->getLerninhalt(new ConcreteCreatorRealien($stufe,$lerneinheit));
+            $this->console_log('Model aufgerufen');
         default:
             # code...
             break;
