@@ -51,7 +51,7 @@ require_once('sidebar.php');
                         <p class="card-text">Verbessere dein Deutsch</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Öffnen</button>
+                            <a href="/lernplattform/includes/deutsch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ require_once('sidebar.php');
                         <p class="card-text">Improve your english</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Öffnen</button>
+                            <a href="/lernplattform/includes/englisch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ require_once('sidebar.php');
                         <p class="card-text">Hier findest du deinen Lernforschritt</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Öffnen</button>
+                            <a type="button" class="btn btn-sm btn-outline-secondary" href="/lernplattform/features/kind/kinder_guthaben/guthaben_controller.php">Öffnen</a>
                             </div>
                         </div>
                     </div>
