@@ -7,7 +7,7 @@
     </a>
 
       <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle userField" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-primary d-flex justify-content-center d-md-table mx-auto dropdown-toggle userField" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           <img src="https://github.com/mdo.png" alt="" class="rounded-circle me-2" width="40" height="40">
           Username
           </button>
