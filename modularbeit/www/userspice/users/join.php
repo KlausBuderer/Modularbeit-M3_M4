@@ -66,7 +66,6 @@ if (Input::exists()) {
     $fname = Input::get('fname');
     $lname = Input::get('lname');
     $email = Input::get('email');
-	$birthday = Input::get('birthday');
     $username = Input::get('username');
 
 
@@ -105,12 +104,7 @@ if (Input::exists()) {
                 'min' => 5,
                 'max' => 100,
           ],
-          'birthday' => [
-                'display' => lang('GEN_BIRTHDAY'),
-                'required' => true,
-                'min' => 1,
-                'max' => 12,
-          ],  
+
           'password' => [
                 'display' => lang('GEN_PASS'),
                 'required' => true,
@@ -159,7 +153,7 @@ if (Input::exists()) {
                                         'fname' => ucfirst(Input::get('fname')),
                                         'lname' => ucfirst(Input::get('lname')),
                                         'email' => Input::get('email'),
-										'password' => password_hash(Input::get('password', true), PASSWORD_BCRYPT, ['cost' => 12]),
+                                        'password' => password_hash(Input::get('password', true), PASSWORD_BCRYPT, ['cost' => 12]),
                                         'permissions' => 1,
                                         'join_date' => $join_date,
                                         'email_verified' => $pre,
