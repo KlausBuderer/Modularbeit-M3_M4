@@ -1,0 +1,61 @@
+---
+
+# modularbeit 1.0.0
+#
+# Runs Apache, Postgres, PHP (+Redis) and phpPgAdmin
+# SSL is preconfigured.
+# Imagemagick and XDebug are activated.
+#
+# Run with 
+# docker-compose up -d
+#
+# (c)2020 Harald Schneider
+#
+
+version: "3"
+
+services:
+
+  php:
+    container_name: "modularbeit-php"
+    image: bitnami/php-fpm:7.4
+    depends_on:
+      - redis
+    volumes:
+      - ./modularbeit/www/:/app:delegated
+      - ./modularbeit/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
+
+  # --- Apache 2.4
+  #
+  apache:
+    container_name: "modularbeit-apache"
+    image: bitnami/apache:2.4
+    ports:
+      - '8000:8080'
+      - '443:8443'
+    depends_on:
+      - php
+    volumes:
+      - ./modularbeit/www/:/app:delegated
+      - ./modularbeit/apache/my_vhost.conf:/vhosts/myapp.conf:ro
+      - ./modularbeit/apache/certs:/certs
+      # Use this for bitnami's builtin certs:
+      # ./modularbeit/apache/certs:/opt/bitnami/apache2/conf/bitnami/certs 
+
+  # --- Redis 6.0
+  #
+  redis:
+    container_name: "modularbeit-redis"
+    image: bitnami/redis:6.0
+    environment:
+      - REDIS_PASSWORD=at15jx13
+ 
+  phpmyadmin:
+    container_name: "modularbeit-phpmyadmin"
+    image: bitnami/phpmyadmin:latest
+    ports:
+      - '8143:8443'
+    environment:
+      - DATABASE_HOST=itwisse.mysql.db.hostpoint.ch
+      
+      

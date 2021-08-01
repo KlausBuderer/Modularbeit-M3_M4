@@ -25,7 +25,7 @@ require_once $abs_us_root.$us_url_root.'users/helpers/helpers.php';
 // Set config
 $GLOBALS['config'] = array(
 	'mysql'      => array(
-'host'         => 'itwisse.mysql.db.internal',
+'host'         => 'itwisse.mysql.db.hostpoint.ch',
 'username'     => 'itwisse_lpf',
 'password'     => 'P99F-TBtgm2RgujbPVS!',
 'db'           => 'itwisse_lernplattform',
