@@ -2,14 +2,14 @@
 
 # modularbeit 1.0.0
 #
-# Runs Apache, Postgres, PHP (+Redis) and phpPgAdmin
+# Runs Apache, PHP (+Redis) and phpMyAdmin
 # SSL is preconfigured.
 # Imagemagick and XDebug are activated.
 #
 # Run with 
 # docker-compose up -d
 #
-# (c)2020 Harald Schneider
+# Basis von (c) 2020 Harald Schneider - Erweiterung und Anpassung (c)Bruno Thurnherr
 #
 
 version: "3"
