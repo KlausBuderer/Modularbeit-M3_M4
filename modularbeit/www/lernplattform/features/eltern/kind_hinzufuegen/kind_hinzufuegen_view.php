@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    <?php
+     # include_once './includes/kinder_uebersicht_template.php';
+    ?>
     <head>
         <meta charset="UTF-8">
         <title>Kind erfassen</title>
@@ -8,10 +11,16 @@
     <body>
         <div class='container'>
             <h1>Neues Kind erfassen</h1>
-            <p>Hier haben Sie die Möglichkeit Ihr Kind zu erfassen.</p>
-            
+            <p>Hier haben Sie die Möglichkeit Ihr Kind zu erfassen.</p>          
             <form action="kind_hinzufuegen_controller.php" method="post">
-                <div>
+
+                <label for="geschlecht">Geschlecht des Kindes</label>
+                <div class="form-group">
+                <select id="inputState" class="form-control" name="geschlecht"><br>
+                <option>W</option>
+                <option>M</option>
+                </select>
+                </div>
                     <div class="form-group">
                         <label for="bname_kind">Benutzername des Kindes</label>
                         <input name="bname_kind" type="text" class="form-control" id="bname_kind">
