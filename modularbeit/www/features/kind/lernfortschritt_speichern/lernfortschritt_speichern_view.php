@@ -16,9 +16,9 @@ public function __construct($erzieltePunkte, $punkteGuthaben, $mediengutscheine)
 public function ausgabe(){
 
     echo '<form id="myForm" action="/includes/guthaben_anzeigen.php" method="post">';
-    echo '<input type="hidden" name="lerninhalt" value="'. $this->erzieltePunkte.'">';
-    echo '<input type="hidden" name="stufe" value="'. $this->punkteGuthaben.'">';
-    echo '<input type="hidden" name="modul" value="'. $this->mediengutscheine.'">';
+    echo '<input type="hidden" name="erzieltePunkte" value="'. $this->erzieltePunkte.'">';
+    echo '<input type="hidden" name="totalPunkte" value="'. $this->punkteGuthaben.'">';
+    echo '<input type="hidden" name="guthaben" value="'. $this->mediengutscheine.'">';
  
        echo  '</form>';
        echo '<script type="text/javascript">';
@@ -26,12 +26,5 @@ public function ausgabe(){
      echo '</script>';
 }
 
-
-function console_log($data){
-echo '<script>';
-echo 'console.log('.json_encode($data). ')';
-echo '</script>';
-
-}
 
 }

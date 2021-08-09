@@ -4,9 +4,7 @@ require_once('header.php');
 require_once('navbar_login.php');
 require_once('sidebar.php');
 
-
-  //$lerneinheit = $this->lerneinheit;
-  //$lerneinheit = $_POST['lerneinheit'];
+  $userId = $user->data()->id;
    $lerneinheit = $_SESSION['lerneinheit'];
    $lerneinheit = json_encode($lerneinheit);
   $lerninhalt =$_POST['lerninhalt'];
@@ -18,7 +16,6 @@ require_once('sidebar.php');
       
       <h1 class="text-center fw-lighter display-2">Aufgaben</h1>
         <hr>
-        <h1><?php print_r($lerneinheit);?></h1>
 
       <div id="start_screen" class="container-fluid bg-light text-dark p-5 quiz_start">
         <h1>Herzlich Willkommen!</h1>
@@ -60,6 +57,7 @@ require_once('sidebar.php');
             <input type="text" name="stufe" id="stufe" style="display:none;" value="<?php echo $stufe;?>">
             <input type="text" name="lerneinheit" id="lerneinheit" style="display:none;" value="<?php echo $modul;?>">
             <input type="text" name="lernmodul" id="lernmodul" style="display:none;" value="<?php echo $lerninhalt;?>">
+            <input type="text" name="userId" id="userId" style="display:none;" value="<?php echo $userId;?>">
             <p><button type="submit" name="beenden" class="end btn btn-primary btn-lg">Beenden</button></p>
           </form>
       </div>

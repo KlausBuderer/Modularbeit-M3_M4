@@ -4,6 +4,9 @@ require_once('header.php');
 require_once('navbar_login.php');
 require_once('sidebar.php');
 
+$erzieltePunktzahl =$_POST['erzieltePunkte'];
+$guthaben = $_POST['guthaben'];
+$neuePunktzahl = $_POST['totalPunkte']; 
 
  
 ?>
@@ -18,9 +21,9 @@ require_once('sidebar.php');
 <div id="start_screen" class="container-fluid bg-light text-dark p-5 quiz_start">
         <h1>Gut gemacht!!!</h1>
         <h2>Weiter so...</h2>
-        <p></p>
+        <p><?= $neuePunktzahl?></p>
 
-        <p>Dein aktuelles Medienguthaben ist: 2h</p>
+        <p>Dein aktuelles Medienguthaben ist: <?= $guthaben; ?>h</p>
 
 
 

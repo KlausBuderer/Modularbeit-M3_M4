@@ -51,6 +51,11 @@ public function setLernfortschritt()
 
 }
 
+public function getPunkte()
+{
+    return $this->punkte;
+}
+
 //Berechnung der erreichten Punkte
 private function calcPunkte()
 {
@@ -61,7 +66,6 @@ $result = 0;
 
 // 100 * stufe / Anzahl Fragen * 2 gerundet auf Ganzzahlen
 $result = round(100 * $stufe  / ($Fragen * 2));
-console_log($result);
 return $result;
 }
 
@@ -85,9 +89,4 @@ $timestamp = time();
    return date("d.m.Y", $timestamp);
 }
 
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-}
 }

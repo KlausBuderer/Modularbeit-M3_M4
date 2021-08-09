@@ -10,6 +10,7 @@ class Kinder_Uebesicht_Controller{
        // $model = new KinderUebersichtModel($id);
 
         $view = new KinderUebersichtView();
+        $view->ausgabe();
 
     }
     
