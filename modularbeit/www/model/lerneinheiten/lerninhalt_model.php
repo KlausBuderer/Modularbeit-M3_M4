@@ -38,10 +38,6 @@ public function createLerninhalt(){
             break;
     }
 
-    /* $this->console_log($stufe);
-    $this->console_log($modul);
-    $this->console_log($lerneinheit);
-    $this->console_log($lerninhalt); */
 
     return $lerninhalt;
 

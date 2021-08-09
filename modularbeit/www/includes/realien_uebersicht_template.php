@@ -80,7 +80,7 @@ require_once('sidebar.php');
                                         <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
-                                    <p class="card-text">Plus Minus</p>
+                                    <p class="card-text">Tiere</p>
                                     <label for="customRange1" class="form-label">Stufe</label>
                                     <div class="container">
                                             <div class="row">

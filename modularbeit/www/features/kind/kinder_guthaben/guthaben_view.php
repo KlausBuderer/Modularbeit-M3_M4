@@ -3,13 +3,15 @@
 class GuthabenView{
 
     public $guthaben;
+    public $punkte;
     public $username;
     
 
-    public function __construct($guthaben)
+    public function __construct($guthaben, $punkte)
     {
 
         $this->guthaben = $guthaben;
+        $this->punkte = $punkte;
         
     }
 
@@ -19,6 +21,7 @@ class GuthabenView{
    echo '<form id="myForm" action="/includes/guthaben.php" method="post">';
    echo '<input type="hidden" name="guthaben" value="'. $this->guthaben.'">';
    echo '<input type="hidden" name="username" value="'. $this->username.'">';
+   echo '<input type="hidden" name="punkte" value="'. $this->punkte.'">';
    
 
       echo  '</form>';

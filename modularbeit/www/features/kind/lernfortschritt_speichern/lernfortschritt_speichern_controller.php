@@ -10,11 +10,10 @@ if(isset($_POST["beenden"])){
     $stufe = $_POST["stufe"];
     $lerneinheit = $_POST["lerneinheit"];
     $lernmodul = $_POST["lernmodul"];
+    $userId = $_POST["userId"];
 }
 
-$erzieltePunkte = 5; 
-$punkteGuthaben = 50; 
-$mediengutscheine = 0.5;
+
 
 //Lernfortschritt abspeichern
 $setLernfortschritt = new SetLernfortschritt($anzRichtig, $anzFragen, $abbruch, $stufe, $lerneinheit, $lernmodul);
@@ -22,17 +21,10 @@ $setLernfortschritt = new SetLernfortschritt($anzRichtig, $anzFragen, $abbruch, 
 $setLernfortschritt->setLernfortschritt();
 
 //Punkte User zuweisen und Mediengutschein berechnen
-$addPointsToUser = new AddPointsToUser();
+$addPointsToUser = new AddPointsToUser($setLernfortschritt->getPunkte(), $userId);
 
-$view = new Lernfortschritt_speichern_View($erzieltePunkte, $punkteGuthaben, $mediengutscheine);
+$view = new Lernfortschritt_speichern_View($setLernfortschritt->getPunkte(), $addPointsToUser->getNeuPunkte(), $addPointsToUser->getActualGuthaben());
 $view->ausgabe();
 
-//$ler
 
-  function console_log($data){
-  echo '<script>';
-  echo 'console.log('.json_encode($data). ')';
-  echo '</script>';
-
- } 
  

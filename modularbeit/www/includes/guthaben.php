@@ -5,7 +5,7 @@ require_once('navbar_login.php');
 require_once('sidebar.php');
 
 $guthaben = $_POST['guthaben'];
-//$username = $_POST['username'];
+$punkte = $_POST['punkte'];
  
 ?>
 
@@ -19,7 +19,15 @@ $guthaben = $_POST['guthaben'];
 <div id="start_screen" class="container-fluid bg-light text-dark p-5 quiz_start">
         <h1>Hallo <?= $user->data()->username; ?></h1>
         <h2>Du verfügst über <?php echo $guthaben; ?> Mediengutscheine</h2>
-        <p></p>
+        <p>Es fehlen noch <?= 100 - $punkte ?> Punkte für einen weiteren Mediengutschein!!!</p>
+
+
+
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow= "58" aria-valuemin="0" aria-valuemax="100" style="width: <?= $punkte . "%" ;?>"><?= $punkte . "Punkte" ;?></div>
+        </div>
+
 
         <p>Sehr gut, weiter so...</p>
 
