@@ -49,7 +49,7 @@ require_once('sidebar.php');
                                         <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
-                                    <p class="card-text">Dreisatzrechnung</p>
+                                    <p class="card-text">Textaufgaben</p>
                                     <label for="customRange1" class="form-label">Stufe</label>
                                     <div class="container">
                                             <div class="row">
@@ -77,7 +77,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="images/mathematik_plus_minus.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Plus Minus</p>
