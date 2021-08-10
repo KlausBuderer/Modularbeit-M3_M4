@@ -13,9 +13,7 @@
 #
 
 version: "3"
-
 services:
-
   php:
     container_name: "modularbeit-php"
     image: bitnami/php-fpm:7.4
@@ -25,8 +23,8 @@ services:
       - ./modularbeit/www/:/app:delegated
       - ./modularbeit/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
 
-  # --- Apache 2.4
-  #
+  # Apache 2.4 Webserver
+  # 
   apache:
     container_name: "modularbeit-apache"
     image: bitnami/apache:2.4
@@ -50,12 +48,12 @@ services:
     environment:
       - REDIS_PASSWORD=at15jx13
  
-  phpmyadmin:
+ # phpMyAdmin: Webanwendung zur Administration der MySQL-Datenbanken respektive MariaDB
+ # Datenbank Zugriff erfolgt über das Internet auf den Host itwisse.mysql.db.hostpoint.ch
+   phpmyadmin:
     container_name: "modularbeit-phpmyadmin"
     image: bitnami/phpmyadmin:latest
     ports:
       - '8143:8443'
     environment:
       - DATABASE_HOST=itwisse.mysql.db.hostpoint.ch
-      
-      
