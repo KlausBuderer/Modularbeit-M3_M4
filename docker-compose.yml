@@ -52,8 +52,7 @@ services:
  
  # phpMyAdmin: Webanwendung zur Administration der MySQL-Datenbanken respektive MariaDB
  # Datenbank Zugriff erfolgt über das Internet auf den Host itwisse.mysql.db.hostpoint.ch
- 
-  phpmyadmin:
+   phpmyadmin:
     container_name: "modularbeit-phpmyadmin"
     image: bitnami/phpmyadmin:latest
     ports:
