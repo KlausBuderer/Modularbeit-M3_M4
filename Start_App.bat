@@ -13,7 +13,7 @@ echo +             .....IHRE Docker Desktop Software ist gestartet, es kann losg
 echo +                                                                                                                                                                     +
 echo +             unser Modularbeit mit dem Namen Mediengutschein wird gestartet                                                                                          +
 echo +                                                                                                                                                                     +
-echo +				sobald Docker fertig gestartet ist, können Sie im Browser die Webseite Mediengutschein unter:                                                          +                                                                               +
+echo +				sobald Docker fertig gestartet ist, können Sie im Browser die Webseite Mediengutschein unter                                                          +                                                                               +
 echo +                                                                                                                                                                     +
 echo +                 https://localhost.ch                                                                                                                                +
 echo +                                                                                                                                                                     +
@@ -27,7 +27,7 @@ echo +                                                                          
 echo +                                                                                                                                                                     +
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo 
-echo Bitte Enter drücken um die Mediengutschein 
+echo Bitte Enter druecken um die Mediengutschein 
 echo 
 ) else (
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -47,9 +47,9 @@ echo +                                                                          
 echo +                                                                                                                                                                     +
 echo +                                                                                                                                                                     +
 echo +                                                                                                                                                                     +
-echo +             sobald Sie dies gemacht haben und dann diese Fenster mit ENTER bestätigt habe, geht es weiter mit unserer Modularbeit.                                  +
+echo +             sobald Sie dies gemacht haben und dann diese Fenster mit ENTER bestaetigt habe, geht es weiter mit unserer Modularbeit.                                  +
 echo +                                                                                                                                                                     +
-echo +				Wenn es dann geklappt hat, so können Sie im Browser die Webseite Mediengutschein unter:                                                                +                                                                               +
+echo +				Wenn es dann geklappt hat, so können Sie im Browser die Webseite Mediengutschein unter                                                                +                                                                               +
 echo +                                                                                                                                                                     +
 echo +                 https://localhost.ch                                                                                                                                +
 echo +                                                                                                                                                                     +
@@ -62,7 +62,7 @@ echo +                                                                          
 echo +                                                                                                                                                                     +
 echo +                                                                                                                                                                     +
 echo +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-echo Bitte den "%Programm%" starten und danach hier Enter drücken
+echo Bitte den "%Programm%" starten und danach hier Enter druecken
 )
 pause
 docker compose up

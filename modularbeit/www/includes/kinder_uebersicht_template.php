@@ -14,7 +14,7 @@ require_once('sidebar.php');
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="/includes/images/mathematik_hauptseite.jpg" style="height: 20rem;" class="card-img-top">
+                    <img src="/includes/images/mathematik_hauptseite.jpg" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body">
                     <p class="card-text">Verbessere deine Mathe Skills</p>
@@ -30,7 +30,7 @@ require_once('sidebar.php');
             <div class="col">
                 <div class="card shadow-sm">
                         
-                            <img src="/includes/images/realien.png" style="height: 20rem;" class="card-img-top">
+                            <img src="/includes/images/realien.png" style="height: 18rem;" class="card-img-top">
                         
                     <div class="card-body">
                         <p class="card-text">Werde ein Meister oder eine Meisterin in Realien</p>
@@ -46,7 +46,7 @@ require_once('sidebar.php');
             <div class="col">
                 <div class="card shadow-sm">
                         
-                            <img src="/includes/images/deutsch.jpg" style="height: 20rem;" class="card-img-top">
+                            <img src="/includes/images/deutsch.jpg" style="height: 18rem;" class="card-img-top">
                         
                     <div class="card-body">
                         <p class="card-text">Verbessere dein Deutsch</p>
@@ -62,7 +62,7 @@ require_once('sidebar.php');
             <div class="col">
                 <div class="card shadow-sm">
                         
-                            <img src="/includes/images/englisch.jpg" style="height: 20rem;" class="card-img-top">
+                            <img src="/includes/images/englisch.jpg" style="height: 18rem;" class="card-img-top">
                         
                     <div class="card-body">
                         <p class="card-text">Improve your english</p>
@@ -78,7 +78,7 @@ require_once('sidebar.php');
             <div class="col">
                 <div class="card shadow-sm">
                         
-                            <img src="/includes/images/franzoesisch.jpg" style="height: 20rem;" class="card-img-top">
+                            <img src="/includes/images/franzoesisch.jpg" style="height: 18rem;" class="card-img-top">
                         
                     <div class="card-body">
                         <p class="card-text">apprendre le français</p>
@@ -94,7 +94,7 @@ require_once('sidebar.php');
             <div class="col">
                 <div class="card shadow-sm">
                         
-                            <img src="/includes/images/lernfortschritt.jpg" style="height: 20rem;" class="card-img-top">
+                            <img src="/includes/images/lernfortschritt.jpg" style="height: 18rem;" class="card-img-top">
                         
                     <div class="card-body">
                         <p class="card-text">Hier findest du deinen Lernforschritt</p>
