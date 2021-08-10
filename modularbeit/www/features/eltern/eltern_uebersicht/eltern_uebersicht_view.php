@@ -6,6 +6,8 @@ class ElternuebersichtView{
 
 
     private $kinder = array();
+    private $kind1 = array('max', 19);
+    private $kind2 = array('anna', 21);
 
 
 
@@ -13,35 +15,22 @@ class ElternuebersichtView{
 
         $this->kinder = $kinder;
 
+        //array_push($this->kinder, $this->kind1);
+        //array_push($this->kinder, $this->kind2);
+
     }
 
-    private function OeffneBild(){
-        
-        return 'Hello';
-    }
+    public function showKinder(){
+
+        $_SESSION['kinderListe'] = $this->kinder;
+
+        echo '<form id="myForm" action="/includes/eltern_uebersicht_template.php" method="post">';
+           echo  '</form>';
+           echo '<script type="text/javascript">';
+             echo "document.getElementById('myForm').submit()";
+         echo '</script>';
+         }
 
  
-   public function setName($name){
-        $this->name = $name;
-    }
-
-    public function setSex($sex){
-        $this->sex = $sex;
-    }
-
-    public function setAge($age){
-        $this->age = $age;
-    }
-
-
-    public function getData(){
-        return $this-> name;
-
-    }
-
-
-    public function __destruct(){
-
-    }
 
 }

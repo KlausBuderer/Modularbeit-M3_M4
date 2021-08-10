@@ -21,9 +21,15 @@ $neuePunktzahl = $_POST['totalPunkte'];
 <div id="start_screen" class="container-fluid bg-light text-dark p-5 quiz_start">
         <h1>Gut gemacht!!!</h1>
         <h2>Weiter so...</h2>
-        <p><?= $neuePunktzahl?></p>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow= "58" aria-valuemin="0" aria-valuemax="100"  style="width: <?= $punkte . "%" ;?>"><?= $punkte . "Punkte" ;?></div>
+        </div>
+
+        <br>
 
         <p>Dein aktuelles Medienguthaben ist: <?= $guthaben; ?>h</p>
+
 
 
 
