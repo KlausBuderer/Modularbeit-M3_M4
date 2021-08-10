@@ -86,3 +86,10 @@ background-color: #2470dc;
 border-radius: 50px;
 
 }
+
+
+/*Elternübersicht*/
+
+.navButton{
+  float: right;
+}
