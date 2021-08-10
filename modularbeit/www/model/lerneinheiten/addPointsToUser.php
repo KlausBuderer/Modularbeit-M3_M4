@@ -78,7 +78,7 @@ private function checkGuthabenschwelle(){
 // Prüfe Guthabenschwelle erreicht
     if ($this->neuPunkte >= $this->guthabenSchwelle) {
         $this->neuPunkte-=$this->guthabenSchwelle;
-        $this->actualGuthaben + 1;
+        $this->actualGuthaben += 1;
     }
 }
 
