@@ -13,9 +13,7 @@
 #
 
 version: "3"
-
 services:
-
   php:
     container_name: "modularbeit-php"
     image: bitnami/php-fpm:7.4
@@ -25,8 +23,8 @@ services:
       - ./modularbeit/www/:/app:delegated
       - ./modularbeit/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
 
-  # --- Apache 2.4 Webserver
-  #
+  # Apache 2.4 Webserver
+  # 
   apache:
     container_name: "modularbeit-apache"
     image: bitnami/apache:2.4
@@ -59,5 +57,3 @@ services:
       - '8143:8443'
     environment:
       - DATABASE_HOST=itwisse.mysql.db.hostpoint.ch
-      
-      
