@@ -93,3 +93,29 @@ border-radius: 50px;
 .navButton{
   float: right;
 }
+
+
+/*MG Verwaltung*/
+
+.mg-verwaltung{
+  display: inline-flex;
+  padding-left: 5rem;
+  color: black;
+}
+
+.mg-verwaltung-titel{
+  color: black;
+}
+
+.submit-button{
+  margin-left: 5rem;
+}
+
+.back-button{
+  margin-top: 2rem;
+}
+
+.input-fenster{
+  margin-top: 0.5rem;
+}
+

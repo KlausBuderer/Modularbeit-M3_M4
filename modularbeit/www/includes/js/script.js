@@ -168,4 +168,11 @@ function bewegeComputer(){
     console.log("Daten werden in die Datenbank gespeichert");
 
   }
+
+  $("#mg-speichern").click(function() {
+      var gutscheinInput = document.getElementById('gutscheinInput').text;
+      $("#neuGutschein").text(gutscheinInput);
+
+  });
+
   

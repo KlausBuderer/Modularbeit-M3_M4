@@ -14,6 +14,17 @@ public function __construct($userId)
     $this->fetchDb();
 }
 
+public function setGuthaben($neuGuthaben)
+{
+    $connection = new DbConnection();
+    $conn = $connection->buildConnection();
+
+    $sql =  "UPDATE profiles SET  guthaben= $neuGuthaben WHERE user_id= $this->userId;";
+  
+    $result = mysqli_query($conn, $sql);
+  
+}
+
 public function getGuthaben(){
 
 return $this->guthaben;

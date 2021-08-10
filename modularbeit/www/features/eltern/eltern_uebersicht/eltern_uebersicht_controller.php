@@ -1,5 +1,13 @@
 <?php
+
+
+if (file_exists('model/lerneinheiten/Elternuebersicht.php')) {
 require_once 'model/lerneinheiten/Elternuebersicht.php';
+  } elseif (file_exists('../model/lerneinheiten/Elternuebersicht.php')){
+   
+    require_once '../model/lerneinheiten/Elternuebersicht.php';
+  }   
+
 require_once 'eltern_uebersicht_view.php';
 
 //In dieser Klasse wird die Elternübersicht bearbeitet
@@ -15,19 +23,5 @@ public function __construct($userId) {
     $view = new ElternuebersichtView($this->elternuebersicht->getKinder());
     $view->showKinder();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

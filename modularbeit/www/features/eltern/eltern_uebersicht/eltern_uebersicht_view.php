@@ -15,9 +15,6 @@ class ElternuebersichtView{
 
         $this->kinder = $kinder;
 
-        //array_push($this->kinder, $this->kind1);
-        //array_push($this->kinder, $this->kind2);
-
     }
 
     public function showKinder(){
