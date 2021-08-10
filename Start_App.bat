@@ -1,5 +1,4 @@
 @echo off
-
 set Programm=docker desktop
 tasklist |find /i "%Programm%" >nul
 if %errorlevel% == 0 (
