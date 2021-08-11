@@ -15,7 +15,7 @@ require_once('sidebar.php');
 
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                <img src="images/deutschverben.jpg" style="height: 18rem;" class="card-img-top">
 
                                 <div class="card-body">
                                     <p class="card-text">Verben Konjugieren</p>
@@ -46,7 +46,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="images/deutsch4faelle.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Die vier Fälle</p>
@@ -77,7 +77,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="images/deutschhoerverstaendnis.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Plus Minus</p>

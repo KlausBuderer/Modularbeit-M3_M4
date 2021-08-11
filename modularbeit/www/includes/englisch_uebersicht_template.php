@@ -15,7 +15,7 @@ require_once('sidebar.php');
 
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                <img src="images/englishunits.jpg" style="height: 18rem;" class="card-img-top">
 
                                 <div class="card-body">
                                     <p class="card-text">Units</p>
@@ -46,7 +46,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="images/englishverbs.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Verbs</p>
@@ -77,7 +77,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="includes/images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="images/englishlistening.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Listening</p>
