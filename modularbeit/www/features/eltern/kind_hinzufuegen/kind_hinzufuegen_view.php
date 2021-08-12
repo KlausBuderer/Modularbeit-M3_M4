@@ -19,7 +19,8 @@
             <form action="kind_hinzufuegen_controller.php" method="post">
                 <div>
                 <input type="radio" name="spam" value="1" checked>Mädchen 
-                    <input type="radio" name="spam" value="2">Junge<br>
+                    <input type="radio" name="spam" value="2" id="geschlecht" >Junge<br>
+                    <br>
                 </div>
                     <div class="form-group">
                         <label for="username">Benutzername des Kindes</label>
@@ -47,26 +48,26 @@
                     <br>
                     <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
                 <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="chkbx_mathematik" disabled checked >
-                <label class="form-check-label" for="chkbx_mathematik">
+                <input class="form-check-input" type="checkbox" value="X" id="cboxmathematik" disabled checked >
+                <label class="form-check-label" for="cboxmathematik">
                     Mathematik
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="chkbx_le_deutsch" disabled checked >
-                <label class="form-check-label" for="chkbx_le_deutsch">
+                <input class="form-check-input" type="checkbox" value="X" id="cboxdeutsch" disabled checked >
+                <label class="form-check-label" for="cboxdeutsch">
                     Deutsch
                 </label>
                 </div>
                 <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="chkbx_le_englisch" disabled checked >
-                <label class="form-check-label" for="chkbx_le_englisch">
+                <input class="form-check-input" type="checkbox" value="X" id="cboxenglisch" disabled checked >
+                <label class="form-check-label" for="cboxenglisch">
                   Englisch
                 </label>
                 </div>
                 <div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="chkbx_le_realien" disabled checked >
-                <label class="form-check-label" for="chkbx_le_realien">
+				<input class="form-check-input" type="checkbox" value="X" id="cboxrealien" disabled checked >
+                <label class="form-check-label" for="cboxrealien">
                   Realien
                 </label>
                 </div>
