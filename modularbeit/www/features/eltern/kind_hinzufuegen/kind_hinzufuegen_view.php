@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <?php
-     # include_once './includes/kinder_uebersicht_template.php';
+    require_once('../../../includes/navbar_eltern.php');
+    require_once('../../../includes/sidebar_eltern.php');
+    require_once('../../../includes/header.php');
+    $nachname = $user->data()->id;
     ?>
     <head>
         <meta charset="UTF-8">
         <title>Kind erfassen</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+        </head>
     <body>
         <div class='container'>
             <h1>Neues Kind erfassen</h1>
@@ -26,7 +28,7 @@
                         <input name="bname_kind" type="text" class="form-control" id="bname_kind">
                     </div>
                     <div class="form-group">
-                        <label for="vorname_kind">Nachname</label>
+                        <label for="vorname_kind">Vorname</label>
                         <input name="vorname_kind" type="text" class="form-control" id="vorname_kind">
                     </div>
 					<div class="form-group">

@@ -87,7 +87,6 @@ function getLernfortschritt($kindId, $kindsname)
     new LernfortschrittController($kindId, $kindsname);
 }
 
-
 ?>
 
 
