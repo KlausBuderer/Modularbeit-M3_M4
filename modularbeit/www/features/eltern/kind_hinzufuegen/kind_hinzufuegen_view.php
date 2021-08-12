@@ -4,7 +4,7 @@
     require_once('../../../includes/navbar_eltern.php');
     require_once('../../../includes/sidebar_eltern.php');
     require_once('../../../includes/header.php');
-    $nachname = $user->data()->lname;
+    $lname = $user->data()->lname;
     $email = $user->data()->email;
     $passwort = 'willkommen'
     ?>
@@ -17,26 +17,21 @@
             <h1>Neues Kind erfassen</h1>
             <p>Hier haben Sie die Möglichkeit Ihr Kind zu erfassen.</p>          
             <form action="kind_hinzufuegen_controller.php" method="post">
-
-                <label for="geschlecht">Geschlecht des Kindes</label>
-                <div class="form-group">
-                <select id="inputState" class="form-control" name="geschlecht"><br>
-                <option>Bitte auswählen</option>
-                <option>Mädchen</option>
-                <option>Junge</option>
-                </select>
+                <div>
+                <input type="radio" name="spam" value="1" checked>Mädchen 
+                    <input type="radio" name="spam" value="2">Junge<br>
                 </div>
                     <div class="form-group">
-                        <label for="bname_kind">Benutzername des Kindes</label>
-                        <input name="bname_kind" type="text" class="form-control" id="bname_kind" required>
+                        <label for="username">Benutzername des Kindes</label>
+                        <input name="username" type="text" class="form-control" id="username" required>
                     </div>
                     <div class="form-group">
-                        <label for="vorname_kind">Vorname</label>
-                        <input name="vorname_kind" type="text" class="form-control" id="vorname_kind" required>
+                        <label for="fname">Vorname</label>
+                        <input name="fname" type="text" class="form-control" id="fname" required>
                     </div>                 
 					<div class="form-group">
-                        <label for="nachname_kind">Nachname</label><br>
-                        <input name="nachname_kind" type="text" value="<?php echo $nachname; ?>"class="form-control" id="nachname_kind" disabled> 
+                        <label for="lname">Nachname</label><br>
+                        <input name="lname" type="text" value="<?php echo $lname; ?>"class="form-control" id="lname" disabled> 
                     </div>                  
                    <div class="form-group">
                         <label for="email">Email</label>                   
