@@ -6,6 +6,7 @@
     require_once('../../../includes/header.php');
     $nachname = $user->data()->lname;
     $email = $user->data()->email;
+    $passwort = 'willkommen'
     ?>
     <head>
         <meta charset="UTF-8">
@@ -27,11 +28,11 @@
                 </div>
                     <div class="form-group">
                         <label for="bname_kind">Benutzername des Kindes</label>
-                        <input name="bname_kind" type="text" class="form-control" id="bname_kind">
+                        <input name="bname_kind" type="text" class="form-control" id="bname_kind" required>
                     </div>
                     <div class="form-group">
                         <label for="vorname_kind">Vorname</label>
-                        <input name="vorname_kind" type="text" class="form-control" id="vorname_kind">
+                        <input name="vorname_kind" type="text" class="form-control" id="vorname_kind" required>
                     </div>                 
 					<div class="form-group">
                         <label for="nachname_kind">Nachname</label><br>
@@ -41,14 +42,13 @@
                         <label for="email">Email</label>                   
                         <input name="email" type="email" value="<?php echo $email; ?>"class="form-control" id="email" disabled> 
                     </div>
-                        <div class="form-group">
-                        <label for="passwort1">Passwort</label>
-                        <input name="passwort1" type="text" class="form-control" id="passwort1">
-                    </div>  
+                    <br>
+                    <label><p style="color:red;"><b>Achtung:</b></label>
+                    <label><p style="color:red;">Für das neu angelegte Kind, gilt das Standard Passwort willkommen und kann im Profil vom Kind selbständig geändert werden.</p></label>
                     <div class="form-group">
-                        <label for="passwort2">Passwort Wiederholung</label>
-                        <input name="passwort2" type="text" class="form-control" id="passwort2">
-                    </div> 
+                        <label for="passwort">Passwort</label>                   
+                        <input name="passwort" type="passwort" value="<?php echo $passwort; ?>"class="form-control" id="passwort" disabled> 
+                    </div>
                     <br>
                     <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
                 <div class="form-check">
