@@ -40,6 +40,16 @@
                         <label for="email">Email</label>                   
                         <input name="email" type="email" value="<?php echo $email; ?>"class="form-control" id="email" disabled> 
                     </div>
+                    <div class="form-group">
+                        <label for="passwort1">Passwort</label>                   
+                        <input name="passwort1" type="passwort1" value="<?php echo $email; ?>"class="form-control" id="passwort1" > 
+                    </div>
+                    <div class="form-group">
+                        <label for="passwort2">Passwort wiederholen</label>                   
+                        <input name="passwort2" type="passwort2" value="<?php echo $email; ?>"class="form-control" id="passwort2" > 
+                    </div>
+                    
+                    <br>
                     <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
                 <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="chkbx_mathematik" disabled checked >
