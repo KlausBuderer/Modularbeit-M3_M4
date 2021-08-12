@@ -34,15 +34,15 @@
                     </div>                 
 					<div class="form-group">
                         <label for="nachname_kind">Nachname</label><br>
-                        <input name="nachname_kind" type="text" value="<?php echo $nachname; ?>"class="form-control" id="nachname_kind"> 
+                        <input name="nachname_kind" type="text" value="<?php echo $nachname; ?>"class="form-control" id="nachname_kind" disabled> 
                     </div>                  
                    <div class="form-group">
                         <label for="email">Email</label>                   
-                        <input name="email" type="email" value="<?php echo $email; ?>"class="form-control" id="email"> 
+                        <input name="email" type="email" value="<?php echo $email; ?>"class="form-control" id="email" disabled> 
                     </div>
                     <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
                 <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="chkbx_mathematik"  disabled checked >
+                <input class="form-check-input" type="checkbox" value="" id="chkbx_mathematik" disabled checked >
                 <label class="form-check-label" for="chkbx_mathematik">
                     Mathematik
                 </label>
@@ -66,7 +66,6 @@
                 </label>
                 </div>
   		   <button type="submit" class="form-control">Kind erstellen</button>
-
               </div>
           </form>
         </div>
