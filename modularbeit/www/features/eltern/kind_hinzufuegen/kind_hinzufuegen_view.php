@@ -4,7 +4,8 @@
     require_once('../../../includes/navbar_eltern.php');
     require_once('../../../includes/sidebar_eltern.php');
     require_once('../../../includes/header.php');
-    $nachname = $user->data()->id;
+    $nachname = $user->data()->lname;
+    $email = $user->data()->email;
     ?>
     <head>
         <meta charset="UTF-8">
@@ -30,14 +31,14 @@
                     <div class="form-group">
                         <label for="vorname_kind">Vorname</label>
                         <input name="vorname_kind" type="text" class="form-control" id="vorname_kind">
-                    </div>
+                    </div>                 
 					<div class="form-group">
-                        <label for="nachname_kind">Nachname</label>
-                        <input name="nachname_kind" type="text" class="form-control" id="nachname_kind">
+                        <label for="nachname_kind">Nachname</label><br>
+                        <input name="nachname_kind" type="text" value="<?php echo $nachname; ?>"class="form-control" id="nachname_kind"> 
                     </div>                  
                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="adresse@domain.com">
+                        <label for="email">Email</label>                   
+                        <input name="email" type="email" value="<?php echo $email; ?>"class="form-control" id="email"> 
                     </div>
                     <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
                 <div class="form-check">
