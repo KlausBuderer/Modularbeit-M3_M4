@@ -34,11 +34,11 @@
             </div>
             <div class="form-group">
                 <label for="lname">Nachname</label><br>
-                <input name="lname" type="text" value="<?php echo $lname; ?>" class="form-control" id="lname" disabled>
+                <input name="lname" type="text" value="<?php echo $lname; ?>" class="form-control" id="lname" readonly>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input name="email" type="email" value="<?php echo $email; ?>" class="form-control" id="email" disabled>
+                <input name="email" type="email" value="<?php echo $email; ?>" class="form-control" id="email" readonly>
             </div>
             <br>
             <label>
@@ -84,5 +84,7 @@
     </form>
     </div>
 </body>
-
+<?php
+require_once('../../../includes/footer.php');
+?>
 </html>
