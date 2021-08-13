@@ -127,6 +127,7 @@ $lang = array_merge($lang,array(
 		"GEN_NOT_AVAIL" 	=> "nicht verfügbar",
 		"GEN_AVAIL" 			=> "verfügbar",
 		"GEN_BACK" 				=> "Zurück",
+		"GEN_MAIN" 				=> "Zurück",
 		"GEN_RESET" 			=> "Zurück setzen",
 		"GEN_REQ"					=> "benötigt",
 		"GEN_AND"					=> "und",

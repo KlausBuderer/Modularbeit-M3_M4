@@ -10,7 +10,7 @@ require_once('../../../model/benutzerverwaltung/setkindkonto.php');
 //Klasse der Bearbeitung des Hinzufügen eines Kindes
 
 // Tabellenfelder zum Anlegen des Kindes
-// $id = "";
+$id = "";
 $permissions = 3;
 $email = $_POST['email'];
 // $email_new = $_POST["email"];
