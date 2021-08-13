@@ -1,6 +1,8 @@
 <?php
 require_once 'classes/class.autoloader.php';
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 $abs_us_root=$_SERVER['DOCUMENT_ROOT'];
 
