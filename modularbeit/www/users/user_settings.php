@@ -335,7 +335,7 @@ if (!empty($_POST)) {
                   <input type="hidden" name="csrf" value="<?=Token::generate(); ?>" />
                   <div class="row">
                     <div class="col-6 text-left">
-                      <a class="btn btn-secondary" href="../users/account.php"><?=lang('GEN_CANCEL'); ?></a>
+                      <a class="btn btn-secondary" href="../index.php"><?=lang('GEN_MAIN'); ?></a>
                     </div>
                     <div class="col-6 text-right">
                       <input class='btn btn-primary' type='submit' value='<?=lang('GEN_UPDATE'); ?>' class='submit' />

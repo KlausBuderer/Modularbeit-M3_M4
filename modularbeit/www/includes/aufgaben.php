@@ -67,10 +67,10 @@ require_once('sidebar.php');
 
     <div class="container">
       <div class="container-fluid bg-light text-dark p-5">
-        <img id="Spieler" class="fortschrittSpieler" src="/includes/images/roboter.png">
+        <img id="Spieler" class="fortschrittSpieler" src="/includes/images/spieler_pony.png">
         <br>
         <hr>
-        <img id="Computer" class="fortschrittComputer" src="/includes/images/roboter.png">
+        <img id="Computer" class="fortschrittComputer" src="/includes/images/spieler_gokart.png">
       </div>
     </div>  
  
