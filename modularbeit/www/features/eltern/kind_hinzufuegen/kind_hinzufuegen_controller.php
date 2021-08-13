@@ -1,4 +1,6 @@
 <?php
+// require_once('../../../includes/navbar_eltern.php');
+require_once('../../../model/benutzerverwaltung/setkindkonto.php');
 
 //Klasse der Bearbeitung des Hinzufügen eines Kindes
 
@@ -57,3 +59,8 @@ echo $fname;
 echo $chboxdeutsch;
 echo $geschlecht;
 */
+
+//Kind anlegen
+$setkindkonto = new SetKindKonto();
+$setLernfortschritt = new SetKindKonto($permissions,$email,$email_new,$username,$password,$pin,$fname,$lname,$language,$email_verified,$vericode,$vericode_expiry,$oauth_provider,$oauth_uid,$gender,$locale,$gpluslink,$account_owner,$account_id,$account_mgr,$fb_uid,$picture,$created,$protected,$msg_exempt,$dev_user,$msg_notification,$cloak_allowed,$oauth_tos_accepted,$un_changed,$force_pr,$logins,$last_login,$join_date,$modified,$active);
+
