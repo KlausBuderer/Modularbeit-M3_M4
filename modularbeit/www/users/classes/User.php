@@ -69,7 +69,8 @@ class User
         if ($user) {
             if ($loginHandler !== null) {
                 if (!filter_var($user, FILTER_VALIDATE_EMAIL) === false) {
-                    $field = 'email';
+                    $field = 'username';
+                    // $field = 'email';
                 } else {
                     $field = 'username';
                 }
@@ -77,7 +78,8 @@ class User
                 if (is_numeric($user)) {
                     $field = 'id';
                 } elseif (!filter_var($user, FILTER_VALIDATE_EMAIL) === false) {
-                    $field = 'email';
+                    $field = 'username';
+                    // $field = 'email';
                 } else {
                     $field = 'username';
                 }

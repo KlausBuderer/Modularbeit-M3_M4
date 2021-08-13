@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <?php
-     # include_once './includes/kinder_uebersicht_template.php';
+    require_once('../../../includes/navbar_eltern.php');
+    require_once('../../../includes/sidebar_eltern.php');
+    require_once('../../../includes/header.php');
+    $nachname = $user->data()->lname;
+    $email = $user->data()->email;
+    $passwort = 'willkommen'
     ?>
     <head>
         <meta charset="UTF-8">
         <title>Kind erfassen</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+        </head>
     <body>
         <div class='container'>
             <h1>Neues Kind erfassen</h1>
@@ -17,29 +21,38 @@
                 <label for="geschlecht">Geschlecht des Kindes</label>
                 <div class="form-group">
                 <select id="inputState" class="form-control" name="geschlecht"><br>
-                <option>W</option>
-                <option>M</option>
+                <option>Bitte auswählen</option>
+                <option>Mädchen</option>
+                <option>Junge</option>
                 </select>
                 </div>
                     <div class="form-group">
                         <label for="bname_kind">Benutzername des Kindes</label>
-                        <input name="bname_kind" type="text" class="form-control" id="bname_kind">
+                        <input name="bname_kind" type="text" class="form-control" id="bname_kind" required>
                     </div>
                     <div class="form-group">
-                        <label for="vorname_kind">Nachname</label>
-                        <input name="vorname_kind" type="text" class="form-control" id="vorname_kind">
-                    </div>
+                        <label for="vorname_kind">Vorname</label>
+                        <input name="vorname_kind" type="text" class="form-control" id="vorname_kind" required>
+                    </div>                 
 					<div class="form-group">
-                        <label for="nachname_kind">Nachname</label>
-                        <input name="nachname_kind" type="text" class="form-control" id="nachname_kind">
+                        <label for="nachname_kind">Nachname</label><br>
+                        <input name="nachname_kind" type="text" value="<?php echo $nachname; ?>"class="form-control" id="nachname_kind" disabled> 
                     </div>                  
                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="adresse@domain.com">
+                        <label for="email">Email</label>                   
+                        <input name="email" type="email" value="<?php echo $email; ?>"class="form-control" id="email" disabled> 
                     </div>
+                    <br>
+                    <label><p style="color:red;"><b>Achtung:</b></label>
+                    <label><p style="color:red;">Für das neu angelegte Kind, gilt das Standard Passwort willkommen und kann im Profil vom Kind selbständig geändert werden.</p></label>
+                    <div class="form-group">
+                        <label for="passwort">Passwort</label>                   
+                        <input name="passwort" type="passwort" value="<?php echo $passwort; ?>"class="form-control" id="passwort" disabled> 
+                    </div>
+                    <br>
                     <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
                 <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="chkbx_mathematik"  disabled checked >
+                <input class="form-check-input" type="checkbox" value="" id="chkbx_mathematik" disabled checked >
                 <label class="form-check-label" for="chkbx_mathematik">
                     Mathematik
                 </label>
@@ -63,7 +76,6 @@
                 </label>
                 </div>
   		   <button type="submit" class="form-control">Kind erstellen</button>
-
               </div>
           </form>
         </div>

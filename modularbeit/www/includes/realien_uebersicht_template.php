@@ -46,7 +46,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="images/realienschweiz.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Schweiz</p>
@@ -77,7 +77,7 @@ require_once('sidebar.php');
                         <div class="col">
                             <div class="card shadow-sm">
                                     
-                                        <img src="images/mathe-2.jpg" style="height: 18rem;" class="card-img-top">
+                                        <img src="images/realientiere.jpg" style="height: 18rem;" class="card-img-top">
                                     
                                 <div class="card-body">
                                     <p class="card-text">Tiere</p>
