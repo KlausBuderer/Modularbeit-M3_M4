@@ -10,17 +10,17 @@ require_once('../../../model/benutzerverwaltung/setkindkonto.php');
 //Klasse der Bearbeitung des Hinzufügen eines Kindes
 
 // Tabellenfelder zum Anlegen des Kindes
-$id = "";
-$permissions = 3;
-$email = $_POST['email'];
-// $email_new = $_POST["email"];
-$username = $_POST["username"];
-// $password = $_POST["email"];
-// $pin = $_POST["email"];
-$fname = $_POST["fname"];
+// $id = "";
+// $permissions = 3;
+// $email = $_POST['email'];
+// $email_new = "";
+// $username = $_POST["username"];
+// $password = "passworthash....";
+// $pin = "";
+// $fname = $_POST["fname"];
 // $lname = $_POST["lname"];
 // $language = $_POST["email"];
-// $email_verified = $_POST["email"];
+// $email_verified = "1";
 // $vericode = $_POST["email"];
 // $vericode_expiry = $_POST["email"];
 // $oauth_provider = $_POST["email"];
@@ -48,6 +48,8 @@ $fname = $_POST["fname"];
 // $modified = $_POST["email"];
 // $active = $_POST["email"];
 
+/*
+
 // Checkboxen fest vorbelegt, aktuell ist keine dynamische Steuerung der Modulen vorgesehen.
 $cboxmathematik  = "X";
 $cboxdeutsch     = "X";
@@ -67,7 +69,29 @@ $le_realien;
 $le_bld_profil;
 $le_bld_avatar;
 
-//
+*/
+// Eltern Kind Matches
+// INSERT INTO `itwisse_lernplattform`.`le_eltern_kind_matches`
+
+
+/* 
+function setkindverknuepfung()
+{
+    $connection = new DbConnection();
+    $conn = $connection->buildConnection();
+
+$sql =  "INSERT INTO le_eltern_kind_matches(id,kind_id,eltern_id)
+VALUES ('id','100','200');";
+  $result = mysqli_query($conn, $sql);
+  }
+  $kind_id = 103;
+  $eltern_id = 103;
+setkindverknuepfung($kind_id,$eltern_id)
+
+// setkindverknuepfung($kind_id,$eltern_id);
+
+// new SetKindKonto($eltern_id,$kind_id);
+*/
 /*
 INSERT INTO `itwisse_lernplattform`.`profiles`
 
@@ -88,8 +112,16 @@ echo $user_id . <br>;
 //Verknüpfung Kind zum Eltern
 
 //Permission für Kind
-
+// INSERT INTO `itwisse_lernplattform`.`user_permission_matches`
+$id;
+$user_id;
+$permission_id;
+/*
 
 // $setLernfortschritt->setLernfortschritt();
 */
-require_once('../../../includes/footer.php');
+// require_once('../../../includes/footer.php');
+
+setkindverknuepfung(222,222);
+
+?>
