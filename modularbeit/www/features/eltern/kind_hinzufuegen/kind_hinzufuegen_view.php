@@ -20,8 +20,8 @@
         <p>Hier haben Sie die Möglichkeit Ihr Kind zu erfassen.</p>
         <form action="kind_hinzufuegen_controller.php" method="post">
             <div>
-                <input type="radio" name="spam" value="1" checked>Mädchen
-                <input type="radio" name="spam" value="2" id="geschlecht">Junge<br>
+                <input type="radio" name="spam" value="M" checked>Mädchen
+                <input type="radio" name="spam" value="J" id="gender">Junge<br>
                 <br>
             </div>
             <div class="form-group">
