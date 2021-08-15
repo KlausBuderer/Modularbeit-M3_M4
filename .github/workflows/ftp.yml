@@ -5,12 +5,12 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v2
-
-      - name: 📂 Sync files
-        uses: sebastianpopp/ftp-action@releases/v2
-        with:
-          host: sl233.web.hostpoint.ch
-          user: github@modularbeit.ch
-          password: githubABBTS2021
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: sl233.web.hostpoint.ch
+        username: github@modularbeit.ch
+        password: githubABBTS2021
