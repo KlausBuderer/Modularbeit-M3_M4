@@ -10,5 +10,6 @@ $pdf=new FPDF();
  $pdf->Image('includes/images/spieler_gokart.png', '10', '80', '0', '0');
  $pdf->SetFont('Arial','B',10);
  $pdf->Cell(120,200,'Du darfst fuer diesen Gutschein');
+ 
  $pdf->Output(); 
 ?>
