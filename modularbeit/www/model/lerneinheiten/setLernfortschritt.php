@@ -1,7 +1,7 @@
 <?php
-//include_once '../../../../userspice/users/init.php';
+
 include_once 'dbconnection.php';
-//include_once '../../../../userspice/users/classes/class.autoloader.php';
+
 
 
 
@@ -15,16 +15,17 @@ class SetLernfortschritt {
   private  $lernmodul;
   private $date;
   private $punkte = 0;
-  private $userId = 1;
+  private $userId;
  
 
-public function __construct($anzRichtige, $anzFragen, $abbruch, $stufe, $lerneinheit, $lernmodul)
+public function __construct($anzRichtige, $anzFragen, $abbruch, $stufe, $lerneinheit, $lernmodul, $userId)
 {
     $this->anzRichtige = $anzRichtige;
     $this->anzFragen = $anzFragen;
     $this->stufe = $stufe;
     $this->lerneinheit = $lerneinheit;
     $this->lernmodul = $lernmodul;
+    $this->userId = $userId;
 
     //Pruefen ob Lerneinheit abgebrochen wurde
     $this->abbruch = $abbruch;

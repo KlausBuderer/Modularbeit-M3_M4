@@ -14,6 +14,14 @@ if(isset($_POST["beenden"])){
     $userId = $_POST["userId"];
 }
 
+/* //Test
+    $anzRichtig = 10;
+    $anzFragen = 11;
+    $abbruch = false;
+    $stufe = 1;
+    $lerneinheit = 'einxeins';
+    $lernmodul = 'mathe';
+    $userId = 22; */
 
 
 //Lernfortschritt abspeichern
