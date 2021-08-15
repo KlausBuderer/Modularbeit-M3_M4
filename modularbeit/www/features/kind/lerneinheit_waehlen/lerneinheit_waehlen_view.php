@@ -22,7 +22,7 @@ public function ausgabe(){
 
     //Aufruf Template und übergabe von Daten
 
-   echo '<form id="myForm" action="aufgaben.php" method="post">';
+   echo '<form id="myForm" action="/includes/aufgaben.php" method="post">';
    echo '<input type="hidden" name="lerninhalt" value="'. $this->lerninhalt.'">';
    echo '<input type="hidden" name="stufe" value="'. $this->stufe.'">';
    echo '<input type="hidden" name="modul" value="'. $this->modul.'">';
