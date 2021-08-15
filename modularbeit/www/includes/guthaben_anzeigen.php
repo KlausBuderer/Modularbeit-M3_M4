@@ -4,7 +4,7 @@ require_once('header.php');
 require_once('navbar_login.php');
 require_once('sidebar.php');
 
-$erzieltePunktzahl =$_POST['erzieltePunkte'];
+$erzieltePunktzahl = $_POST['erzieltePunkte'];
 $guthaben = $_POST['guthaben'];
 $neuePunktzahl = $_POST['totalPunkte']; 
 
@@ -23,7 +23,7 @@ $neuePunktzahl = $_POST['totalPunkte'];
         <h2>Weiter so...</h2>
 
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow= "58" aria-valuemin="0" aria-valuemax="100"  style="width: <?= $erzieltePunktzahl . "%" ;?>"><?= $erzieltePunktzahl . "Punkte" ;?></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow= "58" aria-valuemin="0" aria-valuemax="100"  style="width: <?= $neuePunktzahl . "%" ;?>"><?= $neuePunktzahl . "Punkte" ;?></div>
         </div>
 
         <br>
