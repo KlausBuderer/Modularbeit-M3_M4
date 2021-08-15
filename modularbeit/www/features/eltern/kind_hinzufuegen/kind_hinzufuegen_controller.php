@@ -3,93 +3,91 @@ require_once('../../../includes/header.php');
 require_once('../../../includes/navbar_eltern.php');
 require_once('../../../includes/sidebar_eltern.php');
 require_once('../../../model/benutzerverwaltung/setkindkonto.php');
-
-// Ermittlung ID des angemeldeten Benutzers
-// $id = $user->data()->id;
+require_once('../../../model/benutzerverwaltung/setkindgenerell.php');
 
 //Klasse der Bearbeitung des Hinzufügen eines Kindes
 
-// Tabellenfelder zum Anlegen des Kindes
-$id = "";
-$permissions = 3;
-$email = $_POST['email'];
-// $email_new = $_POST["email"];
-$username = $_POST["username"];
-// $password = $_POST["email"];
-// $pin = $_POST["email"];
-$fname = $_POST["fname"];
-// $lname = $_POST["lname"];
-// $language = $_POST["email"];
-// $email_verified = $_POST["email"];
-// $vericode = $_POST["email"];
-// $vericode_expiry = $_POST["email"];
-// $oauth_provider = $_POST["email"];
-// $oauth_uid = $_POST["email"];
-// $gender = $_POST["email"];
-// $locale = $_POST["email"];
-// $gpluslink = $_POST["email"];
-// $account_owner = $_POST["email"];
-// $account_id = $_POST["email"];
-// $account_mgr = $_POST["email"];
-// $fb_uid = $_POST["email"];
-// $picture = $_POST["email"];
-// $created = $_POST["email"];
-// $protected = $_POST["email"];
-// $msg_exempt = $_POST["email"];
-// $dev_user = $_POST["email"];
-// $msg_notification = $_POST["email"];
-// $cloak_allowed = $_POST["email"];
-// $oauth_tos_accepted = $_POST["email"];
-// $un_changed = $_POST["email"];
-// $force_pr = $_POST["email"];
-// $logins = $_POST["email"];
-// $last_login = $_POST["email"];
-// $join_date = $_POST["email"];
-// $modified = $_POST["email"];
-// $active = $_POST["email"];
+// Ermittlung ID des angemeldeten Benutzers
+$id_vater = $user->data()->id;
 
-// Checkboxen fest vorbelegt, aktuell ist keine dynamische Steuerung der Modulen vorgesehen.
-$cboxmathematik  = "X";
-$cboxdeutsch     = "X";
-$cboxenglisch    = "X";
-$cboxrealien     = "X";
+// Tabelle USERS
+// id -> wird nicht übergeben
+$id = "";                                                                       //Primary Key / Not Null / AutoIncrement
+$permissions = "3";                                                             //Not Null
+$email = $_POST['email'];                                                       //Not Null
+$email_new = "NULL";
+$username = $_POST['username'];                                                 //Not Null
+$password = "";
+$pin = "NULL";
+$fname = $_POST['fname'];                                                       //Not Null 
+$lname = $_POST['lname'];                                                       //Not Null
+$language = "de-DE";
+$email_verified = "1";                                                          //Not Null
+$vericode = "";
+$vericode_expiry = "2021-08-01 19:18:02";
+$oauth_provider = "NULL";
+$oauth_uid = "NULL";
+$gender = "M";  // zu korrigieren                                               //Not Null
+$locale = "NULL";                                                               //Not Null
+$gpluslink = "NULL";        
+$account_owner = "1";                                                           //Not Null
+$account_id = "0";                                                              //Not Null
+$account_mgr = "0";                                                             //Not Null
+$fb_uid = "NULL";
+$picture = "NULL";
+$created = "0000-00-00 00:00:00";                                               //Not Null
+$protected = "0";                                                               //Not Null
+$msg_exempt = "0";                                                              //Not Null
+$dev_user = "0";                                                                //Not Null
+$msg_notification = "1";                                                        //Not Null
+$cloak_allowed = "0";                                                           //Not Null
+$oauth_tos_accepted = "1";
+$un_changed = "0";                                                              //Not Null
+$force_pr = "0";                                                                //Not Null
+$logins = "0";                                                                  //Not Null
+$last_login = "2021-01-01 00:00:00";                                            //Not Null
+$join_date = "";
+$modified = "NULL";
+$active = "1";
 
-// Felder für Profile Tabelle.
-$id;
-// $user_id = $id;
-$bio;
-$kind;
-$geschlecht;
-$le_englisch;
-$le_deutsch;
-$le_mathematik;
-$le_realien;
-$le_bld_profil;
-$le_bld_avatar;
+// Tabelle PROFILES
+// id -> wird nicht übergeben
+$id ="";
+$user_id = "100";
+$bio = "test";
+$kind = "3";
+$geschlecht = "M";
+$le_englisch = "X";
+$le_deutsch = "X";
+$le_mathematik = "X";
+$le_realien = "X";
+$le_bld_profil = "";
+$le_bld_avatar = "";
+$punkte = "0";
+$guthaben = "0";
 
-//
-/*
-INSERT INTO `itwisse_lernplattform`.`profiles`
+// Tabelle LE_ELTERN_KIND_MATCHES
+// id -> wird nicht übergeben
+$kind_id = "123444";
+$eltern_id = "321";
 
-
-
-echo $email . '<br>';
-echo $username .  '<br>';
-echo $fname .  '<br>';  
-echo $cboxmathematik .  '<br>'; 
-echo $user_id . <br>;
-
-//Kind anlegen und Rückgabe ID zum letzten geschriebenen Datensatz (ID für Kind / Eltern Verknürpfung)
-// $SetKindKonto = new SetKindKonto($permissions,$email,$email_new,$username,$password,$pin,$fname,$lname,$language,$email_verified,$vericode,$vericode_expiry,$oauth_provider,$oauth_uid,$gender,$locale,$gpluslink,$account_owner,$account_id,$account_mgr,$fb_uid,$picture,$created,$protected,$msg_exempt,$dev_user,$msg_notification,$cloak_allowed,$oauth_tos_accepted,$un_changed,$force_pr,$logins,$last_login,$join_date,$modified,$active);
-// $SetKindKonto = new SetKindKonto();
-
-//Profil zum Kind anlegen
-
-//Verknüpfung Kind zum Eltern
-
-//Permission für Kind
+// Tabelle PERMISSION_PAGE_MATCHES
+// id -> wird nicht übergeben
+$permission_id = "";
+$page_id = "";
 
 
-// $setLernfortschritt->setLernfortschritt();
-*/
-require_once('../../../includes/footer.php');
+// $SetKindKonto = new setkindkonto($id,$permissions,$email,$email_new,$username,$password,$pin,$fname,$lname,$language,$email_verified,$vericode,$vericode_expiry,$oauth_provider,$oauth_uid,$gender,$locale,$gpluslink,$account_owner,$account_id,$account_mgr,$fb_uid,$picture,$created,$protected,$msg_exempt,$dev_user,$msg_notification,$cloak_allowed,$oauth_tos_accepted,$un_changed,$force_pr,$logins,$last_login,$join_date,$modified,$active);
+// $SetKindKonto->setkindusertabelle($id,$permissions,$email,$email_new,$username,$password,$pin,$fname,$lname,$language,$email_verified,$vericode,$vericode_expiry,$oauth_provider,$oauth_uid,$gender,$locale,$gpluslink,$account_owner,$account_id,$account_mgr,$fb_uid,$picture,$created,$protected,$msg_exempt,$dev_user,$msg_notification,$cloak_allowed,$oauth_tos_accepted,$un_changed,$force_pr,$logins,$last_login,$join_date,$modified,$active);
+
+// $SetKindGenerell = new SetKindGenerell($id,$user_id,$bio,$kind,$geschlecht,$le_englisch,$le_deutsch,$le_mathematik,$le_realien,$le_bld_profil,$le_bld_avatar,$punkte,$guthaben,$kind_id,$eltern_id,$permission_id,$page_id);
+// $SetKindGenerell->setkindprofil($id,$user_id,$bio,$kind,$geschlecht,$le_englisch,$le_deutsch,$le_mathematik,$le_realien,$le_bld_profil,$le_bld_avatar,$punkte,$guthaben);
+
+$SetKindGenerell = new SetKindGenerell($id,$user_id,$bio,$kind,$geschlecht,$le_englisch,$le_deutsch,$le_mathematik,$le_realien,$le_bld_profil,$le_bld_avatar,$punkte,$guthaben,$kind_id,$eltern_id,$permission_id,$page_id);
+$SetKindGenerell->setkindmatcheseltern($id, $kind_id,$eltern_id);
+
+
+// $setkindkonto->setkindprofil($id,$user_id,$bio,$kind,$geschlecht,$le_englisch,$le_deutsch,$le_mathematik,$le_realien,$le_bld_profil,$le_bld_avatar,$punkte,$guthaben);
+
+//$setkindeleternmatch = new setkindelternmatch($kind_id,$eltern_id);
+// $setkindeleternmatch->setkindeleternmatch($kind_id,$eltern_id);
