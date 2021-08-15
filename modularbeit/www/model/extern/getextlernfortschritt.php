@@ -9,19 +9,24 @@ class GetLernfortschrittExt{
       $this->nachname = $fname;
     }
 
-public function getausgabecsv($fname, $lname)
+public function getausgabejson($fname, $lname)
 {
     $connection = new DbConnection();
     $conn = $connection->buildConnection();
 
-    $sql = "SELECT * FROM users";
+    if (mysqli_connect_errno())echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    $sql = "SELECT * FROM users ";
+    // $sql = "SELECT * FROM users WHERE 'fname' LIKE '%{$fname}%' and 'lname' LIKE '%{$lname}%' ";
     $result = mysqli_query($conn, $sql);
 
-    $row = $result -> fetch_assoc();
-    $dsatz=mysqli_fetch_assoc($result);
+    // $row = $result -> fetch_assoc();
+    // $dsatz=mysqli_fetch_assoc($result);
 
-    echo $fname;
- 
+    $array = array();
+    while($row=mysqli_fetch_assoc($result)){
+        $array[] = $row;
+        }
+echo json_encode($array);
     }
 }
 ?>
