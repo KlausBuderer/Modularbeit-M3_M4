@@ -5,6 +5,6 @@ $fname = $_GET['vorname'];
 $lname = $_GET['nachname'];
 
 $GetLernfortschrittExt = new GetLernfortschrittExt($fname,$lname);
-$GetLernfortschrittExt->getausgabecsv($fname,$lname);
+$GetLernfortschrittExt->getausgabejson($fname,$lname);
 
 ?>
