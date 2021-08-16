@@ -148,5 +148,4 @@ function getAufgaben($lerninhalt, $stufe, $modul)
     $aufgabe->setModul($lerninhalt, $stufe, $modul); 
 }
 
-
 ?>

@@ -1,7 +1,7 @@
 <?php
-include "../../../model/lerneinheiten/setLernfortschritt.php";
-include "../../../model/lerneinheiten/addPointsToUser.php";
-include "./lernfortschritt_speichern_view.php";
+include_once "../../../model/lerneinheiten/SetLernfortschritt.php";
+include_once "../../../model/lerneinheiten/AddPointsToUser.php";
+include_once "./lernfortschritt_speichern_view.php";
 include_once './nicht_aufgeben_view.php';
 
 if(isset($_POST["beenden"])){
@@ -13,15 +13,6 @@ if(isset($_POST["beenden"])){
     $lernmodul = $_POST["lernmodul"];
     $userId = $_POST["userId"];
 }
-
-/* //Test
-    $anzRichtig = 10;
-    $anzFragen = 11;
-    $abbruch = false;
-    $stufe = 1;
-    $lerneinheit = 'einxeins';
-    $lernmodul = 'mathe';
-    $userId = 22; */
 
 
 //Lernfortschritt abspeichern

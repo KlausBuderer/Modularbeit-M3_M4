@@ -1,8 +1,8 @@
 <?php
 
-include_once "creator.php";
-include_once "hauptstaedtelaender.php";
-include_once "schweiz.php";
+include_once "Creator.php";
+include_once "HauptstaedteLaender.php";
+include_once "Schweiz.php";
 include_once "Tiere.php";
 
 
@@ -10,7 +10,7 @@ class ConcreteCreatorRealien extends Creator{
 
 private $lerneinheit;
 private $stufe;
-private $lerninhalt = [];
+
 
 public function __construct($stufe, $lerneinheit)
 {
@@ -27,20 +27,20 @@ public function produceLerninhalt(){
 
     switch ($lerneinheit) {
         case 'hauptstaedte_laender':
-            # code...
-            $this->console_log('Concrete Creator aufgerufen');
+          
+
             $lerninhalt = $this->produce(new HauptstaedteLaender($stufe));
 
             break;
         case 'schweiz':
-            # code...
-            $this->console_log('Concrete Creator aufgerufen');
+         
+
             $lerninhalt = $this->produce(new Schweiz($stufe));
 
             break;
         case 'tiere':
-            # code...
-            $this->console_log('Concrete Creator aufgerufen');
+           
+
             $lerninhalt = $this->produce(new Tiere($stufe));
 
             break;
@@ -61,11 +61,4 @@ private function produce(Produceble $lerneinheit){
   
 }
 
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-    
-    }
 }

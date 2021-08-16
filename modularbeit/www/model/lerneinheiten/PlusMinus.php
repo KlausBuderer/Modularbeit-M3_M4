@@ -1,7 +1,7 @@
 <?php
 
-include_once "produceble.php";
-include_once "aufgabe.php";
+include_once "Produceble.php";
+include_once "Aufgabe.php";
 
 class PlusMinus implements Produceble{
 
@@ -25,7 +25,6 @@ public function __construct($stufe)
             break;
         }
 
-        //console_log($this->range);
 }
 
 public function produce()
@@ -37,10 +36,10 @@ private function getAufgaben(){
     $lerninhalt = [] ;
 
     for ($i=0; $i < 99; $i++) { 
-        # code...
+       
         $aufgabe = $this->createQuestion();
         $lerninhalt[$i] = $aufgabe->getEncoded();
-       // console_log($lerninhalt[$i]);
+
     }
 
     return $lerninhalt;
@@ -83,23 +82,23 @@ private function createQuestion(){
     //Mappen der richtigen Antwort
     switch ($rightPlacement) {
         case '0':
-            # code...
+          
             $right = "A";
             break;
         case '1':
-            # code...
+            
             $right = "B";
             break;
         case '2':
-            # code...
+            
             $right = "C";
             break;
         case '3':
-            # code...
+           
             $right = "D";
             break;
         default:
-            # code...
+           
             break;
     }
     
@@ -113,7 +112,7 @@ private function createQuestion(){
        $ans[1] = $wrong1;
     }elseif ($ans[2] == "") {
         $ans[2] = $wrong1;
-        # code...
+      
     }else{
         $ans[3] = $wrong1;
     }
@@ -124,7 +123,7 @@ private function createQuestion(){
        $ans[1] = $wrong2;
     }elseif ($ans[2] == "") {
         $ans[2] = $wrong2;
-        # code...
+       
     }else{
         $ans[3] = $wrong2;
     }
@@ -135,7 +134,7 @@ private function createQuestion(){
        $ans[1] = $wrong3;
     }elseif ($ans[2] == "") {
         $ans[2] = $wrong3;
-        # code...
+       
     }else{
         $ans[3] = $wrong3;
     }
@@ -145,14 +144,4 @@ private function createQuestion(){
     return new Aufgabe(0, $question, $right, $ans[0], $ans[1],  $ans[2],  $ans[3], $this->stufe);
 }
 
-
-
-
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-    
-    }
 }
