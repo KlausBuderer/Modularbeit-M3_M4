@@ -17,9 +17,14 @@ function showNextQuestion() {
   if (wegSpieler === 100 || wegComputer === 100) {
     showEnd();
     currentQuestionNo = 0;
+    indexArray = [];
   }
-  console.log("Loading Question:" + getRandomNo(questions.length));
-  currentQuestion = questions[getRandomNo(questions.length)];
+
+  var questionNbr = getQuestionNumber();
+
+
+  console.log("Loading Question:" + questionNbr);
+  currentQuestion = questions[questionNbr];
   $("#qno").text(currentQuestionNo+1);
   $("#question_text").text(currentQuestion.question);
   $("#answer_a").text(currentQuestion.A);
@@ -42,3 +47,35 @@ function getRandomNo (max){
     
   
 }
+
+//Auswahl der Frage 
+function getQuestionNumber(){
+  var newNumber = false;
+
+  do {
+
+  //Erstellung Zufallsnummer
+   var number = getRandomNo(questions.length);
+    //Prüfung ob Nummer schon in Array vorhanden
+   if (!contains(indexArray,number)) {
+     indexArray.push(number);
+     newNumber = true;
+   }
+    
+  } while (!newNumber);
+
+  return number;
+}
+
+
+//-> Prüfung ob Frage schon gestellt wurde
+
+  function contains(a, obj) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+  
