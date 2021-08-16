@@ -1,7 +1,7 @@
 <?php
 
-include_once "dbconnection.php";
-include_once "aufgabe.php";
+include_once "Dbconnection.php";
+include_once "Aufgabe.php";
 
 class GetLerninhalt{
 

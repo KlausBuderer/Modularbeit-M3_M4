@@ -1,8 +1,7 @@
 <?php
 
-abstract class Creator{
 
-    private $lerninhalt = [];
+abstract class Creator{
 
     public function produceLerninhalt(){}
 

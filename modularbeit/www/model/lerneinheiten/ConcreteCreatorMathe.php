@@ -1,15 +1,15 @@
 <?php
 
-include_once "creator.php";
-include_once "einxeins.php";
-include_once "dreisatz.php";
-include_once "plus_minus.php";
+include_once "Creator.php";
+include_once "EinXEins.php";
+include_once "Dreisatz.php";
+include_once "PlusMinus.php";
 
 class ConcreteCreatorMathe extends Creator{
 
 private $lerneinheit;
 private $stufe;
-private $lerninhalt = [];
+
 
 public function __construct($stufe, $lerneinheit)
 {
@@ -26,7 +26,7 @@ public function produceLerninhalt(){
 
     switch ($lerneinheit) {
         case 'einxeins':
-            # code...
+            
             $lerninhalt = $this->produce(new EinXEins($stufe));
             
             
@@ -35,7 +35,7 @@ public function produceLerninhalt(){
             $lerninhalt = $this->produce(new Dreisatz($stufe));
             break;
         case 'plus_minus':
-            # code...
+            
             $lerninhalt = $this->produce(new PlusMinus($stufe));
             break;
         
@@ -55,11 +55,4 @@ private function produce(Produceble $lerneinheit){
   
 }
 
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-    
-    }
 }

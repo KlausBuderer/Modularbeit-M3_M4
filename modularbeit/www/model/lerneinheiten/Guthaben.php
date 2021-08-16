@@ -1,6 +1,6 @@
 <?php
 
-require_once 'dbconnection.php';
+require_once 'Dbconnection.php';
 
 class Guthaben{
 

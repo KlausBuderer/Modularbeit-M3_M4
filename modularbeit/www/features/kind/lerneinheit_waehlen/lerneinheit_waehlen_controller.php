@@ -1,6 +1,6 @@
 <?php
 
-require_once "../model/lerneinheiten/lerninhalt_model.php";
+require_once "../model/lerneinheiten/LerninhaltModel.php";
 require_once "../features/kind/lerneinheit_waehlen/lerneinheit_waehlen_view.php";
 
 class Lerninhalt{

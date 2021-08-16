@@ -1,9 +1,9 @@
 <?php
 
 
-include_once "produceble.php";
-include_once "aufgabe.php";
-include_once "getlerninhalt.php";
+include_once "Produceble.php";
+include_once "Aufgabe.php";
+include_once "GetLerninhalt.php";
 
 class Dreisatz implements Produceble{
 

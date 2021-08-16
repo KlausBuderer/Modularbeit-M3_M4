@@ -1,15 +1,15 @@
 <?php
 
 
-include_once "produceble.php";
-include_once "aufgabe.php";
-include_once "getlerninhalt.php";
+include_once "Produceble.php";
+include_once "Aufgabe.php";
+include_once "Getlerninhalt.php";
 
 class Tiere implements Produceble{
 
 
 protected $stufe;
-private $result;
+
 
 
 public function __construct($stufe)
@@ -32,14 +32,5 @@ $getData = new GetLerninhalt($this->stufe, "le_lm_realien_tiere");
 return $getData->selectLerninhalt();
 
 }
-
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-
-}
-
 
 }

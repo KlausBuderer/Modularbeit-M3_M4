@@ -1,7 +1,7 @@
 <?php
+include_once "ConcreteCreatorMathe.php";
+include_once "ConcreteCreatorRealien.php";
 
-include_once "concretecreatormathe.php";
-include_once "concretecreatorrealien.php";
 
 class LerninhaltModel{
 
@@ -32,9 +32,8 @@ public function createLerninhalt(){
         case 'realien':
             //Erstellt den Lerninhalt für Realien
             $lerninhalt = $this->getLerninhalt(new ConcreteCreatorRealien($stufe,$lerneinheit));
-            $this->console_log('Model aufgerufen');
         default:
-            # code...
+        
             break;
     }
 
@@ -48,11 +47,5 @@ private function getLerninhalt(Creator $creator){
 return $creator->produceLerninhalt();
 
 }
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-    
-    }
 
 }

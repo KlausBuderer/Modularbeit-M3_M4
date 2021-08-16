@@ -1,7 +1,7 @@
 <?php
 
-include_once "produceble.php";
-include_once "aufgabe.php";
+include_once "Produceble.php";
+include_once "Aufgabe.php";
 
 class EinXEins implements Produceble{
 
@@ -37,10 +37,9 @@ private function getAufgaben(){
     $lerninhalt = [] ;
 
     for ($i=0; $i < 99; $i++) { 
-        # code...
+
         $aufgabe = $this->createQuestion();
         $lerninhalt[$i] = $aufgabe->getEncoded();
-      //  console_log($lerninhalt[$i]);
     }
 
     return $lerninhalt;
@@ -68,15 +67,15 @@ private function createQuestion(){
     //Mappen der richtigen Antwort
     switch ($rightPlacement) {
         case '0':
-            # code...
+            
             $right = "A";
             break;
         case '1':
-            # code...
+           
             $right = "B";
             break;
         case '2':
-            # code...
+           
             $right = "C";
             break;
         case '3':
@@ -131,13 +130,4 @@ private function createQuestion(){
 }
 
 
-
-
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-    
-    }
 }
