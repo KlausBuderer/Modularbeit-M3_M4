@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Dbconnection.php';
+require_once 'DbConnection.php';
 
 class Elernuebersicht{
 
