@@ -34,7 +34,6 @@ $conn = $connection->buildConnection();
    // Fetch Data from Database
     $sql = "SELECT * from $this->tabelle WHERE stufe= $this->stufe;";
     $result = mysqli_query($conn, $sql);
-    $this->console_log($sql);
 
     while($row = mysqli_fetch_assoc($result)){
 
@@ -48,7 +47,6 @@ $conn = $connection->buildConnection();
 
         $aufgabe =  new Aufgabe($ID, $question, $rightAnswer, $answerA, $answerB,  $answerC,  $answerD, $this->stufe);
         $aufgabeArray = $aufgabe->getEncoded();
-        $this->console_log($aufgabeArray);
         
         array_push($lerninhalt,$aufgabeArray); 
           
@@ -59,11 +57,4 @@ $conn = $connection->buildConnection();
     return $lerninhalt;
 }
 
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-
-}
 }
