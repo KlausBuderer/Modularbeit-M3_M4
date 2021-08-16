@@ -3,7 +3,7 @@
 
 include_once "Produceble.php";
 include_once "Aufgabe.php";
-include_once "Getlerninhalt.php";
+include_once "GetLerninhalt.php";
 
 class Tiere implements Produceble{
 
