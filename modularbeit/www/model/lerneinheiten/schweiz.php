@@ -9,7 +9,7 @@ class Schweiz implements Produceble{
 
 
 protected $stufe;
-private $result;
+
 
 
 public function __construct($stufe)
@@ -33,13 +33,6 @@ return $getData->selectLerninhalt();
 
 }
 
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-
-}
 
 
 }
