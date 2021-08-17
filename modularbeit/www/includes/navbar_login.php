@@ -22,16 +22,16 @@ $user = new User();
 ?>
 
 
-<nav class="navbar sticky-top navbar-light bg-light">
+<nav class="navbar sticky-top nbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand logo" href="#">
       <img src="/includes/images/alarm.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Mediengutschein
+     <span style="color: white;">Mediengutschein</span> 
     </a>
 
       <div class="dropdown">
           <button class="btn btn-primary d-flex justify-content-center d-md-table mx-auto dropdown-toggle userField" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://github.com/mdo.png" alt="" class="rounded-circle me-2" width="40" height="40">
+          <img src="https://github.com/mdo.png" alt="" class="img-fluid rounded-circle me-2" width="40" height="40">
           <?php  echo $user->data()->username; ?>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
