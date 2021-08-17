@@ -82,8 +82,9 @@
 /*Username Anzeige*/
 
 .userField{
-background-color: #2470dc;
-border-radius: 50px;
+background-color: #EDFAFD;
+border-radius: 30px;
+color: #135589;
 
 }
 
@@ -119,3 +120,59 @@ border-radius: 50px;
   margin-top: 0.5rem;
 }
 
+
+
+/*Sidebar*/
+.text{
+  margin-top: 1.5rem;
+  font-size: x-large;
+  border-radius: 5%;
+  color:white;
+
+}
+
+.text:hover{
+
+font-size: xx-large;
+color: #3DDAD8;
+
+}
+
+.sbar{
+  background-color: #2A93D5;
+  border-bottom-right-radius: 5em;
+
+ 
+}
+
+.nbar{
+  background-color: #2A93D5;
+}
+
+.logo{
+  color: #EDFAFD;
+}
+
+
+/*main*/
+.haupt{
+  background-color: #EDFAFD;
+}
+
+
+
+.card-body{
+  background-color: #AED9DA;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.card{
+border-radius: 2rem;
+
+}
+
+.card-img-top{
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
