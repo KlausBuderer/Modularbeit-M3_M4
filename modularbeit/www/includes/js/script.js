@@ -8,6 +8,7 @@ var anzahlRichtigeAntworten = 0;
 var anzahlFragen = 0;
 var abbruch = false;
 
+//Lerneinheit beginnen
 
 $(".start").click(function() {
   console.log( "Start" );
@@ -16,6 +17,7 @@ $(".start").click(function() {
   });
 });
 
+//Aufgabe starten
 function startQuiz() {
   showNextQuestion();
   $("#question").fadeIn("slow");  
@@ -31,6 +33,7 @@ $("#answer_a_btn").click(function() {
   deselectAnswer("#answer_b_btn");
   deselectAnswer("#answer_c_btn");
   deselectAnswer("#answer_d_btn");
+  $("#answer_commit_btn").show();
 });
 
 $("#answer_b_btn").click(function() {
@@ -38,6 +41,7 @@ $("#answer_b_btn").click(function() {
   deselectAnswer("#answer_a_btn");
   deselectAnswer("#answer_c_btn");
   deselectAnswer("#answer_d_btn");
+  $("#answer_commit_btn").show();
 });
 
 $("#answer_c_btn").click(function() {
@@ -45,6 +49,7 @@ $("#answer_c_btn").click(function() {
   deselectAnswer("#answer_b_btn");
   deselectAnswer("#answer_a_btn");
   deselectAnswer("#answer_d_btn");
+  $("#answer_commit_btn").show();
 });
 
 $("#answer_d_btn").click(function() {
@@ -52,6 +57,7 @@ $("#answer_d_btn").click(function() {
   deselectAnswer("#answer_b_btn");
   deselectAnswer("#answer_c_btn");
   deselectAnswer("#answer_a_btn");
+  $("#answer_commit_btn").show();
 });
 
 $("#answer_commit_btn").click(function() {
@@ -107,15 +113,17 @@ function validateAnswer() {
     anzahlFragen++ ;
     $("#Computer").css("margin-left", wegComputer + "%");
   }
-  $("#continue_btn").show();
+
+      setTimeout(goNext, 1000);
+     
+
 }
 
-$("#continue_btn").click(function() {
-  currentQuestionNo++;
-  showNextQuestion();  
-  $("#continue_btn").hide();
-  $("#answer_commit_btn").show();
-});
+function goNext() {
+   currentQuestionNo++;
+      showNextQuestion();  
+}
+
 
 function selectAnswer(id) {
   $(id).addClass("btn-primary");

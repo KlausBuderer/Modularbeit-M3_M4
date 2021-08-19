@@ -66,6 +66,39 @@
     width: 50px;
 }
 
+.rennbahn{
+  border: 2px solid grey;
+  position: relative;
+}
+
+.rennbahnTextSpieler{
+position: absolute;
+top: 0;
+text-align: center;
+color: rgba(99, 92, 92, 0.445);
+
+
+}
+
+.rennbahnTextComputer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+    color: rgba(99, 92, 92, 0.445);
+  
+  
+  }
+
+  .ziel{
+    position: absolute;
+    right: 0;
+    top: 43%;
+    bottom: 43%;
+    transform: rotate(-90deg);
+    color: rgba(119, 114, 114, 0.637);
+  }
+  
+
 /*Fragenfeld */
 
 .antwortButton{
@@ -76,6 +109,11 @@
   border-width: 1px;
   border-radius: 5px;
     
+}
+
+.btn-close{
+  position: relative;
+  right: 2rem;
 }
 
 
