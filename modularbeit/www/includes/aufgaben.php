@@ -24,8 +24,8 @@ require_once('sidebar.php');
       </div>
       
       <div id="question" class="question container-fluid bg-light text-dark p-5" style="display:none;" >
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <button id="abbrechen" class="btn btn-primary me-md-2" type="button">X</button>
+        <div class="d-grid gap-2 d-xs-flex justify-content-xs-end d-md-flex justify-content-md-end">
+          <button id="abbrechen" class="btn-close" type="button"></button>
         </div>
         <h2>Frage <span id="qno"></span></h2>
         <p id="question_text">...?</p>
@@ -40,8 +40,8 @@ require_once('sidebar.php');
         <div class="row">
           <div class="col-md-10"></div>
           <div class="col-md-2">
-            <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-block" role="button"><span id="commit_text">Antworten</span></button></p>
-            <p><button id="continue_btn" cl;ass="btn btn-primary btn-lg btn-block" role="button" style="display:none;"><span id="commit_text" >Weiter</span></button></p>
+            <p><button id="answer_commit_btn" class="btn btn-primary btn-lg btn-block" role="button" style="display:none;"><span id="commit_text">Antworten</span></button></p>
+            <p><button id="continue_btn" class="btn btn-primary btn-lg btn-block" role="button" style="display:none;"><span id="commit_text" >Weiter</span></button></p>
           </div>
         </div>
       </div>
@@ -64,13 +64,18 @@ require_once('sidebar.php');
     </div>
 
     <hr>
-
-    <div class="container">
-      <div class="container-fluid bg-light text-dark p-5">
+      
+    <div class="container"> 
+       
+      <div class="container-fluid bg-light text-dark p-5 rennbahn" id="rennbahn">
+        <span class="display-6 ziel">Ziel</span>
+      <span class= "display-6 rennbahnTextSpieler"><?php echo $user->data()->username;?></span>
         <img id="Spieler" class="fortschrittSpieler" src="/includes/images/spieler_pony.png">
         <br>
-        <hr>
+        <hr>  
+        <span class= "display-6 rennbahnTextComputer">Computer</span>
         <img id="Computer" class="fortschrittComputer" src="/includes/images/spieler_gokart.png">
+      
       </div>
     </div>  
  
