@@ -12,9 +12,6 @@ $text5=utf8_decode("Du musst nicht alles auf einmal einmal einlösen, deine Elte
 $text6=utf8_decode("können auch nur ein Teil davon einlösen");
 $text7=utf8_decode("Viel Spass !");
 $text8=utf8_decode("dein Mediengutschein Portal");
-
-
-
 $pdf=new FPDF();
 $pdf->AddPage();
 $pdf->Image('includes/images/spieler_gokart.png',10,10,50);    
