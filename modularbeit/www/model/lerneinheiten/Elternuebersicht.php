@@ -1,4 +1,7 @@
 <?php
+namespace Model\Lerneinheit;
+use DbConnection;
+
 
 require_once 'DbConnection.php';
 

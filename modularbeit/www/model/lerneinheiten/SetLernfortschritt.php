@@ -1,5 +1,7 @@
 <?php
 
+namespace Model\Lerneinheit;
+
 include_once 'DbConnection.php';
 
 
@@ -34,8 +36,8 @@ public function __construct($anzRichtige, $anzFragen, $abbruch, $stufe, $lernein
     $this->date = $this->getDate();
 
     //Pruefen ob Lerneinheit erfolgreich abgeschlossen wurde
-    if($this->lerneinheitErfolgreich() == true){
-        $this->punkte = $this->calcPunkte();
+    if($this->lerneinheitErfolgreich($this->anzRichtige) == true){
+        $this->punkte = $this->calcPunkte($this->anzFragen, $this->stufe);
     }
 
 }
@@ -58,11 +60,11 @@ public function getPunkte()
 }
 
 //Berechnung der erreichten Punkte
-private function calcPunkte()
+public function calcPunkte($anzFragen, $stufe)
 {
 
-$Fragen = $this->anzFragen;
-$stufe = $this->stufe;
+$Fragen = $anzFragen;
+$stufe = $stufe;
 $result = 0;
 
 // 100 * stufe / Anzahl Fragen * 2 gerundet auf Ganzzahlen
@@ -71,9 +73,9 @@ return $result;
 }
 
 //Prüfen ob Lerneinheit erfolgreich absolviert wurde
-private function lerneinheitErfolgreich(){
+public function lerneinheitErfolgreich($anzRichtige){
 
-    if ($this->anzRichtige == 10){
+    if ($anzRichtige == 10){
         return true;
     }else{
         return false;

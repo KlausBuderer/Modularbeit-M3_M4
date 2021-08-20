@@ -1,7 +1,13 @@
 <?php
 
+
+namespace Model\Lerneinheit;
+use Produceble;
+use Aufgabe;
+
 include_once "Produceble.php";
 include_once "Aufgabe.php";
+
 
 class EinXEins implements Produceble{
 
@@ -25,7 +31,7 @@ public function __construct($stufe)
             break;
         }
 
-       // console_log($this->range);
+
 }
 
 public function produce()
