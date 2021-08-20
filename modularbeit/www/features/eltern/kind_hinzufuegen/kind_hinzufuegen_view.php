@@ -38,7 +38,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input name="email" type="email" value="<?php echo $email; ?>" class="form-control" id="email" readonly>
+                <input name="email" type="text" class="form-control" id="email" required>
             </div>
             <br>
             <label>
