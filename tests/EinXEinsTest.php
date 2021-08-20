@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 use Model\Lerneinheit\EinXEins;
-include 'C:\01_Daten\ABBTS\Semester2\00_Modularbeit\Modularbeit_Release/modularbeit/www/model/lerneinheiten/EinXEins.php';
+include 'app/modularbeit/www/model/lerneinheiten/EinXEins.php';
 
 class EinXEinsTest extends TestCase{
 
