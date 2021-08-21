@@ -1,7 +1,10 @@
 <?php
+namespace Model\Lerneinheit;
 
 include_once "Produceble.php";
-include_once "Aufgabe.php";
+include_once "Aufgabe.php"; 
+use Produceble;
+use Model\Lerneinheit\Aufgabe;
 
 class PlusMinus implements Produceble{
 

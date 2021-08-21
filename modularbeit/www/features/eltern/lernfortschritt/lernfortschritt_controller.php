@@ -1,5 +1,7 @@
 <?php
 
+use Model\Lerneinheit\GetLernfortschritt;
+
 require_once '../model/lerneinheiten/GetLernfortschritt.php';
 require_once 'lernfortschritt_view.php';
 

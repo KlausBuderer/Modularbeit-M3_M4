@@ -1,6 +1,7 @@
 <?php
 
 
+
 if (file_exists('model/lerneinheiten/Elternuebersicht.php')) {
 require_once 'model/lerneinheiten/Elternuebersicht.php';
   } elseif (file_exists('../model/lerneinheiten/Elternuebersicht.php')){
@@ -9,7 +10,7 @@ require_once 'model/lerneinheiten/Elternuebersicht.php';
   }   
 
 require_once 'eltern_uebersicht_view.php';
-
+use Model\Lerneinheit\Elernuebersicht;
 //In dieser Klasse wird die Elternübersicht bearbeitet
 class ElternuebersichtController{
 

@@ -1,9 +1,18 @@
 <?php
+namespace Model\Lerneinheit;
+
+use Model\Lerneinheit\Creator;
+use Model\Lerneinheit\HauptstaedteLaender;
+use Model\Lerneinheit\Schweiz;
+use Model\Lerneinheit\Tiere;
+use Produceble;
 
 include_once "Creator.php";
 include_once "HauptstaedteLaender.php";
 include_once "Schweiz.php";
-include_once "Tiere.php";
+include_once "Tiere.php";  
+
+
 
 
 class ConcreteCreatorRealien extends Creator{

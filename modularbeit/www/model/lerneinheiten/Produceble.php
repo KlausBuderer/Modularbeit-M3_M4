@@ -1,5 +1,6 @@
 <?php
 
+use Model\Lerneinheit;
 interface Produceble{
 
 

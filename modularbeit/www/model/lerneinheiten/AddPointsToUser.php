@@ -1,5 +1,7 @@
 <?php
 
+namespace Model\Lerneinheit;
+
 // Klass um Punkte einem User zuzuweisen
 class AddPointsToUser{
 

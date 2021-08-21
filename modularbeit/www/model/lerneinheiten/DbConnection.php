@@ -1,5 +1,5 @@
 <?php
-
+namespace Model\Lerneinheit;
 
 class DbConnection{
 

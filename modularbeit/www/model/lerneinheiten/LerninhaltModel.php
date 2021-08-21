@@ -1,6 +1,14 @@
 <?php
+namespace Model\Lerneinheit;
+
+
+
 include_once "ConcreteCreatorMathe.php";
-include_once "ConcreteCreatorRealien.php";
+include_once "ConcreteCreatorRealien.php"; 
+
+use Model\Lerneinheit\ConcreteCreatorMathe;
+use Model\Lerneinheit\ConcreteCreatorRealien;
+use Model\Lerneinheit\Creator;
 
 
 class LerninhaltModel{

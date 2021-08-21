@@ -1,5 +1,9 @@
 <?php
+namespace Model\Lerneinheit;
 
+use Produceble;
+use Model\Lerneinheit\GetLerninhalt;
+use Model\Lerneinheit\Aufgabe;
 
 include_once "Produceble.php";
 include_once "Aufgabe.php";
@@ -32,14 +36,5 @@ $getData = new GetLerninhalt($this->stufe, "le_lm_mathematik_textaufgaben");
 return $getData->selectLerninhalt();
 
 }
-
-
-function console_log($data){
-    echo '<script>';
-    echo 'console.log('.json_encode($data). ')';
-    echo '</script>';
-
-}
-
 
 }
