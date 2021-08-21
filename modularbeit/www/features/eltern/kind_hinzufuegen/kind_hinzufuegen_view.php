@@ -5,7 +5,6 @@
     require_once('../../../includes/sidebar_eltern.php');
     require_once('../../../includes/header.php');
     $lname = $user->data()->lname;
-    $email = $user->data()->email;
     $passwort = 'willkommen'
     ?>
 
@@ -45,8 +44,9 @@
                 <p style="color:red;"><b>Achtung:</b>
             </label>
             <label>
-                <p style="color:red;">Für das neu angelegte Kind, gilt das Standard Passwort willkommen und kann im
-                    Profil vom Kind selbständig geändert werden.</p>
+                <div class="form-group">
+                    <label for="fname">Vorname</label>
+                    <input name="passwort" type="text" class="form-control" id="fname" required>
             </label>
             <div class="form-group">
                 <label for="passwort">Passwort</label>
