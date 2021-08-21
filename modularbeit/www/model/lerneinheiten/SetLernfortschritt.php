@@ -2,6 +2,9 @@
 
 namespace Model\Lerneinheit;
 
+use Model\Lerneinheit\DbConnection;
+
+
 include_once 'DbConnection.php';
 
 

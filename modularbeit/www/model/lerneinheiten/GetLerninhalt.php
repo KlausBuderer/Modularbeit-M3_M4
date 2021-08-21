@@ -1,8 +1,16 @@
 <?php
+namespace Model\Lerneinheit;
 
+
+
+
+use Model\Lerneinheit\DbConnection;
+use Model\Lerneinheit\Aufgabe;
+use Produceble;
+ 
 include_once "DbConnection.php";
 include_once "Aufgabe.php";
-
+ 
 class GetLerninhalt{
 
 private $stufe;

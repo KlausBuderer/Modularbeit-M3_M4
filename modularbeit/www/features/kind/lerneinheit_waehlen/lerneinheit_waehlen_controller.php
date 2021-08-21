@@ -2,6 +2,8 @@
 
 require_once "../model/lerneinheiten/LerninhaltModel.php";
 require_once "../features/kind/lerneinheit_waehlen/lerneinheit_waehlen_view.php";
+use Model\Lerneinheit\LerninhaltModel;
+
 
 class Lerninhalt{
 

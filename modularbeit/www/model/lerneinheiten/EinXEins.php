@@ -1,12 +1,11 @@
 <?php
-
-
 namespace Model\Lerneinheit;
+
 use Produceble;
-use Aufgabe;
+use Model\Lerneinheit\Aufgabe;
 
 include_once "Produceble.php";
-include_once "Aufgabe.php";
+include_once "Aufgabe.php"; 
 
 
 class EinXEins implements Produceble{

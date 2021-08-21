@@ -1,8 +1,13 @@
 <?php
 
+
+$root = "modularbeit/www/model/lerneinheiten/EinXEins.php";
+
+
 use PHPUnit\Framework\TestCase;
 use Model\Lerneinheit\EinXEins;
-include 'app/modularbeit/www/model/lerneinheiten/EinXEins.php';
+
+include  $root;
 
 class EinXEinsTest extends TestCase{
 

@@ -1,8 +1,12 @@
 <?php
 
+
+$root = "modularbeit/www/model/lerneinheiten/PlusMinus.php";
+
+
 use PHPUnit\Framework\TestCase;
 use Model\Lerneinheit\PlusMinus;
-include 'C:\01_Daten\ABBTS\Semester2\00_Modularbeit\Modularbeit_Release/modularbeit/www/model/lerneinheiten/PlusMinus.php';
+include $root;
 
 class PlusMinusTest extends TestCase{
 

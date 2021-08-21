@@ -1,8 +1,12 @@
 <?php
 
+
+$root = "modularbeit/www/model/lerneinheiten/SetLernfortschritt.php";
+
+
 use PHPUnit\Framework\TestCase;
 use Model\Lerneinheit\SetLernfortschritt;
-include 'C:\01_Daten\ABBTS\Semester2\00_Modularbeit\Modularbeit_Release/modularbeit/www/model/lerneinheiten/SetLernfortschritt.php';
+include $root;
 
 class SetLernfortschrittTest extends PHPUnit\Framework\TestCase {
 

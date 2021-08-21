@@ -1,8 +1,12 @@
 <?php
 
+
+$root = "modularbeit/www/model/lerneinheiten/LerninhaltModel.php";
+
+
 use PHPUnit\Framework\TestCase;
 use Model\Lerneinheit\LerninhaltModel;
-include 'C:\01_Daten\ABBTS\Semester2\00_Modularbeit\Modularbeit_Release/modularbeit/www/model/lerneinheiten/LerninhaltModel.php';
+include $root;
 
 class FactoryTest extends PHPUnit\Framework\TestCase {
 

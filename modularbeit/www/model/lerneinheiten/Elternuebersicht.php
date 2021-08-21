@@ -1,9 +1,7 @@
 <?php
 namespace Model\Lerneinheit;
-use DbConnection;
-
-
-require_once 'DbConnection.php';
+use Model\Lerneinheit\DbConnection;
+ require_once 'DbConnection.php'; 
 
 class Elernuebersicht{
 

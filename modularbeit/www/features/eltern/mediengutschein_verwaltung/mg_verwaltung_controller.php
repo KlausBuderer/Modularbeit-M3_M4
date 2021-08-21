@@ -1,4 +1,5 @@
 <?php
+use Model\Lerneinheit\Guthaben;
 
 require_once '../model/lerneinheiten/Guthaben.php';
 require_once 'mg_verwaltung_view.php';

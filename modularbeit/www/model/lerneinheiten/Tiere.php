@@ -1,5 +1,9 @@
 <?php
+namespace Model\Lerneinheit;
 
+use Produceble;
+use Model\Lerneinheit\Aufgabe;
+use Model\Lerneinheit\GetLerninhalt;
 
 include_once "Produceble.php";
 include_once "Aufgabe.php";

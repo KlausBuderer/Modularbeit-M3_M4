@@ -1,6 +1,9 @@
 <?php
 
-require_once 'DbConnection.php';
+namespace Model\Lerneinheit;
+
+require_once 'DbConnection.php'; 
+
 
 class Guthaben{
 

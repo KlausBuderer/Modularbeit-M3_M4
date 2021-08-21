@@ -1,5 +1,8 @@
 <?php
 
+namespace Model\Lerneinheit;
+
+
 class Aufgabe{
 
 private $id;

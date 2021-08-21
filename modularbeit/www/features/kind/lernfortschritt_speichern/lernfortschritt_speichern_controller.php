@@ -4,6 +4,9 @@ include_once "../../../model/lerneinheiten/AddPointsToUser.php";
 include_once "./lernfortschritt_speichern_view.php";
 include_once './nicht_aufgeben_view.php';
 
+use Model\Lerneinheit\SetLernfortschritt;
+use Model\Lerneinheit\AddPointsToUser;
+
 if(isset($_POST["beenden"])){
     $anzRichtig = $_POST["anzRichtig"];
     $anzFragen = $_POST["anzFragen"];
