@@ -32,5 +32,4 @@ $pdf->text(15,240, "$text7");
 $pdf->text(15,250, "$text8");
 //$pdf->Output(); 
 $pdf->Output("anzeigename.pdf", "I");
-
 ?>
