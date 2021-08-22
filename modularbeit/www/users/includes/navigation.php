@@ -72,10 +72,10 @@ if ($user->isLoggedIn()) {
 
 <!-- Navigation -->
 
-<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar navbar-fixed-top navbar-inverse navbar-light bg-light" role="navigation" style="background-color: #e3f2fd !important;">
 
 	<div class="container">
-
+S
 		<!-- Brand and toggle get grouped for better mobile display -->
 
 		<div class="navbar-header ">
@@ -94,7 +94,7 @@ if ($user->isLoggedIn()) {
 
 <!-- <a class="" href="<?=$us_url_root?>"><img class="img-responsive" src="<?=$us_url_root?>users/images/logo.png" alt="" /></a> -->
 
-<a class="" href="<?=$us_url_root?>"><img class="img-responsive" src="<?=$us_url_root?>users/images/medienverwaltung.png" alt="" /></a>
+<a class="" href="<?=$us_url_root?>"><img class="img-responsive" src="<?=$us_url_root?>users/images/Logo_neu.png" alt="" /></a>
 
 		</div>
 

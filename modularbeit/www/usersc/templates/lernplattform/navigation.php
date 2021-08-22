@@ -15,19 +15,24 @@ if (file_exists($abs_us_root . $us_url_root . 'usersc/templates/' . $settings->t
 if ($navstyle == 'Default') {
   ?>
   <!-- Set your logo and the "header" of the navigation here -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a href="<?= $us_url_root ?>"><img src="<?= $us_url_root ?>users/images/logo.png"></a>
+ <!--  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a href="<?= $us_url_root ?>">
+      <div class="col-sm-3 col-md-2">
+        <img src="<?= $us_url_root ?>users/images/Logo_neu.png" style="height: 3rem;">
+      </div>
+    </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExample03">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto"> -->
 
         <!-- Here's where it gets tricky.  We need to concatenate together the html to make the menu. -->
         <!-- Basically you will be editing each function into the "style" of your menu -->
         <?php
-        if ($settings->navigation_type == 0) {
+       /*  if ($settings->navigation_type == 0) {
           $query = $db->query("SELECT * FROM email");
           $results = $query->first();
 
@@ -50,15 +55,15 @@ if ($navstyle == 'Default') {
 
         if ($settings->navigation_type == 1) {
           require_once($abs_us_root . $us_url_root . 'usersc/templates/' . $settings->template . '/assets/functions/dbnav.php');
-        }
+        } */
         ?>
 
 
         <!-- Close everything out and leave the hooks so error and bold messages work on your template -->
-      </ul>
+   <!--    </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 <?php
 
 } elseif ($navstyle == 'Left Side') {
@@ -124,7 +129,7 @@ if ($navstyle == 'Default') {
 
       <div class="" style="background-color: #023c73;">
         <div class="text-center">
-          <a style="left:-35px;position: relative;" href="<?= $us_url_root ?>"><img style="" src="<?= $us_url_root ?>users/images/logo.png"></a>
+          <a style="left:-35px;position: relative;" href="<?= $us_url_root ?>"><img style="" src="<?= $us_url_root ?>users/images/Logo_neu.png"></a>
         </div>
       </div>
     <?php }
@@ -198,7 +203,7 @@ if ($navstyle == 'Default') {
         </button>
         <div class="" style="background-color: #023c73;">
           <div class="text-center">
-            <a style="right:-35px;position: relative;" href="<?= $us_url_root ?>"><img style="" src="<?= $us_url_root ?>users/images/logo.png"></a>
+            <a style="right:-35px;position: relative;" href="<?= $us_url_root ?>"><img style="" src="<?= $us_url_root ?>users/images/Logo_neu.png"></a>
           </div>
         </div>
       <?php }

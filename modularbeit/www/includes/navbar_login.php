@@ -24,22 +24,24 @@ $user = new User();
 
 <nav class="navbar sticky-top nbar">
   <div class="container-fluid">
-    <a class="navbar-brand logo" href="#">
-      <img src="/includes/images/alarm.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-     <span style="color: white;">Mediengutschein</span> 
+    <div class="col-sm-5 col-md-3"> 
+       <a class="navbar-brand logo" href="#">
+      <img src="/includes/images/logo.png" alt="" class="img-fluid">
     </a>
-
-      <div class="dropdown">
-          <button class="btn btn-primary d-flex justify-content-center d-md-table mx-auto dropdown-toggle userField" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://github.com/mdo.png" alt="" class="img-fluid rounded-circle me-2" width="40" height="40">
-          <?php  echo $user->data()->username; ?>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="/users/user_settings.php">Einstellungen</a></li>
-            <li><a class="dropdown-item" href="/users/logout.php">Abmelden</a></li>
-          </ul>
-      </div>
-        
+  </div>
+  
+      <div class="col-sm-1 col-md-2">
+          <div class="dropdown">
+              <button class="btn btn-primary d-flex justify-content-center d-md-table mx-auto dropdown-toggle userField" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="" class="img-fluid rounded-circle me-2" width="40" height="40">
+              <?php  echo $user->data()->username; ?>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/users/user_settings.php">Einstellungen</a></li>
+                <li><a class="dropdown-item" href="/users/logout.php">Abmelden</a></li>
+              </ul>
+          </div>
+        </div>
 
   </div>
 </nav>
