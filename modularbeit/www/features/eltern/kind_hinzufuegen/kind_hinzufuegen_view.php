@@ -40,19 +40,12 @@
                 <input name="email" type="text" class="form-control" id="email" required>
             </div>
             <br>
-            <label>
-                <p style="color:red;"><b>Achtung:</b>
-            </label>
-            <label>
+             <label>
                 <div class="form-group">
-                    <label for="fname">Vorname</label>
-                    <input name="passwort" type="text" class="form-control" id="fname" required>
+                    <label for="fname">Passwort</label>
+                    <input name="password" type="text" class="form-control" id="password" required>
             </label>
-            <div class="form-group">
-                <label for="passwort">Passwort</label>
-                <input name="passwort" type="passwort" value="<?php echo $passwort; ?>" class="form-control"
-                    id="passwort" disabled>
-            </div>
+           </div>
             <br>
             <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
             <div class="form-check">
@@ -80,8 +73,8 @@
                 </label>
             </div>
             <button type="submit" class="form-control">Kind erstellen</button>
-    </div>
-    </form>
+        </div>
+        </form>
     </div>
 </body>
 <?php
