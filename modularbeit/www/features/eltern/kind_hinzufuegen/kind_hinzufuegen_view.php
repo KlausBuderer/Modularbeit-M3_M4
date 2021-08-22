@@ -25,24 +25,32 @@
             </div>
             <div class="form-group">
                 <label for="username">Benutzername des Kindes</label>
-                <input name="username" type="text" class="form-control" id="username" required>
+                <input name="username" type="text" class="form-control" id="username" required
+                data-toggle="tooltip" data-placement="top" title="Bitte geben Sie den gewünschten Benutzernamen ein">
+  
             </div>
             <div class="form-group">
                 <label for="fname">Vorname</label>
-                <input name="fname" type="text" class="form-control" id="fname" required>
+                <input name="fname" type="text" class="form-control" id="fname" required
+                data-toggle="tooltip" data-placement="top" title="Bitte geben Sie den gewünschten Vornamen ein">
             </div>
             <div class="form-group">
                 <label for="lname">Nachname</label><br>
-                <input name="lname" type="text" value="<?php echo $lname; ?>" class="form-control" id="lname" readonly>
+                <input name="lname" type="text" value="<?php echo $lname; ?>" class="form-control" id="lname" readonly
+                data-toggle="tooltip" data-placement="top" title="Sie können nur Kinder mit dem gleichen Nachnamen erfassen.Sollten Sie es anderes benötigen,
+                 so können dies nachträglich im Benutzerprofil des Kindes ändern">
+
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input name="email" type="text" class="form-control" id="email" required>
+                <input name="email" type="text" class="form-control" id="email" required
+                data-toggle="tooltip" data-placement="top" title="Bitte geben Sie eine E-Mail Adresse ein, im Falle wenn Sie das Passwort zurücksetzen möchten / müssen.">
             </div>
             <label>
                 <div class="form-group">
                     <label for="fname">Passwort</label>
-                    <input name="password" type="text" class="form-control" id="password" required>
+                    <input name="password" type="text" class="form-control" id="password" required
+                    data-toggle="tooltip" data-placement="top" title="Bitte geben Sie ein für Ihr Kind gut merkbares Passwort ein">
             </label>
            </div>
            <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
