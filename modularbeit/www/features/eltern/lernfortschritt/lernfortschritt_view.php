@@ -25,9 +25,6 @@ class LernfortschrittView{
 
         echo '<input type="hidden" name="kindsname" value="'. $this->kindsname.'">';
 
-      
-    
-    
            echo  '</form>';
            echo '<script type="text/javascript">';
              echo "document.getElementById('myForm').submit()";
