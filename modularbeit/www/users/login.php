@@ -96,9 +96,13 @@ if (!empty($_POST['login_hook'])) {
     $token = Token::generate();
     ?>
     <div id="page-wrapper">
-      <div class="container">
+     <div class="container" style="border-style: solid; border-width: 1px; border-color: lightgrey; border-radius: 5px; margin-top: 15%; max-width: 40rem; box-shadow: 0 0 4em rgba(83, 85, 87, 0.411);">
+      <div class="container" >
         <div class="row">
           <div class="col-sm-12">
+            <div class="text-center">
+              <img class="img-fluid" src="<?= $us_url_root ?>users/images/Logo_neu.png" style="margin-bottom: 3rem;">
+            </div>
             <?php
             includeHook($hooks,'body');
             ?>
@@ -123,8 +127,9 @@ if (!empty($_POST['login_hook'])) {
                 <input type="hidden" name="login_hook" value="1">
                 <input type="hidden" name="csrf" value="<?=$token?>">
                 <input type="hidden" name="redirect" value="<?=Input::get('redirect')?>" />
-                <button class="submit  btn  btn-primary" id="next_button" type="submit"><i class="fa fa-sign-in"></i> <?=lang("SIGNIN_BUTTONTEXT","");?></button>
-
+                <!-- <button class="submit btn  btn-primary" id="next_button" type="submit"><i class="fa fa-sign-in"></i> <?=lang("SIGNIN_BUTTONTEXT","");?></button>
+                 --><button class="btn btn-outline-primary" type="submit"><i class="fa fa-sign-in"></i> <?=lang("SIGNIN_BUTTONTEXT","");?></button>
+          
               </form>
             </div>
           </div>
@@ -142,7 +147,7 @@ if (!empty($_POST['login_hook'])) {
             </div>
           </div>
         </div>
-
+    </div>
         <?php require_once $abs_us_root.$us_url_root.'usersc/templates/'.$settings->template.'/container_close.php'; //custom template container ?>
 
         <!-- footers -->

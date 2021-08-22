@@ -30,7 +30,8 @@ Special thanks to John Bovey for the password strenth feature.
   opacity: .5;
 }
 </style>
-
+<div class="container" style="border-style: solid; border-width: 1px; border-color: lightgrey; border-radius: 5px; margin-top: 15%; max-width: 40rem; box-shadow: 0 0 4em rgba(83, 85, 87, 0.411);">
+     
 <div class="row">
   <div class="col-sm-12">
     <?php
@@ -39,6 +40,10 @@ Special thanks to John Bovey for the password strenth feature.
     <?php }
     includeHook($hooks,'body');
     ?>
+
+            <div class="text-center" >
+              <img class="img-fluid" src="<?= $us_url_root ?>users/images/Logo_neu.png" style="margin-bottom: 3rem;">
+            </div> 
 
     <form class="form-signup" action="" method="<?=$form_method;?>" id="payment-form">
 
@@ -143,7 +148,11 @@ Special thanks to John Bovey for the password strenth feature.
       <input type="hidden" value="<?=Token::generate();?>" name="csrf">
 
       <div class="form-group">
-        <button class="submit btn btn-primary " type="submit" id="next_button"><i class="fa fa-plus-square"></i> <?=lang("SIGNUP_TEXT");?></button>
+        <button class="submit btn btn-outline-primary " type="submit" id="next_button"><i class="fa fa-plus-square"></i> <?=lang("SIGNUP_TEXT");?></button>
+        <div class="text-right">
+        <!--   <a type="button" class="btn btn-outline-secondary justify-content-md-end" href="../../users/login.php">Zurück</a> -->
+          <a href='../users/login.php'><i class="fa fa-sign-in"></i>Anmelden</a>
+        </div>
       </div>
 
     </form>
@@ -151,7 +160,7 @@ Special thanks to John Bovey for the password strenth feature.
   </div>
 </div>
 
-
+</div>
 <script type="text/javascript">
 $(document).ready(function(){
 
