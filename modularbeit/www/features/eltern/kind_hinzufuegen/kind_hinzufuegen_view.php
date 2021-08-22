@@ -39,15 +39,13 @@
                 <label for="email">Email</label>
                 <input name="email" type="text" class="form-control" id="email" required>
             </div>
-            <br>
-             <label>
+            <label>
                 <div class="form-group">
                     <label for="fname">Passwort</label>
                     <input name="password" type="text" class="form-control" id="password" required>
             </label>
            </div>
-            <br>
-            <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
+           <label for="Lerneinheiten">Automatisch zugeordnete Lerneinheiten</label>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="X" id="cboxmathematik" disabled checked>
                 <label class="form-check-label" for="cboxmathematik">
@@ -72,9 +70,9 @@
                     Realien
                 </label>
             </div>
-            <button type="submit" class="form-control">Kind erstellen</button>
         </div>
-        </form>
+            <button type="submit" class="form-control">Kind erstellen</button>
+       </form>
     </div>
 </body>
 <?php
