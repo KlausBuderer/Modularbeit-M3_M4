@@ -1,11 +1,11 @@
-
-     <div class="container-fluid overflow-hidden haupt">
+<link href="/includes/css/clock.css" rel="stylesheet">
+<script src="/includes/js/clock.js"></script>
+<div class="container-fluid overflow-hidden haupt">
     <div class="row vh-100 overflow-auto">
         <div class="col-12 col-md-1 col-sm-12 col-xl-2 px-sm-12 px-0 d-flex sticky-top ">
             <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white sbar">
                <br>
                <br>
-
                 <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-md-grow-0 flex-grow-1 mb-md-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
 
                 <li class="nav-item sidebar-button">       
@@ -41,7 +41,6 @@
                       </svg>  <span class="ms-1 d-none d-xl-inline">Deutsch</span>
                       </a>
                     </li>
-
                     
                     <li class="nav-item sidebar-button">
                       <a class="nav-link text" href="/includes/englisch_uebersicht_template.php">
@@ -58,15 +57,21 @@
                           <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
                         </svg> <span class="ms-1 d-none d-xl-inline">Guthaben</span>
                         </a>
+                      </li>
+                      <li class="nav-item clock">
+                        <article class="clock">
+                            <div class="hours-container">
+                                <div class="hours"></div>
+                            </div>
+                            <div class="minutes-container">
+                                <div class="minutes"></div>
+                            </div>
+                            <div class="seconds-container">
+                                <div class="seconds"></div>
+                            </div>
+                        </article>
                     </li>
-
                 </ul>
             </div>
-        </div> 
-  
-  
-
-
-  
-
-  <div class="col-md-9 col-lg-10">
+        </div>
+<div class="col-md-9 col-lg-10">
