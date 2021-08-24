@@ -1,6 +1,8 @@
+
 <!-- Sidebar Kinder -->
 
-
+<link href="/includes/css/clock.css" rel="stylesheet">
+<script src="/includes/js/clock.js"></script>
 
 
 <div class="container-fluid overflow-hidden" id="body">
@@ -73,8 +75,20 @@
               </svg> <span class="ms-1 d-none d-xl-inline">Farbschema</span>
             </button>
           </li>
-
-        </ul>
+            <li class="nav-item clock">
+                        <article class="clock">
+                            <div class="hours-container">
+                                <div class="hours"></div>
+                            </div>
+                            <div class="minutes-container">
+                                <div class="minutes"></div>
+                            </div>
+                            <div class="seconds-container">
+                                <div class="seconds"></div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
       </div>
     </div>
 
@@ -150,3 +164,8 @@
 
    
     <div class="col-md-9 col-lg-10">
+
+      
+       
+      
+

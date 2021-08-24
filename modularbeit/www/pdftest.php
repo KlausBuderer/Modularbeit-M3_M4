@@ -8,7 +8,7 @@ $text1=utf8_decode("MEDIENGUTSCHEIN");
 $text2=utf8_decode("Herzlichen Gratulation - Du warst fleissig und wirst nun belohnt !");
 $text3=utf8_decode("Du darfst mit diesem Gutschein ");
 $text4=utf8_decode("Stunden Medien benutzen.");
-$text5=utf8_decode("Du musst nicht alles auf einmal einmal einlösen, deine Eltern");
+$text5=utf8_decode("Du musst nicht alles auf einmal einlösen, deine Eltern");
 $text6=utf8_decode("können auch nur ein Teil davon einlösen");
 $text7=utf8_decode("Viel Spass !");
 $text8=utf8_decode("dein Mediengutschein Portal");
@@ -30,5 +30,6 @@ $pdf->text(15,190, "$text5");
 $pdf->text(15,200, "$text6");
 $pdf->text(15,240, "$text7");
 $pdf->text(15,250, "$text8");
-$pdf->Output(); 
+//$pdf->Output(); 
+$pdf->Output("anzeigename.pdf", "I");
 ?>
