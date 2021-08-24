@@ -1,48 +1,51 @@
 <?php
+
 namespace Model\Lerneinheit;
 
 use Model\Lerneinheit\DbConnection;
 
 
- require_once 'DbConnection.php'; 
+require_once 'DbConnection.php';
 
-class GetLernfortschritt{
+//Klasse für das Auslesen des Lernfortschritts eines bestimmten Kindes aus der Datenbank
+
+class GetLernfortschritt
+{
 
     private $kindsId;
     private $lernfortschritt = array();
 
-public function __construct($kindsId) {
-    $this->kindsId = $kindsId;
+    public function __construct($kindsId)
+    {
+        $this->kindsId = $kindsId;
 
-    $this->fetchData();
+        $this->fetchData();
+    }
 
-}
+    public function getLernfortschritt()
+    {
+        return $this->lernfortschritt;
+    }
 
-public function getLernfortschritt(){
-    return $this->lernfortschritt;
-}
+    private function fetchData()
+    {
 
-private function fetchData(){
+        //Verbindung zur DB aufbauen
+        $connection = new DbConnection();
+        $conn = $connection->buildConnection();
 
-    //Verbindung zur DB aufbauen
-    $connection = new DbConnection();
-    $conn = $connection->buildConnection();
-    
-       // Fetch Data from Database
+        // Fetch Data from Database
         $sql = "SELECT * from le_lernfortschritt WHERE userid= $this->kindsId;";
         $result = mysqli_query($conn, $sql);
 
         $counter = 0;
-  
-        while($row = mysqli_fetch_assoc($result)){
 
-    
+        while ($row = mysqli_fetch_assoc($result)) {
+
+
             $this->lernfortschritt[$counter] = array($row['datum'], $row['lerneinheit'], $row['beschreibung'], $row['anzfragengesamt'], $row['anzfragenkorrekt'], $row['vorzeitabbruch'], $row['punkteerreicht']);
-              
-        $counter++;
+
+            $counter++;
         }
-    
-}
-
-
+    }
 }

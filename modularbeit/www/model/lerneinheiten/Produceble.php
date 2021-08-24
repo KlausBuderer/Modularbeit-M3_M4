@@ -1,11 +1,12 @@
 <?php
 
 use Model\Lerneinheit;
-interface Produceble{
 
 
-public function produce();
+// Factory Patter
+// Interface für die zu Produzierenden Klassen
 
-
-
+interface Produceble
+{
+    public function produce();
 }

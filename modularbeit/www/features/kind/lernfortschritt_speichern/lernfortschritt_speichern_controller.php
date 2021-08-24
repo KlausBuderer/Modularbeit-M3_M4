@@ -7,7 +7,7 @@ include_once './nicht_aufgeben_view.php';
 use Model\Lerneinheit\SetLernfortschritt;
 use Model\Lerneinheit\AddPointsToUser;
 
-if(isset($_POST["beenden"])){
+if (isset($_POST["beenden"])) {
     $anzRichtig = $_POST["anzRichtig"];
     $anzFragen = $_POST["anzFragen"];
     $abbruch = $_POST["abbruch"];
@@ -28,13 +28,11 @@ $addPointsToUser = new AddPointsToUser($setLernfortschritt->getPunkte(), $userId
 
 
 if ($anzRichtig >= 10) {
-$view = new Lernfortschritt_speichern_View($setLernfortschritt->getPunkte(), $addPointsToUser->getNeuPunkte(), $addPointsToUser->getActualGuthaben());
-$view->ausgabe();
-}else{
-$viewNichtErfolg = new NichtAufgebenView();
-$viewNichtErfolg->ausgabe();
+    //Ausgabe falls Aufgabe erfolgreich
+    $view = new Lernfortschritt_speichern_View($setLernfortschritt->getPunkte(), $addPointsToUser->getNeuPunkte(), $addPointsToUser->getActualGuthaben());
+    $view->ausgabe();
+} else {
+    //Ausgabe falls Aufgabe nicht erfolgreich
+    $viewNichtErfolg = new NichtAufgebenView();
+    $viewNichtErfolg->ausgabe();
 }
-
-
-
- 

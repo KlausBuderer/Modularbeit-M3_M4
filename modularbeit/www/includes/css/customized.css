@@ -133,13 +133,13 @@ color: rgba(99, 92, 92, 0.445);
 /*Username Anzeige*/
 
 .userField{
-background-color: #EDFAFD;
 border-radius: 30px;
-color: #135589;
-
 }
 
-
+#dropdownMenuButton1{
+background-color: #EDFAFD;
+color: #135589;
+}
 /*Elternübersicht*/
 
 .navButton{
@@ -153,6 +153,10 @@ color: #135589;
   display: inline-flex;
   padding-left: 5rem;
   color: black;
+}
+
+.mg-verwaltung-punkte-text{
+  padding-left: 10rem;
 }
 
 .mg-verwaltung-titel{
@@ -169,8 +173,9 @@ color: #135589;
 
 .input-fenster{
   margin-top: 0.5rem;
+  margin-left: 5%;
+  max-width: 15rem;
 }
-
 
 
 /*Sidebar*/
@@ -189,11 +194,9 @@ color: #3DDAD8;
 
 }
 
-.sbar{
+#sidebar{
   background-color: #2A93D5;
   border-bottom-right-radius: 5em;
-
- 
 }
 
 .nbar{

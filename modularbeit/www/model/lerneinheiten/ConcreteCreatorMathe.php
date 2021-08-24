@@ -1,4 +1,5 @@
 <?php
+
 namespace Model\Lerneinheit;
 
 use Model\Lerneinheit\Creator;
@@ -10,56 +11,56 @@ use Produceble;
 include_once "Creator.php";
 include_once "EinXEins.php";
 include_once "Dreisatz.php";
-include_once "PlusMinus.php"; 
+include_once "PlusMinus.php";
 
-class ConcreteCreatorMathe extends Creator{
+//Concrete Creator des Factory Patterns für das Modul Mat
 
-private $lerneinheit;
-private $stufe;
-
-
-public function __construct($stufe, $lerneinheit)
+class ConcreteCreatorMathe extends Creator
 {
-    $this->lerneinheit = $lerneinheit;
-    $this->stufe = $stufe;
-    
-}
 
-public function produceLerninhalt(){
+    private $lerneinheit;
+    private $stufe;
 
-    $lerneinheit = $this->lerneinheit;
-    $stufe = $this->stufe;
-    $lerninhalt = [];
 
-    switch ($lerneinheit) {
-        case 'einxeins':
-            
-            $lerninhalt = $this->produce(new EinXEins($stufe));
-            
-            
-            break;
-        case 'dreisatz':
-            $lerninhalt = $this->produce(new Dreisatz($stufe));
-            break;
-        case 'plus_minus':
-            
-            $lerninhalt = $this->produce(new PlusMinus($stufe));
-            break;
-        
-        default:
-        
-            break;
+    public function __construct($stufe, $lerneinheit)
+    {
+        $this->lerneinheit = $lerneinheit;
+        $this->stufe = $stufe;
     }
 
+    public function produceLerninhalt()
+    {
 
-    return $lerninhalt;
+        $lerneinheit = $this->lerneinheit;
+        $stufe = $this->stufe;
+        $lerninhalt = [];
 
-}
+        switch ($lerneinheit) {
 
-private function produce(Produceble $lerneinheit){
+            case 'einxeins':
+                $lerninhalt = $this->produce(new EinXEins($stufe));
+                break;
 
-    return $lerneinheit->produce();
-  
-}
+            case 'dreisatz':
+                $lerninhalt = $this->produce(new Dreisatz($stufe));
+                break;
+                
+            case 'plus_minus':
+                $lerninhalt = $this->produce(new PlusMinus($stufe));
+                break;
 
+            default:
+
+                break;
+        }
+
+
+        return $lerninhalt;
+    }
+
+    private function produce(Produceble $lerneinheit)
+    {
+
+        return $lerneinheit->produce();
+    }
 }

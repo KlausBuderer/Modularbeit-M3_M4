@@ -3,6 +3,7 @@
 require_once 'guthaben_view.php';
 require_once '../../../model/lerneinheiten/Guthaben.php';
 require_once '../../../users/init.php';
+
 use Model\Lerneinheit\Guthaben;
 
 //Holt aktuelles Guthaben des Users
@@ -17,4 +18,3 @@ $guthabenObj = new Guthaben($user->data()->id);
 
 $guthabenView = new GuthabenView($guthabenObj->getGuthaben(), $guthabenObj->getPunkte());
 $guthabenView->showGuthaben();
-

@@ -6,35 +6,35 @@ require_once('sidebar.php');
 
 $erzieltePunktzahl = $_POST['erzieltePunkte'];
 $guthaben = $_POST['guthaben'];
-$neuePunktzahl = $_POST['totalPunkte']; 
-
- 
+$neuePunktzahl = $_POST['totalPunkte'];
 ?>
 
+<!-- Mediengutschein Guthabensanzeige nach einer Aufgabe -->
 <br>
 <br>
 
 
 <div class="container">
-      
-
-<div id="start_screen" class="container-fluid bg-light text-dark p-5 quiz_start">
-        <h1>Gut gemacht!!!</h1>
-        <h2>Weiter so...</h2>
-
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow= "58" aria-valuemin="0" aria-valuemax="100"  style="width: <?= $neuePunktzahl . "%" ;?>"><?= $neuePunktzahl . "Punkte" ;?></div>
-        </div>
-
-        <br>
-
-        <p>Dein aktuelles Medienguthaben ist: <?= $guthaben; ?>h</p>
 
 
+  <div id="start_screen" class="container-fluid bg-light text-dark p-5 quiz_start">
+    <h1>Gut gemacht!!!</h1>
+    <h2>Weiter so...</h2>
+
+    <!-- Aktueller Punktestand in einem Progressbar -->
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: <?= $neuePunktzahl . "%"; ?>"><?= $neuePunktzahl . "Punkte"; ?></div>
+    </div>
+
+    <br>
+    <!-- Ausgabe aktuelles Medienguthaben -->
+    <p>Dein aktuelles Medienguthaben ist: <?= $guthaben; ?>h</p>
 
 
-        <p><a href="/index.php" class="start btn btn-primary btn-lg" role="button">Weiter</a></p>
-      </div>
+
+    <!-- Zurückbutton -->
+    <p><a href="/index.php" class="start btn btn-primary btn-lg" role="button">Weiter</a></p>
+  </div>
 
 
 
@@ -42,4 +42,4 @@ $neuePunktzahl = $_POST['totalPunkte'];
 </div>
 
 
-    <?php include 'footer.php'; ?>
+<?php include 'footer.php'; ?>

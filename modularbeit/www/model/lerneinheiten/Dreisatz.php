@@ -1,4 +1,5 @@
 <?php
+
 namespace Model\Lerneinheit;
 
 use Produceble;
@@ -9,32 +10,30 @@ include_once "Produceble.php";
 include_once "Aufgabe.php";
 include_once "GetLerninhalt.php";
 
-class Dreisatz implements Produceble{
+//Klasse für die Erstellung der Dreisatzaufgaben
 
-
-protected $stufe;
-private $result;
-
-
-public function __construct($stufe)
+class Dreisatz implements Produceble
 {
-    $this->stufe = $stufe;
-}
+    protected $stufe;
+    private $result;
+
+    public function __construct($stufe)
+    {
+        $this->stufe = $stufe;
+    }
 
 
-public function produce()
-{
-    //console_log($this->getAufgaben());
-return $this->getAufgaben();
-}
+    public function produce()
+    {
+        return $this->getAufgaben();
+    }
 
-//Holt die Daten aus der Datenbank und gibt ein Array mit Aufgaben zurück
-private function getAufgaben(){
+    //Holt die Daten aus der Datenbank und gibt ein Array mit Aufgaben zurück
+    private function getAufgaben()
+    {
 
-$getData = new GetLerninhalt($this->stufe, "le_lm_mathematik_textaufgaben");
+        $getData = new GetLerninhalt($this->stufe, "le_lm_mathematik_textaufgaben");
 
-return $getData->selectLerninhalt();
-
-}
-
+        return $getData->selectLerninhalt();
+    }
 }
