@@ -6,9 +6,6 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
 
-    sudo apt-get install php7.x-mysqli
-
-    sudo service apache2 restart
 
     steps:
       - uses: actions/checkout@v2
