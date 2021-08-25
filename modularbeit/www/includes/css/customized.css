@@ -1,3 +1,17 @@
+
+
+
+:root{
+
+  --body_color: #FAE5C7;
+--side_nav_color: #FAC17A;
+--card_color:#DAB258;
+--userfield_color:#C2EDCE;
+--titel_color:#F6F6F2;
+}
+
+
+
 /*
  * Sidebar
  */
@@ -137,7 +151,7 @@ border-radius: 30px;
 }
 
 #dropdownMenuButton1{
-background-color: #EDFAFD;
+background-color: var(--userfield_color);
 color: #135589;
 }
 /*Elternübersicht*/
@@ -190,17 +204,17 @@ color: #135589;
 .text:hover{
 
 font-size: xx-large;
-color: #3DDAD8;
+color: var(--body_color);
 
 }
 
 #sidebar{
-  background-color: #2A93D5;
+  background-color: var(--side_nav_color);
   border-bottom-right-radius: 5em;
 }
 
 .nbar{
-  background-color: #2A93D5;
+  background-color: var(--side_nav_color);
 }
 
 .logo{
@@ -210,13 +224,13 @@ color: #3DDAD8;
 
 /*main*/
 .haupt{
-  background-color: #EDFAFD;
+  background-color: var(--body_color);
 }
 
 
 
 .card-body{
-  background-color: #AED9DA;
+  background-color: var(--card_color);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }

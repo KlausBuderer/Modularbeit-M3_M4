@@ -145,7 +145,7 @@
     </div>
 
 
-    <script src="/includes/js/color.js"></script>
+<!--     <script src="/includes/js/color.js"></script> -->
 
 
    

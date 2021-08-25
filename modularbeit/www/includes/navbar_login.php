@@ -9,6 +9,11 @@
    require_once './users/init.php';
 } 
 
+$avatar = $_COOKIE['avatar'];
+
+if ($avatar == null) {
+  $avatar = "./images/avatars/Placeholder.png";
+}
 
 $user = new User();
  
@@ -26,7 +31,7 @@ $user = new User();
       <div class="col-sm-1 col-md-2">
           <div class="dropdown">
               <button class="btn btn-primary d-flex justify-content-center d-md-table mx-auto dropdown-toggle userField" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img id="avatar" src="./images/avatars/Placeholder.png" alt="" class="img-fluid rounded-circle me-2" width="40" height="40">
+              <img id="avatar" src=<?= $avatar?> alt="" class="img-fluid rounded-circle me-2" width="40" height="40">
               <?php  echo $user->data()->username; ?>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">

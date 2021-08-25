@@ -36,5 +36,11 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 }
 
 ?>
+<script src="/includes/js/color.js"></script>
+<script type="text/javascript">
+      (function() {
+        initColor();
+      })();
+    </script>
 
 <body style="padding: 0px 0px 0px 0px;">

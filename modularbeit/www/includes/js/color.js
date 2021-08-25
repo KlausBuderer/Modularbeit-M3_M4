@@ -12,7 +12,7 @@ vampir : ['#1A1A1D', '#6F2232', '#950740', '#4E4E50', '#950740', 'vampir'],
 pink : ['#E3E2DF', '#EE4C7C', '#EE4C7C', '#E3AFBC', '#EE4C7C', 'pink']
 };
 
-
+var root = document.querySelector(':root');
 var scheme;
 
 // Initialisierung des Farbschemas mit der zuletzt gewählten Farbe
@@ -30,7 +30,13 @@ function initColor() {
 
   function coloring(colors) {
 
-    document.getElementById('sidebar').style.backgroundColor = colors[1];
+    root.style.setProperty('--body_color', colors[0]);
+    root.style.setProperty('--side_nav_color', colors[1]);
+    root.style.setProperty('--card_color', colors[2]);
+    root.style.setProperty('--userfield_color', colors[3]);
+    root.style.setProperty('--titel_color', colors[4]);
+
+ /*    document.getElementById('sidebar').style.backgroundColor = colors[1];
     //document.getElementById('footer').style.backgroundColor = colors[1];
     document.getElementById('nav').style.backgroundColor = colors[1];
     document.getElementById('body').style.backgroundColor = colors[0];
@@ -39,9 +45,9 @@ function initColor() {
     document.getElementById('card3').style.backgroundColor = colors[2];
     document.getElementById('titel').style.color = colors[4];
     document.getElementById('dropdownMenuButton1').style.backgroundColor = colors[2];
-    document.getElementById('dropdownMenuButton1').style.ColorackgroundColor = colors[0];
+    document.getElementById('dropdownMenuButton1').style.ColorackgroundColor = colors[0]; */
 
-    setCookie(colors[5]);
+    setCookie(colors[5], 30);
 
   }
 

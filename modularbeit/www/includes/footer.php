@@ -14,10 +14,6 @@
 
 </body>
 
-<script type="text/javascript">
-      (function() {
-        initColor();
-      })();
-    </script>
+
 
 </html>
