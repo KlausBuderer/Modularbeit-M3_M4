@@ -3,11 +3,13 @@ require_once('header.php');
 require_once('navbar_login.php');
 require_once('sidebar.php');
 ?>
+
+<!-- Übersichtsbild Deutsch -->
     <div class="album py-5 bs-wight">
         <div class="container">
 
 
-        <h1 class="text-center fw-lighter display-2">Deutsch</h1>
+        <h1 id="titel" class="text-center fw-lighter display-2">Deutsch</h1>
         <hr>
 
             <form action="/features/kind/lerneinheit_waehlen/lerneinheit_waehlen_controller.php" method="Post">
@@ -17,7 +19,7 @@ require_once('sidebar.php');
                             <div class="card shadow-sm">
                                 <img src="images/deutschverben.jpg" style="height: 18rem;" class="card-img-top">
 
-                                <div class="card-body">
+                                <div class="card-body" id="card1">
                                     <p class="card-text">Verben Konjugieren</p>
                                         <label for="customRange1" class="form-label">Stufe</label><br>
                                         <div class="container">
@@ -48,7 +50,7 @@ require_once('sidebar.php');
                                     
                                         <img src="images/deutsch4faelle.jpg" style="height: 18rem;" class="card-img-top">
                                     
-                                <div class="card-body">
+                                <div class="card-body" id="card2">
                                     <p class="card-text">Die vier Fälle</p>
                                     <label for="customRange1" class="form-label">Stufe</label>
                                     <div class="container">
@@ -79,7 +81,7 @@ require_once('sidebar.php');
                                     
                                         <img src="images/deutschhoerverstaendnis.jpg" style="height: 18rem;" class="card-img-top">
                                     
-                                <div class="card-body">
+                                <div class="card-body" id="card3">
                                     <p class="card-text">Plus Minus</p>
                                     <label for="customRange1" class="form-label">Hörverständnis</label>
                                     <div class="container">

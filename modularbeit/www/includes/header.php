@@ -1,11 +1,8 @@
 <?php
 
-require_once ('config.php');
+require_once('config.php');
 
 ?>
-
-
-
 <!DOCTYPE html>
 
 <html lang="de">
@@ -33,12 +30,17 @@ require_once ('config.php');
 <?php
 
 
-
-    if (session_status() !== PHP_SESSION_ACTIVE) {
-       session_start(); # code...
-    }
+// Sessionstart falls noch nicht gestartet
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
 
 ?>
+<script src="/includes/js/color.js"></script>
+<script type="text/javascript">
+      (function() {
+        initColor();
+      })();
+    </script>
 
 <body style="padding: 0px 0px 0px 0px;">
- 

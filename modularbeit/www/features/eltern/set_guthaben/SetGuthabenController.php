@@ -3,6 +3,7 @@
 require_once '../model/lerneinheiten/Guthaben.php';
 require_once '../features/eltern/eltern_uebersicht/eltern_uebersicht_controller.php';
 
+use Model\Lerneinheit\Guthaben;
 
 class setGuthabenController{
 

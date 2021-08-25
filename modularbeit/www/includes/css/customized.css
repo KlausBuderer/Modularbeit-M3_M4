@@ -1,3 +1,17 @@
+
+
+
+:root{
+
+  --body_color: #FAE5C7;
+--side_nav_color: #FAC17A;
+--card_color:#DAB258;
+--userfield_color:#C2EDCE;
+--titel_color:#F6F6F2;
+}
+
+
+
 /*
  * Sidebar
  */
@@ -133,13 +147,13 @@ color: rgba(99, 92, 92, 0.445);
 /*Username Anzeige*/
 
 .userField{
-background-color: #EDFAFD;
 border-radius: 30px;
-color: #135589;
-
 }
 
-
+#dropdownMenuButton1{
+background-color: var(--userfield_color);
+color: #135589;
+}
 /*Elternübersicht*/
 
 .navButton{
@@ -153,6 +167,10 @@ color: #135589;
   display: inline-flex;
   padding-left: 5rem;
   color: black;
+}
+
+.mg-verwaltung-punkte-text{
+  padding-left: 10rem;
 }
 
 .mg-verwaltung-titel{
@@ -169,8 +187,9 @@ color: #135589;
 
 .input-fenster{
   margin-top: 0.5rem;
+  margin-left: 5%;
+  max-width: 15rem;
 }
-
 
 
 /*Sidebar*/
@@ -185,19 +204,17 @@ color: #135589;
 .text:hover{
 
 font-size: xx-large;
-color: #3DDAD8;
+color: var(--body_color);
 
 }
 
-.sbar{
-  background-color: #2A93D5;
+#sidebar{
+  background-color: var(--side_nav_color);
   border-bottom-right-radius: 5em;
-
- 
 }
 
 .nbar{
-  background-color: #2A93D5;
+  background-color: var(--side_nav_color);
 }
 
 .logo{
@@ -207,13 +224,13 @@ color: #3DDAD8;
 
 /*main*/
 .haupt{
-  background-color: #EDFAFD;
+  background-color: var(--body_color);
 }
 
 
 
 .card-body{
-  background-color: #AED9DA;
+  background-color: var(--card_color);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
 }

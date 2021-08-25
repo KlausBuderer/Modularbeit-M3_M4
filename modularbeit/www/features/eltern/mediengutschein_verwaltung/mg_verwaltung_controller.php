@@ -1,12 +1,14 @@
 <?php
+
 use Model\Lerneinheit\Guthaben;
 
 require_once '../model/lerneinheiten/Guthaben.php';
 require_once 'mg_verwaltung_view.php';
 
-//
+//Mediengutscheinkontroller
 
-class MediengutscheinVerwaltung{
+class MediengutscheinVerwaltung
+{
 
     private $medienGuthaben;
     private $punkte;
@@ -14,19 +16,17 @@ class MediengutscheinVerwaltung{
 
 
 
-public function __construct($kindId, $kindsname) {
+    public function __construct($kindId, $kindsname)
+    {
 
-    $this->kindsname = $kindsname;
+        $this->kindsname = $kindsname;
 
-    //Hole Guthaben und Punkte aus der Datenbank
-    $guthaben = new Guthaben($kindId);
-    $this->medienGuthaben = $guthaben->getGuthaben();
-    $this->punkte = $guthaben->getPunkte();
+        //Holt Guthaben und Punkte aus der Datenbank
+        $guthaben = new Guthaben($kindId);
+        $this->medienGuthaben = $guthaben->getGuthaben();
+        $this->punkte = $guthaben->getPunkte();
 
-    $view = new MediengutscheinVerwaltungView($this->kindsname, $kindId, $this->medienGuthaben, $this->punkte);
-    $view->showGuthaben();
-
-
-}
-
+        $view = new MediengutscheinVerwaltungView($this->kindsname, $kindId, $this->medienGuthaben, $this->punkte);
+        $view->showGuthaben();
+    }
 }
