@@ -8,7 +8,7 @@ var colors = {
 rosa : ['#FAFAFB', '#EFB7BA', '#E5C0C8', '#C2EDCE', '#F6F6F2', 'rosa'],
 orange : ['#FAE5C7', '#FAC17A', '#DAB258', '#C2EDCE', '#F6F6F2', 'orange'],
 green : ['#EDF5E1', '#5CDB95', '#05386B', '#EDF5E1', '#05386B', 'green'],
-vampir : ['#1A1A1D', '#6F2232', '#950740', '#4E4E50', '#950740', 'vampir'],
+vampir : ['#1A1A1D', '#6F2232', '#950740', '#4E4E50', '#6F2232', 'vampir'],
 pink : ['#E3E2DF', '#EE4C7C', '#EE4C7C', '#E3AFBC', '#EE4C7C', 'pink']
 };
 
@@ -35,18 +35,7 @@ function initColor() {
     root.style.setProperty('--card_color', colors[2]);
     root.style.setProperty('--userfield_color', colors[3]);
     root.style.setProperty('--titel_color', colors[4]);
-
- /*    document.getElementById('sidebar').style.backgroundColor = colors[1];
-    //document.getElementById('footer').style.backgroundColor = colors[1];
-    document.getElementById('nav').style.backgroundColor = colors[1];
-    document.getElementById('body').style.backgroundColor = colors[0];
-    document.getElementById('card1').style.backgroundColor = colors[2];
-    document.getElementById('card2').style.backgroundColor = colors[2];
-    document.getElementById('card3').style.backgroundColor = colors[2];
-    document.getElementById('titel').style.color = colors[4];
-    document.getElementById('dropdownMenuButton1').style.backgroundColor = colors[2];
-    document.getElementById('dropdownMenuButton1').style.ColorackgroundColor = colors[0]; */
-
+    backColor = colors[0]
     setCookie(colors[5], 30);
 
   }
