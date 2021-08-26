@@ -8,6 +8,11 @@
 --card_color:#DAB258;
 --userfield_color:#C2EDCE;
 --titel_color:#F6F6F2;
+
+/* Sidebar Navigation indicator */
+
+--indicator: var(--side_nav_color);
+
 }
 
 
@@ -58,6 +63,7 @@
   .sidebar .nav-link:hover .feather,
   .sidebar .nav-link.active .feather {
     color: inherit;
+    background-color: var(--indicator);
   }
   
   .sidebar-heading {
@@ -210,7 +216,7 @@ color: var(--body_color);
 
 #sidebar{
   background-color: var(--side_nav_color);
-  border-bottom-right-radius: 5em;
+  border-bottom-right-radius: 3em;
 }
 
 .nbar{
