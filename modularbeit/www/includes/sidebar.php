@@ -75,25 +75,9 @@
               </svg> <span class="ms-1 d-none d-xl-inline">Farbschema</span>
             </button>
           </li>
-            <li class="nav-item clock">
-                        <article class="clock">
-                            <div class="hours-container">
-                                <div class="hours"></div>
-                            </div>
-                            <div class="minutes-container">
-                                <div class="minutes"></div>
-                            </div>
-                            <div class="seconds-container">
-                                <div class="seconds"></div>
-                            </div>
-                        </article>
-                    </li>
-                </ul>
+         </ul>
       </div>
     </div>
-
-
-
 
     <!--Farbschema Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
