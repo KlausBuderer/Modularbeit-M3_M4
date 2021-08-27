@@ -24,7 +24,7 @@ $user = new User();
   <div class="container-fluid">
     <div class="col-xs-3 col-sm-3 col-md-3" style="max-width: 60%;"> 
        <a class="navbar-brand logo" href="#" >
-      <img src="/includes/images/logo.png" alt="" class="img-fluid">
+      <img src="/public/images/logo.png" alt="" class="img-fluid">
     </a>
   </div>
   <!-- Useranzeige -->
@@ -195,4 +195,4 @@ $user = new User();
       </div>
     </div>
 
-    <script src="/includes/js/avatar.js"></script>
+    <script src="/public/js/avatar.js"></script>

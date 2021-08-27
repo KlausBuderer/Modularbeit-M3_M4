@@ -19,7 +19,7 @@ class ElternuebersichtView
 
         $_SESSION['kinderListe'] = $this->kinder;
 
-        echo '<form id="myForm" action="/includes/eltern_uebersicht_template.php" method="post">';
+        echo '<form id="myForm" action="/public/eltern_uebersicht_template.php" method="post">';
         echo  '</form>';
         echo '<script type="text/javascript">';
         echo "document.getElementById('myForm').submit()";

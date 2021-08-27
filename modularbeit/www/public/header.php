@@ -16,10 +16,10 @@ require_once('config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="/includes/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
     
     <!-- Customized Style -->
-    <link rel="stylesheet" href="/includes/css/customized.css">
+    <link rel="stylesheet" href="/public/css/customized.css">
 
     <title>Mediengutschein</title>
 
@@ -33,7 +33,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 }
 
 ?>
-<script src="/includes/js/color.js"></script>
+<script src="/public/js/color.js"></script>
 <script type="text/javascript">
       (function() {
         initColor();

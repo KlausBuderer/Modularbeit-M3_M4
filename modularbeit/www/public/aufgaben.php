@@ -89,11 +89,11 @@ In diesem File werden die Aufgaben ausgegeben und bearbeitet.
   <div class="container-fluid bg-light text-dark p-5 rennbahn" id="rennbahn">
     <span class="display-6 ziel">Ziel</span>
     <span class="display-6 rennbahnTextSpieler"><?php echo $user->data()->username; ?></span>
-    <img id="Spieler" class="fortschrittSpieler" src="/includes/images/spieler_pony.png">
+    <img id="Spieler" class="fortschrittSpieler" src="/public/images/spieler_pony.png">
     <br>
     <hr>
     <span class="display-6 rennbahnTextComputer">Computer</span>
-    <img id="Computer" class="fortschrittComputer" src="/includes/images/spieler_gokart.png">
+    <img id="Computer" class="fortschrittComputer" src="/public/images/spieler_gokart.png">
 
   </div>
 </div>
@@ -107,8 +107,8 @@ In diesem File werden die Aufgaben ausgegeben und bearbeitet.
 </script>
 
 <!-- Aufgabenscript -->
-<script src="/includes/js/aufgaben.js"></script>
-<script src="/includes/js/script.js"></script>
+<script src="/public/js/aufgaben.js"></script>
+<script src="/public/js/script.js"></script>
 
 
 <?php include 'footer.php'; ?>

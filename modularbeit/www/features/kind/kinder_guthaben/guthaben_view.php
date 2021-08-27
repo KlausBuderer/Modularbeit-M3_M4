@@ -18,7 +18,7 @@ class GuthabenView
     public function showGuthaben()
     {
 
-        echo '<form id="myForm" action="/includes/guthaben.php" method="post">';
+        echo '<form id="myForm" action="/public/guthaben.php" method="post">';
         echo '<input type="hidden" name="guthaben" value="' . $this->guthaben . '">';
         echo '<input type="hidden" name="username" value="' . $this->username . '">';
         echo '<input type="hidden" name="punkte" value="' . $this->punkte . '">';

@@ -21,13 +21,13 @@ Hauptbild wenn sich ein Kind anmeldet
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card shadow-sm">
-                    <img src="/includes/images/mathematik_hauptseite.jpg" style="height: 18rem;" class="card-img-top">
+                    <img src="/public/images/mathematik_hauptseite.jpg" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body"  id="card1">
                         <p class="card-text">Verbessere deine Mathe Skills</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/includes/mathe_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/mathe_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -37,13 +37,13 @@ Hauptbild wenn sich ein Kind anmeldet
             <div class="col">
                 <div class="card shadow-sm">
 
-                    <img src="/includes/images/realien.png" style="height: 18rem;" class="card-img-top">
+                    <img src="/public/images/realien.png" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body" id="card2">
                         <p class="card-text">Werde ein Meister oder eine Meisterin in Realien</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/includes/realien_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/realien_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -53,13 +53,13 @@ Hauptbild wenn sich ein Kind anmeldet
             <div class="col">
                 <div class="card shadow-sm">
 
-                    <img src="/includes/images/deutsch.jpg" style="height: 18rem;" class="card-img-top">
+                    <img src="/public/images/deutsch.jpg" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body" id="card3">
                         <p class="card-text">Verbessere dein Deutsch</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/includes/deutsch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/deutsch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -69,13 +69,13 @@ Hauptbild wenn sich ein Kind anmeldet
             <div class="col">
                 <div class="card shadow-sm">
 
-                    <img src="/includes/images/englisch.jpg" style="height: 18rem;" class="card-img-top">
+                    <img src="/public/images/englisch.jpg" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body" id="card1">
                         <p class="card-text">Improve your english</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/includes/englisch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/englisch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ Hauptbild wenn sich ein Kind anmeldet
             <div class="col">
                 <div class="card shadow-sm">
 
-                    <img src="/includes/images/franzoesisch.jpg" style="height: 18rem;" class="card-img-top">
+                    <img src="/public/images/franzoesisch.jpg" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body" id="card2">
                         <p class="card-text">apprendre le français</p>
@@ -101,7 +101,7 @@ Hauptbild wenn sich ein Kind anmeldet
             <div class="col">
                 <div class="card shadow-sm">
 
-                    <img src="/includes/images/lernfortschritt.jpg" style="height: 18rem;" class="card-img-top">
+                    <img src="/public/images/lernfortschritt.jpg" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body" id="card3">
                         <p class="card-text">Hier findest du deinen Lernforschritt</p>

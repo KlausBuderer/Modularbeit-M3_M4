@@ -1,7 +1,7 @@
 <!-- Sidebar Kinder -->
 
-<link href="/includes/css/clock.css" rel="stylesheet">
-<script src="/includes/js/clock.js"></script>
+<link href="/public/css/clock.css" rel="stylesheet">
+<script src="/public/js/clock.js"></script>
 
 
 <div class="container-fluid overflow-hidden haupt">
@@ -14,34 +14,34 @@
         <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-md-grow-0 flex-grow-1 mb-md-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu" style="margin-left: 1%;">
 
           <li class="nav-item sidebar-button">
-            <a id="sb1" class="nav-link text" href="/includes/kinder_uebersicht_template.php">
+            <a id="sb1" class="nav-link text" href="/public/kinder_uebersicht_template.php">
             <img class="img-fluid sidebar-icon" src="images/sidebar/menu.png" alt="">
              <span class="ms-1 d-none d-xl-inline"> Übersicht</span>
             </a>
           </li>
 
           <li class="nav-item sidebar-button">
-            <a id="sb2" class="nav-link text" href="/includes/mathe_uebersicht_template.php">
+            <a id="sb2" class="nav-link text" href="/public/mathe_uebersicht_template.php">
               <img class="img-fluid sidebar-icon" src="images/sidebar/mathe.png" alt="">
               <span class="ms-1 d-none d-xl-inline"> Mathematik</span>
             </a>
           </li>
 
           <li class="nav-item sidebar-button">
-            <a id="sb3" class="nav-link text" href="/includes/realien_uebersicht_template.php">
+            <a id="sb3" class="nav-link text" href="/public/realien_uebersicht_template.php">
             <img class="img-fluid sidebar-icon" src="images/sidebar/planet-earth.svg" alt=""> <span class="ms-1 d-none d-xl-inline"> Realien</span>
             </a>
           </li>
 
           <li class="nav-item sidebar-button">
-            <a id="sb6" class="nav-link text" data-bs-toggle="tooltip" data-bs-placement="right" title="In diesem Release noch nicht implementiert" data-bs-content="And here's some amazing content. It's very engaging. Right?" href="/includes/deutsch_uebersicht_template.php">
+            <a id="sb6" class="nav-link text" data-bs-toggle="tooltip" data-bs-placement="right" title="In diesem Release noch nicht implementiert" data-bs-content="And here's some amazing content. It's very engaging. Right?" href="/public/deutsch_uebersicht_template.php">
             <img class="img-fluid sidebar-icon" src="images/sidebar/deutsche.png" alt=""> <span class="ms-1 d-none d-xl-inline">Deutsch</span>
             </a>
           </li>
 
 
           <li class="nav-item sidebar-button">
-            <a id="sb4" class="nav-link text" href="/includes/englisch_uebersicht_template.php">
+            <a id="sb4" class="nav-link text" href="/public/englisch_uebersicht_template.php">
             <img class="img-fluid sidebar-icon" src="images/sidebar/englische-sprache.png" alt=""> <span class="ms-1 d-none d-xl-inline">Englisch</span>
             </a>
           </li>
@@ -56,6 +56,6 @@
       </div>
     </div>
 
-    <script src="/includes/js/sidebar.js"></script>
+    <script src="/public/js/sidebar.js"></script>
 
     <div class="col-md-9 col-lg-10">

@@ -17,7 +17,7 @@ class NichtAufgebenView
     public function ausgabe()
     {
         // Aufruf von Nichtaufgebenview und Übergabe eines zufällig gewählten Ermunterungsspruch
-        echo '<form id="myForm" action="/includes/weiterso.php" method="post">';
+        echo '<form id="myForm" action="/public/weiterso.php" method="post">';
         echo '<input type="hidden" name="text" value="' . $this->text[$this->randomNbr] . '">';
 
 
