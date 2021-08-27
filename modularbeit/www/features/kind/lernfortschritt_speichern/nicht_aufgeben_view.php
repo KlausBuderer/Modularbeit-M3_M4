@@ -11,7 +11,7 @@ class NichtAufgebenView
     public function __construct()
     {
         $this->arraylength = sizeof($this->text);
-        $this->randomNbr = random_int(0, $this->arraylength);
+        $this->randomNbr = random_int(0, $this->arraylength - 1);
     }
 
     public function ausgabe()
