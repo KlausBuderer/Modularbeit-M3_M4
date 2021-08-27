@@ -1,8 +1,6 @@
 
 
-//Scheme struktur 0: Body 1:Sidebar/navabar 2:cardbody 3:useranzeige 4:Titel
-
-
+//Farbschemastruktur 0: Body 1:Sidebar/navabar 2:cardbody 3:useranzeige 4:Titel
 var colors = {
  blue : ['#f2f7f7', '#6FB3B8', '#BADFE7', '#C2EDCE', '#F6F6F2', 'blue'],
 rosa : ['#FAFAFB', '#EFB7BA', '#E5C0C8', '#C2EDCE', '#F6F6F2', 'rosa'],
@@ -24,10 +22,7 @@ function initColor() {
 }
 }
 
-
-
-
-
+//Schreibt das gewählte Farbschema in CSS Variablen
   function coloring(colors) {
 
     root.style.setProperty('--body_color', colors[0]);
@@ -40,7 +35,7 @@ function initColor() {
 
   }
 
-
+//Schreibt das gewählte Farbschema in ein Cookie
   function setCookie(color, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -48,7 +43,7 @@ function initColor() {
     document.cookie = "colorScheme" + "=" + color + ";" + expires + ";path=/";
   } 
 
-
+//Entnimmt dem Cookie das zuletzt gewählte Farbschema
   function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);

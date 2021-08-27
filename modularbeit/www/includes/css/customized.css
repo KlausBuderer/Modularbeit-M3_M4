@@ -21,21 +21,55 @@
  * Sidebar
  */
 
+.text{
+  margin-top: 1.5rem;
+  font-size: x-large;
+  border-radius: 5%;
+  color:white;
+
+}
+
+.text:hover{
+
+font-size: xx-large;
+color: var(--body_color);
+
+}
+
+#sidebar{
+  background-color: var(--side_nav_color);
+  border-bottom-right-radius: 3em;
+}
+
+.nbar{
+  background-color: var(--side_nav_color);
+}
+
+.logo{
+  color: #EDFAFD;
+}
+
+
+ .sidebar-icon{
+   max-width: 25px;
+   max-height: 25px;
+ }
+
   .sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 100; /* Behind the navbar */
-    padding: 48px 0 0; /* Height of navbar */
+    z-index: 100; 
+    padding: 48px 0 0; 
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   } 
   
-  @media (max-width: 767.98px) {
+   @media (max-width: 767.98px) {
     .sidebar {
       top: 5rem;
     }
-  }
+  } 
   
   .sidebar-sticky {
     position: sticky;
@@ -43,7 +77,7 @@
     height: calc(100vh - 48px);
     padding-top: .5rem;
     overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    overflow-y: auto; 
   }
   
   .sidebar .nav-link {
@@ -77,6 +111,7 @@
   .fortschrittSpieler {
     height: 50px;
     width: 50px;
+    transition: margin-left 3s ease-in-out;
 
 }
 
@@ -84,6 +119,7 @@
 .fortschrittComputer {
     height: 50px;
     width: 50px;
+    transition: margin-left 3s ease-in-out;
 }
 
 .rennbahn{
@@ -198,34 +234,6 @@ color: #135589;
 }
 
 
-/*Sidebar*/
-.text{
-  margin-top: 1.5rem;
-  font-size: x-large;
-  border-radius: 5%;
-  color:white;
-
-}
-
-.text:hover{
-
-font-size: xx-large;
-color: var(--body_color);
-
-}
-
-#sidebar{
-  background-color: var(--side_nav_color);
-  border-bottom-right-radius: 3em;
-}
-
-.nbar{
-  background-color: var(--side_nav_color);
-}
-
-.logo{
-  color: #EDFAFD;
-}
 
 
 /*main*/

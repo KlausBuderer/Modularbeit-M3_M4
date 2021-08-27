@@ -23,12 +23,14 @@ In diesem File werden die Aufgaben ausgegeben und bearbeitet.
 <!-- Titel -->
   <h1 class="text-center fw-lighter display-2">Aufgaben</h1>
   <hr>
+  
 <!-- Startbild der Aufgaben -->
   <div id="start_screen" class="container-fluid bg-light text-dark p-5 quiz_start">
     <h1>Herzlich Willkommen!</h1>
     <p></p>
     <p><button class="start btn btn-primary btn-lg" role="button">Jetzt starten</button></p>
   </div>
+
 <!-- Aufgabenbild -->
   <div id="question" class="question container-fluid bg-light text-dark p-5" style="display:none;">
     <div class="d-grid gap-2 d-xs-flex justify-content-xs-end d-md-flex justify-content-md-end">
@@ -60,6 +62,7 @@ In diesem File werden die Aufgaben ausgegeben und bearbeitet.
       </div>
     </div>
   </div>
+
 <!-- Augabenendebild mit Resultatsanzeige -->
   <div id="over" class="container-fluid bg-light text-dark p-5 quiz_end" style="display: none;">
     <h1>Lerneinheit vorbei!</h1>
@@ -96,13 +99,15 @@ In diesem File werden die Aufgaben ausgegeben und bearbeitet.
 </div>
 
 <!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+
 <!-- Aufgabeübergabe von Server an Javascript -->
 <script type="text/javascript">
   var data = (<?php echo $lerneinheit; ?>);
 </script>
+
 <!-- Aufgabenscript -->
-<script src="/includes/js/quiz.js"></script>
+<script src="/includes/js/aufgaben.js"></script>
 <script src="/includes/js/script.js"></script>
 
 

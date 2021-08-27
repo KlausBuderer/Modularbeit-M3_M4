@@ -1,13 +1,6 @@
 <?php
 
-
-
-
-
-
-
-
-
+//PDF Generierung
 
 require_once'fpdf/fpdf.php';
 Header('Content-Type: application/pdf; charset=utf-8'); 
