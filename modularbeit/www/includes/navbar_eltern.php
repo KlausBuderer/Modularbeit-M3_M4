@@ -22,8 +22,8 @@ $user = new User();
     </a>
 <!-- Useranzeige -->
     <div class="dropdown">
-      <button class="btn btn-outline-secondary d-flex justify-content-center d-md-table mx-auto dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" class="rounded-circle me-2" width="40" height="40">
+      <button class="btn btn-outline-secondary d-flex justify-content-center d-md-table mx-auto dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="images/avatars/Placeholder.png" alt="" class="rounded-circle me-2" width="40" height="40">
         <?php echo $user->data()->username; ?>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">

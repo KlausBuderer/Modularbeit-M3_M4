@@ -10,6 +10,8 @@ $kindsId = $_POST['kindsId'];
 $gutscheine = $_POST['guthaben'];
 $punkte = $_POST['punkte'];
 
+
+
 ?>
 
 <!-- Mediengutscheinverwaltung -->
@@ -50,13 +52,19 @@ $punkte = $_POST['punkte'];
                             </div>
                             <div class="input-group input-group-sm mb-3 input-fenster">
                                 <div class="h6" style="margin-right: 2rem;">Stunden</div>
-                                <input type="number" name="stundenPdf" class="form-control" min="0" max="<?= $gutscheine ?>">
+                                <input id="h" type="number" name="stundenPdf" class="form-control" min="0" max="<?= $gutscheine ?>">
+                                <input type="hidden" name="kindsname" value=<?= $kindsname ?>>
+                                <input type="hidden" name="kindsId" value=<?= $kindsId ?>>
+                                <input type="hidden" name="guthaben" value=<?= $gutscheine ?>>
+                                <input type="hidden" name="punkte" value=<?= $punkte ?>>
 
                             </div>
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Abbrechen</button>
-                                <button type="submit" name="pdf" class="btn btn-outline-secondary submit-button">Drucken</button>
+                                <button type="submit" name="pdf" class="btn btn-outline-secondary submit-button" onclick="printPdf();">Drucken</button>
+                                <a id="pdf" href="pdfGutschein.php?h=stunden" target="_blank"></a>
+
                             </div>
                         </div>
                     </div>
@@ -121,56 +129,57 @@ $punkte = $_POST['punkte'];
                 </div>
             </form>
 
-
         </div>
+        <a type="button" href="eltern_uebersicht_template.php" class="btn btn-outline-secondary back-button">Zurück</a>
     </div>
-
-
-    <div class="row g-3 input-fenster">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Zurück
-        </button>
-
-    </div>
-
 
     <br>
-
-
     </div>
 
 
-    <a type="button" href="eltern_uebersicht_template.php" class="btn btn-outline-secondary back-button">Zurück</a>
+
 
     </div>
 
     <?php require_once 'footer.php';
-
     require_once '../features/eltern/set_guthaben/SetGuthabenController.php';
     require_once '../features/eltern/druckePdf/druckeController.php';
 
     if (isset($_POST["hinzu"])) {
         $stunden = $_POST["stundenHinzu"];
-        guthabenHinzufuegen($kindsId, $stunden, $kindsname, $user->data()->id);
+        $kindsId = $_POST['kindsId'];
+        $kindsname = $_POST['kindsname'];
+        $guthaben = $_POST['guthaben'];
+        $punkte = $_POST['punkte'];
+
+        guthabenHinzufuegen($kindsId, $guthaben + $stunden, $kindsname, $user->data()->id, $punkte);
+
         unset($_POST['hinzu']);
     }
 
     if (isset($_POST["pdf"])) {
         $stunden = $_POST["stundenPdf"];
-        gutscheinDrucken($kindsId, $stunden, $gutscheine, $kindsname, $user->data()->id);
+        $kindsId = $_POST['kindsId'];
+        $kindsname = $_POST['kindsname'];
+        $guthaben = $_POST['guthaben'];
+        $punkte = $_POST['punkte'];
+
+        gutscheinDrucken($kindsId, $stunden, $guthaben, $punkte, $kindsname, $user->data()->id);
+
         unset($_POST['pdf']);
     }
 
-    function gutscheinDrucken($kindsId, $stunden, $guthaben, $kindsname, $userid)
+    function gutscheinDrucken($kindsId, $stunden, $guthaben, $punkte, $kindsname, $userid)
     {
-        new DruckePdf($kindsname, $stunden, $guthaben, $kindsId,  $userid);
+        new DruckePdf($kindsname, $stunden, $guthaben, $punkte, $kindsId,  $userid);
     }
 
-    function guthabenHinzufuegen($kindsId, $neuGuthaben, $kindsname, $userid)
+    function guthabenHinzufuegen($kindsId, $neuGuthaben, $kindsname, $userid, $punkte)
     {
-        new SetGuthabenController($kindsname, $kindsId, $neuGuthaben, $userid);
+        new SetGuthabenController($kindsname, $kindsId, $neuGuthaben, $userid, $punkte);
     }
+
 
     ?>
     <script src="/includes/js/script.js"></script>
+    <script src="/includes/js/mg_verwaltung.js"></script>

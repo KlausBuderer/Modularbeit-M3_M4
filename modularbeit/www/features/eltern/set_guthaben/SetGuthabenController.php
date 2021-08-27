@@ -7,16 +7,16 @@ use Model\Lerneinheit\Guthaben;
 
 class setGuthabenController{
 
-public function __construct($kindsname, $kindsId, $neuGuthaben, $userId) {
+public function __construct($kindsname, $kindsId, $neuGuthaben, $userId, $punkte) {
 
     //Speichen des neuen Guthabens
     $set = new Guthaben($kindsId);
     $set->setGuthaben($neuGuthaben);
 
-    print_r($neuGuthaben);
-    print_r($kindsId);
       //Zurück in die Mediengutscheinsverwaltung mit neuem Guthaben
-     $back = new ElternuebersichtController($userId);
+    
+     $view = new MediengutscheinVerwaltungView($kindsname, $kindsId, $neuGuthaben, $punkte);
+     $view->showGuthaben();
      
 }
 
