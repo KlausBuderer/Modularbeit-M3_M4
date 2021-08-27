@@ -2,7 +2,7 @@
 
 var page = window.location.pathname.split("/").pop();
 
-//Sidebar Text vergrössern anhand offener Page
+//Sidebar Text vergrössern anhand geöffneter Page
 switch (page) {
     case 'kinder_uebersicht_template.php':
         document.getElementById("sb1").style.fontSize = "2.2vw";
