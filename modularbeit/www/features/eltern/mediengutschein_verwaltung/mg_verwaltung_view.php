@@ -19,7 +19,7 @@ public function __construct($kindsname, $kindsId, $guthaben, $punkte) {
 //Ruft Mediengutscheinverwaltungview auf und übergibt das aktuelle Guthaben und die aktuellen Punkte
 public function showGuthaben(){
 
-    echo '<form id="myForm" action="/includes/mediengutschein.php" method="post">';
+    echo '<form id="myForm" action="/public/mediengutschein.php" method="post">';
 
     echo '<input type="hidden" name="kindsname" value="'. $this->kindsname.'">';
     echo '<input type="hidden" name="kindsId" value="'. $this->kindsId.'">';

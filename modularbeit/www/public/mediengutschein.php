@@ -181,5 +181,5 @@ $punkte = $_POST['punkte'];
 
 
     ?>
-    <script src="/includes/js/script.js"></script>
-    <script src="/includes/js/mg_verwaltung.js"></script>
+    <script src="/public/js/script.js"></script>
+    <script src="/public/js/mg_verwaltung.js"></script>

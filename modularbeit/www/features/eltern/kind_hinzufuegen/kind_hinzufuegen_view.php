@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <?php
-    require_once('../../../includes/navbar_eltern.php');
-    require_once('../../../includes/sidebar_eltern.php');
-    require_once('../../../includes/header.php');
+    require_once('../../../public/navbar_eltern.php');
+    require_once('../../../public/sidebar_eltern.php');
+    require_once('../../../public/header.php');
     $lname = $user->data()->lname;
     $passwort = 'willkommen'
     ?>
@@ -84,6 +84,6 @@
     </div>
 </body>
 <?php
-require_once('../../../includes/footer.php');
+require_once('../../../public/footer.php');
 ?>
 </html>

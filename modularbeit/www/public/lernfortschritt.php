@@ -9,10 +9,10 @@ $kindsname = $_POST['kindsname'];
 
 ?>
 
-<!-- <link rel="stylesheet" href="includes/datatables/DataTables-1.10.25/css/dataTables.bootstrap5.min.css">  
-<script src= '/includes/js/jquery-3.5.1.min.js'> </script> 
-<script src= '/includes/js/jquery.dataTables.min.js'> </script> 
-<script src= '/includes/datatables/DataTables-1.10.25/js/dataTables.bootstrap5.min.js'> </script> 
+<!-- <link rel="stylesheet" href="public/datatables/DataTables-1.10.25/css/dataTables.bootstrap5.min.css">  
+<script src= '/public/js/jquery-3.5.1.min.js'> </script> 
+<script src= '/public/js/jquery.dataTables.min.js'> </script> 
+<script src= '/public/datatables/DataTables-1.10.25/js/dataTables.bootstrap5.min.js'> </script> 
         
 <script>
     $(document).ready(function() {

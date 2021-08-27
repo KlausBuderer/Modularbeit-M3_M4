@@ -1,8 +1,8 @@
 
 <?php
-require_once('../../../includes/navbar_eltern.php');
-require_once('../../../includes/sidebar_eltern.php');
-require_once('../../../includes/header.php');
+require_once('../../../public/navbar_eltern.php');
+require_once('../../../public/sidebar_eltern.php');
+require_once('../../../public/header.php');
 
 $status = $_POST['status'];
 $fname = $_POST['fname'];
@@ -29,10 +29,10 @@ if ($status == true) {
 }
 ?>
 
-<a type="button" href="/includes/eltern_uebersicht_template.php" class="btn btn-outline-secondary">Zurück</a>
+<a type="button" href="/public/eltern_uebersicht_template.php" class="btn btn-outline-secondary">Zurück</a>
 </div>
 
 
 <?php
-require_once('../../../includes/footer.php');
+require_once('../../../public/footer.php');
 ?>

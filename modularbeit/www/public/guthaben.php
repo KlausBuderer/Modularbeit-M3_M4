@@ -27,7 +27,7 @@ $punkte = $_POST['punkte'];
 
     <p>Sehr gut, weiter so...</p>
 
-    <p><a href="/includes/kinder_uebersicht_template.php" class="start btn btn-primary btn-lg" role="button">Weiter</a></p>
+    <p><a href="/public/kinder_uebersicht_template.php" class="start btn btn-primary btn-lg" role="button">Weiter</a></p>
   </div>
 
 </div>

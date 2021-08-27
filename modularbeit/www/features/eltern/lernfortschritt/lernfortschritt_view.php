@@ -19,7 +19,7 @@ class LernfortschrittView
     {
 
         $_SESSION['lernfortschrittTbl'] = $this->lernfortschritt;
-        echo '<form id="myForm" action="/includes/lernfortschritt.php" method="post">';
+        echo '<form id="myForm" action="/public/lernfortschritt.php" method="post">';
 
 
         echo '<input type="hidden" name="kindsname" value="'. $this->kindsname.'">';
