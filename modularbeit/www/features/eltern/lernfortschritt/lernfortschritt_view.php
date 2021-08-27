@@ -28,11 +28,6 @@ class LernfortschrittView
            echo '<script type="text/javascript">';
              echo "document.getElementById('myForm').submit()";
          echo '</script>';
-    } 
 
-        echo  '</form>';
-        echo '<script type="text/javascript">';
-        echo "document.getElementById('myForm').submit()";
-        echo '</script>';
     }
 }

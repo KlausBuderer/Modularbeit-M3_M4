@@ -42,7 +42,7 @@ $kinder = $_SESSION['kinderListe'];
     echo   ' <li class="list-group-item d-flex justify-content-between">';
     echo       $kind[0];
     echo   ' <div class="dropdown">';
-    echo        '<button class="btn btn-outline-secondary d-flex justify-content-center d-md-table mx-auto dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; border-color: transparent;">';
+    echo        '<button class="btn btn-outline-secondary d-flex justify-content-center d-md-table mx-auto dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; border-color: transparent;">';
     echo        '<img src="images/three-dots.svg" alt="Menü">';
     echo       ' </button>';
 
