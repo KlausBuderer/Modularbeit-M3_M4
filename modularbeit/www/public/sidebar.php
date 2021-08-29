@@ -47,7 +47,7 @@
           </li>
 
           <li class="nav-item sidebar-button">
-            <a id="sb4" class="nav-link text" href="/public/franz_uebersicht_template.php">
+            <a id="sb7" class="nav-link text" href="/public/franz_uebersicht_template.php">
             <img class="img-fluid sidebar-icon" src="images/sidebar/frankreich.png" alt=""> <span class="ms-1 d-none d-xl-inline">Französisch</span>
             </a>
           </li>

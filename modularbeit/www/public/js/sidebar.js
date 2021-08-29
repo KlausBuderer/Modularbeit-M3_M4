@@ -22,6 +22,9 @@ switch (page) {
         case 'deutsch_uebersicht_template.php':
         document.getElementById("sb6").style.fontSize = "2.2vw"; 
         break;
+        case 'franz_uebersicht_template.php':
+            document.getElementById("sb7").style.fontSize = "2.2vw"; 
+            break;
 
     default:
         break;
