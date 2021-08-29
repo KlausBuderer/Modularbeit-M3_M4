@@ -1,7 +1,7 @@
 <?php
-require_once('../../../includes/header.php');
-require_once('../../../includes/navbar_eltern.php');
-require_once('../../../includes/sidebar_eltern.php');
+require_once('../../../public/header.php');
+require_once('../../../public/navbar_eltern.php');
+require_once('../../../public/sidebar_eltern.php');
 require_once('../../../model/benutzerverwaltung/setkindkonto.php');
 
 // Ermittelter Werte (ElternID, angemeldeter Benutzer

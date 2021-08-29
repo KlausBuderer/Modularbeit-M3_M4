@@ -15,7 +15,6 @@ include_once "GetLerninhalt.php";
 class Dreisatz implements Produceble
 {
     protected $stufe;
-    private $result;
 
     public function __construct($stufe)
     {
