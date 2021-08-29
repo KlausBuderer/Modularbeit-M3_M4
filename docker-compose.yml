@@ -11,12 +11,30 @@
 #
 version: '3'
 services:
+
+  # Lokale MySQL Datenbank
+  mysql:
+    container_name: modularbeit-mariadb
+    image: mariadb:10.4
+    environment:
+      MYSQL_ROOT_PASSWORD: P99F-TBtgm2RgujbPVS!
+      MYSQL_DATABASE: itwisse_lernplattform
+      MYSQL_USER: itwisse_lpf
+      MYSQL_PASSWORD: P99F-TBtgm2RgujbPVS!
+      
+    ports:
+      - '3306:3306'
+    volumes:
+      - ./modularbeit/mysql/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      
   # PHP Erweiterung Apache Webserver
   php:
     container_name: modularbeit-php
+
     image: 'bitnami/php-fpm:7.4'
     depends_on:
       - redis
+      - mysql
     volumes:
       - './modularbeit/www/:/app:delegated'
       - './modularbeit/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro'
@@ -29,6 +47,7 @@ services:
       - '8000:8080'
       - '443:8443'
     depends_on:
+      - mysql
       - php
     volumes:
       - './modularbeit/www/:/app:delegated'
