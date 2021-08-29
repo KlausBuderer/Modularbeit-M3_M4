@@ -91,7 +91,8 @@ Hauptbild wenn sich ein Kind anmeldet
                         <p class="card-text">apprendre le français</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Öffnen</button>
+                            <a href="/public/franz_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                          
                             </div>
                         </div>
                     </div>
