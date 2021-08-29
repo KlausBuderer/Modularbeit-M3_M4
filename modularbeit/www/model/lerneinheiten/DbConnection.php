@@ -4,8 +4,8 @@ namespace Model\Lerneinheit;
 
 class DbConnection
 {
-
-  private $dbServerName = 'itwisse.mysql.db.hostpoint.ch';
+// Remote   private $dbServerName = 'itwisse.mysql.db.hostpoint.ch';
+  private $dbServerName = '172.0.0.1';
   private $dbUserName = 'itwisse_lpf';
   private $dbPassword = 'P99F-TBtgm2RgujbPVS!';
   private $dbName = 'itwisse_lernplattform';
