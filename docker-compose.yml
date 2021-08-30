@@ -19,14 +19,16 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: P99F-TBtgm2RgujbPVS!
       MYSQL_DATABASE: itwisse_lernplattform
-      MYSQL_USER: itwisse_lpf
-      MYSQL_PASSWORD: P99F-TBtgm2RgujbPVS!
-      
+      MYSQL_ROOT_HOST: '%'  # needs to be enclosed with quotes
+      #MYSQL_USER: itwisse_lpf
+      #MYSQL_PASSWORD: P99F-TBtgm2RgujbPVS!
+    
     ports:
       - '3306:3306'
     volumes:
       - ./modularbeit/mysql/dump.sql:/docker-entrypoint-initdb.d/dump.sql
-      
+
+
   # PHP Erweiterung Apache Webserver
   php:
     container_name: modularbeit-php

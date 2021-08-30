@@ -1,5 +1,5 @@
-
 <?php
+require_once('../../../public/header.php');
 require_once('../../../public/navbar_eltern.php');
 require_once('../../../public/sidebar_eltern.php');
 require_once('../../../public/header.php');
@@ -8,7 +8,6 @@ $status = $_POST['status'];
 $fname = $_POST['fname'];
 
 ?>
-
 
 <br>
 <br>
