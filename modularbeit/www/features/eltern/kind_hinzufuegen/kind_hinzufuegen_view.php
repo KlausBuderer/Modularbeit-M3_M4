@@ -4,8 +4,8 @@
     require_once('../../../public/navbar_eltern.php');
     require_once('../../../public/sidebar_eltern.php');
     require_once('../../../public/header.php');
+    require_once('../../../users/classes/User.php');
     $lname = $user->data()->lname;
-    $passwort = 'willkommen'
     ?>
 
 <head>
@@ -15,12 +15,13 @@
 
 <body>
     <div class='container'>
-        <h1>Neues Kind erfassen</h1>
+       <h1>Neues Kind erfassen</h1>
         <p>Hier haben Sie die Möglichkeit Ihr Kind zu erfassen.</p>
         <form action="kind_hinzufuegen_controller.php" method="post">
             <div>
-                <input type="radio" name="spam" value="M" checked>Mädchen
-                <input type="radio" name="spam" value="J" id="gender">Junge<br>
+                <input type="radio" name="gender" value="M" checked>Mädchen
+                <input type="radio" name="gender" value="J" id="gender">Junge<br>
+                <input type="hidden" name="aktion" value="speichern">
                 <br>
             </div>
             <div class="form-group">
@@ -43,7 +44,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input name="email" type="text" class="form-control" id="email" required
+                <input name="email" type="email" class="form-control" id="email" required
                 data-toggle="tooltip" data-placement="top" title="Bitte geben Sie eine E-Mail Adresse ein, im Falle wenn Sie das Passwort zurücksetzen möchten / müssen.">
             </div>
             <label>
@@ -79,10 +80,21 @@
                 </label>
             </div>
         </div>
-            <button type="submit" class="form-control">Kind erstellen</button>
+        <?php
+        if (isset($_POST['aktion']) and $_POST['aktion']=='speichern') {
+   
+//     if (isset($_POST['vorname']) and $vorname = 'Hans') {
+        echo "<h1>Es liegen keine Daten vor </h1>";
+   
+    }
+
+?>
+        <button type="submit" action="" class="form-control" value="speichern">Kind erstellen</button>
+
+
        </form>
     </div>
-</body>
+ </body>
 <?php
 require_once('../../../public/footer.php');
 ?>
