@@ -17,13 +17,13 @@ if ($status == true) {
 
 
     echo '<div id="start_screen" class="container-fluid bg-light text-dark p-5">';
-    echo '<h1>Kindkonto für <?= $fname; ?> wurde erfolgreich angelegt.</h1>';
+    echo '<h1>Kindkonto wurde erfolgreich angelegt.</h1>';
 } else {
     echo '<div class="container">';
 
 
     echo '<div id="start_screen" class="container-fluid bg-light text-dark p-5">';
-    echo '<h1>Kindkonto für <?= $fname; ?> konnte nicht angelegt werden.</h1>';
+    echo '<h1>Kindkonto für konnte nicht angelegt werden.</h1>';
 
 }
 ?>

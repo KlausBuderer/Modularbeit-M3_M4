@@ -8,12 +8,25 @@ require_once('../../../model/benutzerverwaltung/setkindkonto.php');
 $eltern_id = $user->data()->id;
 
 // Übernahme aus Formular
-$username = $_POST['username'];
-$email = $_POST['email'];
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$password = $_POST['password'];
-$password = $_POST['password'];
+$username = test_input($_POST['username']);
+$email = test_input($_POST['email']);
+$fname = test_input($_POST['fname']);
+$lname = test_input($_POST['lname']);
+$password = test_input($_POST['password']);
+
+//Eingabevalidierung
+function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   $data = preg_replace("/=/", "=\"\"", $data);
+   $data = preg_replace("/&quot;/", "&quot;\"", $data);
+   $tags = "/&lt;(\/|)(\w*)(\ |)(\w*)([\\\=]*)(?|(\")\"&quot;\"|)(?|(.*)?&quot;(\")|)([\ ]?)(\/|)&gt;/i";
+   $replacement = "<$1$2$3$4$5$6$7$8$9$10>";
+   $data = preg_replace($tags, $replacement, $data);
+   $data = preg_replace("/=\"\"/", "=", $data);
+   return $data;
+ }
 
 
 if (isset($_POST['gender']))
@@ -45,4 +58,7 @@ echo  '</form>';
 echo '<script type="text/javascript">';
 echo "document.getElementById('myForm').submit()";
 echo '</script>';
+
+
+
 

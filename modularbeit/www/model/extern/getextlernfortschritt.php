@@ -1,5 +1,8 @@
 <?php
-require_once'../../model/lerneinheiten/dbconnection.php';
+namespace Model\Lerneinheit;
+use Model\Lerneinheit\DbConnection;
+
+include_once '../../model/lerneinheiten/DbConnection.php';
 
 class GetLernfortschrittExt{
 
