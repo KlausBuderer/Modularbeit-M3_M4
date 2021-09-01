@@ -52,7 +52,7 @@ $punkte = $_POST['punkte'];
                             </div>
                             <div class="input-group input-group-sm mb-3 input-fenster">
                                 <div class="h6" style="margin-right: 2rem;">Stunden</div>
-                                <input id="h" type="number" name="stundenPdf" class="form-control" min="0" max="<?= $gutscheine ?>">
+                                <input id="h" type="number" name="stundenPdf" class="form-control" min="1" max="<?= $gutscheine ?>">
                                 <input type="hidden" name="kindsname" value=<?= $kindsname ?>>
                                 <input type="hidden" name="kindsId" value=<?= $kindsId ?>>
                                 <input type="hidden" name="guthaben" value=<?= $gutscheine ?>>
