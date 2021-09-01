@@ -18,7 +18,7 @@ class CreateKindKonto
     private $status;
 
 
-    public function __construct($username, $fname, $lname, $email, $password, $eltern_id)
+    public function __construct($username, $fname, $lname, $email, $password, $eltern_id, $gender)
     {
         $this->username = $username;
         $this->fname = $fname;
@@ -27,16 +27,15 @@ class CreateKindKonto
         $this->password = $password;
         $this->user = new User();
         $this->eltern_id = $eltern_id;
+        $this->gender = $gender;
         $this->db = DB::getInstance();
 
 
     }
 
-// Funktion zum Anlegen eines Kind Kontos inklusive Befüllung Zusatztabelle
+// Nachfolgend Funktionen zum Anlegen eines Kind Kontos inklusive Befüllung Zusatztabellen
 
-
-
-    public function setkontokind($username, $fname, $lname, $email, $password)
+    public function setkontokind($username, $fname, $lname, $email, $password, $gender)
     {
         $theNewId = $this->user->create(array(
             'username' => Input::get('username'),
@@ -51,7 +50,8 @@ class CreateKindKonto
             'join_date' => date('Y-m-d H:i:s'),
             'vericode' => randomstring(15),
             'vericode_expiry' => date('Y-m-d H:i:s'),
-            'oauth_tos_accepted' => true
+            'oauth_tos_accepted' => true,
+            'gender' => Input::get('gender')
         ));
 
 
@@ -59,7 +59,7 @@ class CreateKindKonto
         $this->db->insert("le_eltern_kind_matches", ["kind_id" => "$theNewId", "eltern_id" => "$this->eltern_id"]);
 
         // Erstellung Profil
-        $this->db->insert("profiles", ["user_id" => "$theNewId", "bio" => "Kind", "kind" => "1", "geschlecht" => "m", "le_englisch" => "X", "le_deutsch" => "X", "le_mathematik" => "X", "le_realien" => "X", "le_bld_profil" => "profil", "le_bld_avatar" => "avatar", "punkte" => 0, "guthaben" => 0]);
+        $this->db->insert("profiles", ["user_id" => "$theNewId", "bio" => "Kind", "kind" => "1", "geschlecht" => "$gender", "le_englisch" => "X", "le_deutsch" => "X", "le_mathematik" => "X", "le_realien" => "X", "le_bld_profil" => "profil", "le_bld_avatar" => "avatar", "punkte" => 0, "guthaben" => 0]);
 
         // Anpassung Permission ID
         $connection = new DbConnection();

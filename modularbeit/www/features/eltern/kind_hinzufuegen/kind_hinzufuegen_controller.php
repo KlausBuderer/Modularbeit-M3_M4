@@ -13,21 +13,28 @@ $email = $_POST['email'];
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $password = $_POST['password'];
+$password = $_POST['password'];
 
-/*
-if( isset($_POST['m']) ) {
-    $gender = 'm';
-}
-elseif( isset($_POST['bla']) ) {
-    $gender = 'm';
-}
-*/
 
-// ................ACHTUNG Geschlecht muss noch übergbeen werden !  aus Formular...................
+if (isset($_POST['gender']))
+{
+
+   switch ($_POST['gender']) 
+   {
+
+      case 'M':   $gender = 'M';
+                         break;
+
+      case 'J':   $gender = 'J';
+                         break;
+
+   }
+} 
+
 // Verprüfung Formular / Benutzername / E-Mail
 
-$CreateKindKonto = new CreateKindKonto($username, $fname, $lname, $email, $password, $eltern_id);
-$CreateKindKonto->setkontokind($username, $fname, $lname, $email, $password, $eltern_id);
+$CreateKindKonto = new CreateKindKonto($username, $fname, $lname, $email, $password, $eltern_id, $gender);
+$CreateKindKonto->setkontokind($username, $fname, $lname, $email, $password, $eltern_id, $gender);
 
 echo '<form id="myForm" action="kind_hinzufuegen_erfolgreich.php" method="post">';
 
@@ -38,5 +45,4 @@ echo  '</form>';
 echo '<script type="text/javascript">';
 echo "document.getElementById('myForm').submit()";
 echo '</script>';
-
 
