@@ -28,7 +28,7 @@ if ($status == true) {
 }
 ?>
 
-<a type="button" href="/public/eltern_uebersicht_template.php" class="btn btn-outline-secondary">Zurück</a>
+<a type="button" href="/index.php" class="btn btn-outline-secondary">Zurück</a>
 </div>
 
 
