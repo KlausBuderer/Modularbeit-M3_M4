@@ -65,7 +65,7 @@ $kinder = $_SESSION['kinderListe'];
   <br>
   <!-- Button für weiters Kind hinzufügen -->
   <div class="d-grid gap-2">
-    <a type="button" href="../features/eltern/kind_hinzufuegen/kind_hinzufuegen_view.php" class="btn btn-outline-secondary">Kind hinzufügen</a>
+    <a type="button" href="kind_hinzufuegen_view.php" class="btn btn-outline-secondary">Kind hinzufügen</a>
   </div>
 
   <?php require('footer.php');
