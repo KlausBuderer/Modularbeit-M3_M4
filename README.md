@@ -1,5 +1,5 @@
 
-# <img src="/mediengutschein/www/public/images/Logo.png" height=150 alt="Mediengutschein" />
+# <img src="./mediengutschein/www/public/images/Logo.png" height=150 alt="Mediengutschein" />
 
 # Mediengutschein
 ## Development
