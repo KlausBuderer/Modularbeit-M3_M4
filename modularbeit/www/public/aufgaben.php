@@ -108,7 +108,6 @@ In diesem File werden die Aufgaben ausgegeben und bearbeitet.
 
 <!-- Aufgabenscript -->
 <script src="/public/js/aufgaben.js"></script>
-<script src="/public/js/script.js"></script>
 
 
 <?php include 'footer.php'; ?>

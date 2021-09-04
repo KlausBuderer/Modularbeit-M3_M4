@@ -19,12 +19,6 @@ function test_input($data) {
    $data = trim($data);
    $data = stripslashes($data);
    $data = htmlspecialchars($data);
-   $data = preg_replace("/=/", "=\"\"", $data);
-   $data = preg_replace("/&quot;/", "&quot;\"", $data);
-   $tags = "/&lt;(\/|)(\w*)(\ |)(\w*)([\\\=]*)(?|(\")\"&quot;\"|)(?|(.*)?&quot;(\")|)([\ ]?)(\/|)&gt;/i";
-   $replacement = "<$1$2$3$4$5$6$7$8$9$10>";
-   $data = preg_replace($tags, $replacement, $data);
-   $data = preg_replace("/=\"\"/", "=", $data);
    return $data;
  }
 
