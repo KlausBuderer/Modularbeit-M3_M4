@@ -1,7 +1,7 @@
 {
     "require": {
-        "phpunit/phpunit": "9.5.2",
-        "ext-mysqli": "*"        
+         "ext-mysqli": "*" ,
+        "phpunit/phpunit": "9.5.2"             
     }
 }
 
