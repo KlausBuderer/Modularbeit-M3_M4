@@ -16,7 +16,7 @@ jobs:
           php_extensions: mysqli
 
       - name: Sleep for 120 seconds
-      - uses: jakejarvis/wait-action@master
+        uses: jakejarvis/wait-action@master
         with:
           time: '120s'
 
