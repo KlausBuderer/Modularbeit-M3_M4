@@ -29,7 +29,7 @@ jobs:
           configuration: phpunit.xml
           args: --coverage-text
 
-            - name: PHPUnit Tests
+      - name: PHPUnit Tests
         uses: php-actions/phpunit@v2
         env:
           TEST_NAME: Unittests
