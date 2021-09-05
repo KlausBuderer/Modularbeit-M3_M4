@@ -17,21 +17,21 @@ require_once('sidebar.php');
 
                 <div class="col">
                     <div class="card shadow-sm">
-                        <img src="images/englishunits.jpg" style="height: 18rem;" class="card-img-top">
+                        <img src="images/franzoesisch_grammaire.jpg" style="height: 18rem;" class="card-img-top">
 
                         <div class="card-body" id="card1">
-                            <p class="card-text">Units</p>
-                            <label for="customRange1" class="form-label">Stufe</label><br>
+                            <p class="card-text">Grammaire</p>
+                            <label for="customRange1" class="form-label">niveau</label><br>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <div style="text-align: left;">Einfach</div>
+                                        <div style="text-align: left;">facile</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: center;">Mittel</div>
+                                        <div style="text-align: center;">moyen</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: right;">Schwierig</div>
+                                        <div style="text-align: right;">lourd</div>
                                     </div>
                                 </div>
                             </div>
@@ -48,21 +48,21 @@ require_once('sidebar.php');
                 <div class="col">
                     <div class="card shadow-sm">
 
-                        <img src="images/englishverbs.jpg" style="height: 18rem;" class="card-img-top">
+                        <img src="images/franzoesisch_verbs.jpg" style="height: 18rem;" class="card-img-top">
 
                         <div class="card-body" id="card2">
                             <p class="card-text">Verbs</p>
-                            <label for="customRange1" class="form-label">Stufe</label>
+                            <label for="customRange1" class="form-label">niveau</label>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <div style="text-align: left;">Einfach</div>
+                                        <div style="text-align: left;">facile</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: center;">Mittel</div>
+                                        <div style="text-align: center;">moyen</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: right;">Schwierig</div>
+                                        <div style="text-align: right;">lourd</div>
                                     </div>
                                 </div>
                             </div>
@@ -79,21 +79,21 @@ require_once('sidebar.php');
                 <div class="col">
                     <div class="card shadow-sm">
 
-                        <img src="images/englishlistening.jpg" style="height: 18rem;" class="card-img-top">
+                        <img src="images/franzoesisch_orthographe.jpg" style="height: 18rem;" class="card-img-top">
 
                         <div class="card-body" id="card3">
-                            <p class="card-text">Listening</p>
-                            <label for="customRange1" class="form-label">Stufe</label>
+                            <p class="card-text">Orthographe</p>
+                            <label for="customRange1" class="form-label">niveau</label>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <div style="text-align: left;">Einfach</div>
+                                        <div style="text-align: left;">facile</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: center;">Mittel</div>
+                                        <div style="text-align: center;">moyen</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: right;">Schwierig</div>
+                                        <div style="text-align: right;">lourd</div>
                                     </div>
                                 </div>
                             </div>

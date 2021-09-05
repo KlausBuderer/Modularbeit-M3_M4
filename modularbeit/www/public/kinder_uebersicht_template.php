@@ -40,7 +40,7 @@ Hauptbild wenn sich ein Kind anmeldet
                     <img src="/public/images/realien.png" style="height: 18rem;" class="card-img-top">
 
                     <div class="card-body" id="card2">
-                        <p class="card-text">Werde ein Meister oder eine Meisterin in Realien</p>
+                        <p class="card-text">Werde ein Meister/in in Realien</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <a href="/public/realien_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
