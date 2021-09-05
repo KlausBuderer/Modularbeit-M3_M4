@@ -21,17 +21,17 @@ require_once('sidebar.php');
 
                         <div class="card-body" id="card1">
                             <p class="card-text">Units</p>
-                            <label for="customRange1" class="form-label">Stufe</label><br>
+                            <label for="customRange1" class="form-label">Level</label><br>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <div style="text-align: left;">Einfach</div>
+                                        <div style="text-align: left;">easy</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: center;">Mittel</div>
+                                        <div style="text-align: center;">medium</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: right;">Schwierig</div>
+                                        <div style="text-align: right;">difficult</div>
                                     </div>
                                 </div>
                             </div>
@@ -52,17 +52,17 @@ require_once('sidebar.php');
 
                         <div class="card-body" id="card2">
                             <p class="card-text">Verbs</p>
-                            <label for="customRange1" class="form-label">Stufe</label>
+                            <label for="customRange1" class="form-label">Level</label>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <div style="text-align: left;">Einfach</div>
+                                        <div style="text-align: left;">easy</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: center;">Mittel</div>
+                                        <div style="text-align: center;">medium</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: right;">Schwierig</div>
+                                        <div style="text-align: right;">difficult</div>
                                     </div>
                                 </div>
                             </div>
@@ -83,17 +83,17 @@ require_once('sidebar.php');
 
                         <div class="card-body" id="card3">
                             <p class="card-text">Listening</p>
-                            <label for="customRange1" class="form-label">Stufe</label>
+                            <label for="customRange1" class="form-label">Level</label>
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <div style="text-align: left;">Einfach</div>
+                                        <div style="text-align: left;">easy</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: center;">Mittel</div>
+                                        <div style="text-align: center;">medium</div>
                                     </div>
                                     <div class="col">
-                                        <div style="text-align: right;">Schwierig</div>
+                                        <div style="text-align: right;">difficult</div>
                                     </div>
                                 </div>
                             </div>

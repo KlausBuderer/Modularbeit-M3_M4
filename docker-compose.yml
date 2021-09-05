@@ -1,8 +1,5 @@
-# modularbeit 1.0.0
-#
 # Runs Apache, PHP (+Redis) and phpMyAdmin
 # SSL is preconfigured.
-# Imagemagick and XDebug are activated.
 #
 # Run with 
 # docker-compose up -d
@@ -20,27 +17,32 @@ services:
       MYSQL_ROOT_PASSWORD: P99F-TBtgm2RgujbPVS!
       MYSQL_DATABASE: itwisse_lernplattform
       MYSQL_ROOT_HOST: '%'  # needs to be enclosed with quotes
-      #MYSQL_USER: itwisse_lpf
-      #MYSQL_PASSWORD: P99F-TBtgm2RgujbPVS!
-    
+      MYSQL_USER: itwisse_lpf
+      MYSQL_PASSWORD: P99F-TBtgm2RgujbPVS!
+    restart: always
     ports:
       - '3306:3306'
     volumes:
       - ./modularbeit/mysql/dump.sql:/docker-entrypoint-initdb.d/dump.sql
 
+  # Verzögerung, wird nicht verwendet, aber für zuküftige Erweiterung beibehalten.
+  # busybox:
+  #  container_name: modularbeit-verzoegerung
+  #  image: busybox
+    #command: "sleep 6000"
+
 
   # PHP Erweiterung Apache Webserver
   php:
     container_name: modularbeit-php
-
     image: 'bitnami/php-fpm:7.4'
     depends_on:
-      - redis
       - mysql
+    restart: always
     volumes:
       - './modularbeit/www/:/app:delegated'
       - './modularbeit/php/php.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro'
-  
+
   # Apache Webserver
   apache:
     container_name: modularbeit-apache
@@ -50,17 +52,24 @@ services:
       - '443:8443'
     depends_on:
       - mysql
-      - php
     volumes:
       - './modularbeit/www/:/app:delegated'
       - './modularbeit/apache/my_vhost.conf:/vhosts/myapp.conf:ro'
       - './modularbeit/apache/certs:/certs'
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://localhost"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
   redis:
     container_name: modularbeit-redis
     image: 'bitnami/redis:6.0'
     environment:
       - REDIS_PASSWORD=at15jx13
-      
+
+
   # PHPmyAdmin Webanwendung zur Pflege der MySql Datenbank resp. Maria Datenbank
   phpmyadmin:
     container_name: modularbeit-phpmyadmin
