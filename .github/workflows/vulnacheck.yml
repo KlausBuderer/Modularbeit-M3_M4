@@ -9,4 +9,4 @@ jobs:
         uses: snyk/actions/node@master
         continue-on-error: true
         env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_TOKEN: 0c3b0f8b-862d-4659-a317-f4ac79fee069
