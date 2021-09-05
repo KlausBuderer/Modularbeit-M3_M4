@@ -1,4 +1,4 @@
-name: "Check for website health and title text"
+name: Workflow zur Prüfung des Webseite 
 
 on: [push]
 
@@ -6,7 +6,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check URLs
-        uses: paramt/url-checker@master
-        with:
-          files: "urlcheck.md"
+    - name: Check http status code of production site
+      uses: lakuapik/gh-actions-http-status@v1
+      with:
+        sites: '["https://www.modularbeit.ch/users/login.php"]'
+        expected: '[301, 200]'
+    
