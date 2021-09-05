@@ -10,5 +10,5 @@ jobs:
       uses: lakuapik/gh-actions-http-status@v1
       with:
         sites: '["https://www.modularbeit.ch/users/login.php"]'
-        expected: '[301, 200]'
+        expected: '[200]'
     
