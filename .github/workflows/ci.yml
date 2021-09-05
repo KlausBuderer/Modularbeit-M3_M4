@@ -9,6 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Build the stack
+        run: docker-compose up -d
+        
+      - name: Healthy Test
+        run: docker run --network container:modularbeit-apache appropriate/curl -s --retry 10 --retry-connrefused https://localhost
+
       - uses: php-actions/composer@v6
 
       - name: PHPUnit Tests

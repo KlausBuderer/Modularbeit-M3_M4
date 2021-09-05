@@ -57,11 +57,10 @@ services:
       - './modularbeit/apache/my_vhost.conf:/vhosts/myapp.conf:ro'
       - './modularbeit/apache/certs:/certs'
     healthcheck:
-      test: ["CMD", "curl", "-f", "https://localhost"]
-      interval: 1m30s
+      test: ["CMD", "curl", "-f", "https://127.0.0.1"]
+      interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 40s
 
   redis:
     container_name: modularbeit-redis
