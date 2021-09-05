@@ -1,18 +1,15 @@
+name: "Check for website health and title text"
 
-
-name: Check_Modularbeit
 on: [push]
-env:
-  NODE_VERSION: 12.x
 
 jobs:
-  check:
+  health_check_job:
     runs-on: ubuntu-latest
+    name: Check for status 200 and title text "modularbeit"
     steps:
-    - uses: actions/checkout@v2
-    - name: Check single, no redirect
-      uses: ./
-      with:
-        url: https://www.modularbeit.ch
-        max-attempts: 5
-        retry-delay: 2s
+      - uses: actions/checkout@v2
+      - id: test
+        uses: johnlokerse/website-healthcheck@v2
+        with:
+          web-url: "https://www.modularbeit.ch"
+          scan-for-text: "modularbeit"
