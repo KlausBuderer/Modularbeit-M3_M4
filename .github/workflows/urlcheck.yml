@@ -1,0 +1,14 @@
+name: Workflow zur Prüfung des Webseite 
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check http status code of production site
+      uses: lakuapik/gh-actions-http-status@v1
+      with:
+        sites: '["www.modularbeit.ch"]'
+        expected: '[301]'
+    
