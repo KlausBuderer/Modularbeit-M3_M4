@@ -57,7 +57,7 @@ services:
       - './modularbeit/apache/my_vhost.conf:/vhosts/myapp.conf:ro'
       - './modularbeit/apache/certs:/certs'
     healthcheck:
-      test: ["CMD", "curl", "-f", "https://127.0.0.2"]
+      test: ["CMD", "curl", "-f", "https://127.0.0.1"]
       interval: 30s
       timeout: 10s
       retries: 3
