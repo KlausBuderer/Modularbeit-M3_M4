@@ -5,11 +5,11 @@ on: [push]
 jobs:
   health_check_job:
     runs-on: ubuntu-latest
-    name: Check for status 200 and title text "modularbeit"
+    name: Check for status 200 and title text "Modularbeit"
     steps:
       - uses: actions/checkout@v2
       - id: test
         uses: johnlokerse/website-healthcheck@v2
         with:
-          web-url: "https://www.modularbeit.ch"
-          scan-for-text: "modularbeit"
+          web-url: "https://www.modularbeit.ch/users/login.php"
+          scan-for-text: ""
