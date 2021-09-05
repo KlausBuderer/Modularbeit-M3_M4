@@ -25,11 +25,11 @@ services:
     volumes:
       - ./modularbeit/mysql/dump.sql:/docker-entrypoint-initdb.d/dump.sql
 
-  # Verzögerung da Container MySQL "Healthy" obwohl Dump noch nicht importiert.
-  busybox:
-    container_name: modularbeit-verzoegerung
-    image: busybox
-    command: "sleep 6000"
+  # Verzögerung, wird nicht verwendet, aber für zuküftige Erweiterung beibehalten.
+  # busybox:
+  #  container_name: modularbeit-verzoegerung
+  #  image: busybox
+    #command: "sleep 6000"
 
 
   # PHP Erweiterung Apache Webserver
@@ -37,7 +37,7 @@ services:
     container_name: modularbeit-php
     image: 'bitnami/php-fpm:7.4'
     depends_on:
-      - busybox
+      - mysql
     restart: always
     volumes:
       - './modularbeit/www/:/app:delegated'
@@ -51,7 +51,7 @@ services:
       - '8000:8080'
       - '443:8443'
     depends_on:
-      - busybox
+      - mysql
     volumes:
       - './modularbeit/www/:/app:delegated'
       - './modularbeit/apache/my_vhost.conf:/vhosts/myapp.conf:ro'
