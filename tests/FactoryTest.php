@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -97,6 +98,18 @@ public function testPruefePlusMinus3()
 }
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+
+//Prüfung ob Mysqli extension geladen ist, falls nicht werden die Tests übersprungen
+protected function setUp():void
+{
+    if (!extension_loaded('mysqli')) {
+        $this->markTestSkipped(
+          'The MySQLi extension is not available.'
+        );
+    }
+}
 
 //Dreisatz in allen Stufen
 
