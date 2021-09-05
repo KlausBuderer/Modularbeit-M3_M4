@@ -4,9 +4,8 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         continue-on-error: true
-        env:
-          SNYK_TOKEN: 0c3b0f8b-862d-4659-a317-f4ac79fee069
+     
