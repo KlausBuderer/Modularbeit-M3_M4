@@ -9,6 +9,6 @@ jobs:
     - name: Check http status code of production site
       uses: lakuapik/gh-actions-http-status@v1
       with:
-        sites: '["https://www.modularbeit.ch/users/login.php"]'
+        sites: '["https://www.google.com"]'
         expected: '[301, 200]'
     
