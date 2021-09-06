@@ -23,8 +23,6 @@ public function getausgabejson($fname, $lname)
 
     $result = mysqli_query($conn, $sql);
 
-    // $row = $result -> fetch_assoc();
-    // $dsatz=mysqli_fetch_assoc($result);
 
     $array = array();
     while($row=mysqli_fetch_assoc($result)){
