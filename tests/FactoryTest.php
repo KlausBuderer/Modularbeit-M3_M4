@@ -4,8 +4,10 @@
 
  $root = "modularbeit/www/model/lerneinheiten/LerninhaltModel.php";
 
+
 use Model\Lerneinheit\LerninhaltModel;
 use PHPUnit\Framework\TestCase;
+
  
 include $root;
 
@@ -20,8 +22,6 @@ public function testGetInstance()
     $this->assertInstanceOf('Model\Lerneinheit\LerninhaltModel',$lerninhaltModel,"Objekt nicht erstellt");  
 }
 
-
-
 //-------------------------------------------------------------------------------------------------------------------------------------
 /* In dieser Testklasse wird die Erstellung der Lerneinheiten, die mit einem Factory-Pattern erstellt werden, getestet. Es wird auf die
 minimal benötigte Anzahl Aufgagen getestet und das in allen Stufen. 
@@ -31,7 +31,6 @@ die Funktionsfähigkeit der Applikation gewährleistet ist.*/
 //--------------------------------------------------------------------------------------------------------------------------------------
 
 //Ein x Eins in allen Stufen
-
 
 //Pruefung Erstellung der Testaufgabenmenge
 public function testPruefeEinXEins1()

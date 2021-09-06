@@ -11,16 +11,6 @@ include  $root;
 
 class GetLernfortschrittTest extends TestCase{
 
-//Prüfung ob Mysqli extension geladen ist, falls nicht werden die Tests übersprungen
-    protected function setUp():void
-{
-    if (!extension_loaded('mysqli')) {
-        $this->markTestSkipped(
-          'The MySQLi extension is not available.'
-        );
-    }
-}
-
 //Instanzierung 
 public function testGetInstance()
 {
@@ -30,6 +20,15 @@ public function testGetInstance()
 
 }
 
+//Prüfung ob Mysqli extension geladen ist, falls nicht werden die Tests übersprungen
+    protected function setUp():void
+{
+    if (!extension_loaded('mysqli')) {
+        $this->markTestSkipped(
+          'The MySQLi extension is not available.'
+        );
+    }
+}
 //Pruefung Lesen einer Liste von Lernfortschritten aus der Datenbank
 public function testPruefeGetLernfortschritt()
 {
