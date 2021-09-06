@@ -22,7 +22,7 @@ if(hasPerm([2],$user->data()->id)){
 //Eltern
   }elseif (hasPerm([1],$user->data()->id)){
 
-    new ElternuebersichtController($userId);
+    new ElternuebersichtController($user->data()->id);
   }else{
     Redirect::to('users/login.php');  
 
