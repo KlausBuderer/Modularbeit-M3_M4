@@ -18,7 +18,7 @@ class Elernuebersicht
 
     public function __construct($userId)
     {
-        $this->userID = $userId;
+        $this->userId = $userId;
 
         $this->connection = new DbConnection();
 
@@ -41,7 +41,7 @@ class Elernuebersicht
 
 
         // Fetch Data from Database
-        $sql = "SELECT kind_id from le_eltern_kind_matches WHERE eltern_id= 20;";
+        $sql = "SELECT kind_id from le_eltern_kind_matches WHERE eltern_id= $this->userId;";
         $result = mysqli_query($conn, $sql);
 
         while ($row = mysqli_fetch_assoc($result)) {
