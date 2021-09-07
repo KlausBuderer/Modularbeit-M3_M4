@@ -27,10 +27,16 @@
 - URL Check  [link](./.github/workflows/urlcheck.yml)
 
 ### Vorgabe Automatismen
-- Github Actions [link](https://github.com/KlausBuderer/Modularbeit-M3_M4/actions)
-- Github Actions [link](./.github/workflows/)
+- Github Actions Auswertung [link](https://github.com/KlausBuderer/Modularbeit-M3_M4/actions)
+- Github Actions Workflows [link](./.github/workflows/)
 
 ## WEG
+
+### Vorgabe Javascript / Jquery
+- JQuery Aufgaben [link](./modularbeit/www/public/js/aufgaben.js)
+- Javascript Farbschemawahl [link](./modularbeit/www/public/js/color.js)
+- Javascript Avatarwahl [link](./modularbeit/www/public/js/avatar.js)
+- Javascript PDF Drucken [link](./modularbeit/www/public/js/mg_verwaltung.js)
 
 
 
