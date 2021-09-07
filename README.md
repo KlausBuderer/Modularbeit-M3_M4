@@ -38,9 +38,15 @@
 - Javascript Avatarwahl [link](./modularbeit/www/public/js/avatar.js)
 - Javascript PDF Drucken [link](./modularbeit/www/public/js/mg_verwaltung.js)
 
+### Vorgabe Validierung von Usereingaben
+- Kind anlegen [link](./modularbeit/www/features/eltern/kind_hinzufuegen/kind_hinzufuegen_controller.php)
 
+### Vorgabe CSS-Framework
+- Customized CSS Klassen [link](./modularbeit/www/public/css/customized.css)
 
-### Deployment
+### Vorgabe Dateienstruktur
+- Kind anlegen [link](./modularbeit/www/public)
+
 
 - `bundle exec rake publish` builds and pushes to the `gh-pages` branch
 
