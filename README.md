@@ -15,7 +15,7 @@
 - Factory Pattern Concrete Product [link](./modularbeit/www/model/lerneinheiten/EinXEins.php)
 
 ## Vorgabe Automatismen
-- Factory Pattern Aufrufer [link](./github/workflow/)
+- Vulnerabilitäten Check [link](./.github/workflows/vulnacheck.yml)
 
 ### WEG
 
