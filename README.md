@@ -48,5 +48,4 @@
 - Kind anlegen [link](./modularbeit/www/public)
 
 
-- `bundle exec rake publish` builds and pushes to the `gh-pages` branch
 
