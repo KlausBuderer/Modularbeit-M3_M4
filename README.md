@@ -20,8 +20,8 @@
 - Ein X Eins Test  [link](./tests/EinXEinsTest.php)
 - Plus Minus Test  [link](./tests/PlusMinusTest.php)
 - Factory Pattern Test  [link](./tests/FactoryTest.php)
-- SetLernfortschritt Test  [link](./tests/SetLernfortschritt.php)
-- GetLernfortschritt Test  [link](./tests/GetLernfortschritt.php)
+- SetLernfortschritt Test  [link](./tests/SetLernfortschrittTest.php)
+- GetLernfortschritt Test  [link](./tests/GetLernfortschrittTest.php)
 
 ### Vorgabe Integrationtests
 - URL Check  [link](./.github/workflows/urlcheck.yml)
