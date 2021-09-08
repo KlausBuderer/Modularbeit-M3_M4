@@ -101,7 +101,7 @@ if (!empty($_POST['login_hook'])) {
         <div class="row">
           <div class="col-sm-12">
             <div class="text-center">
-              <img class="img-fluid" src="<?= $us_url_root ?>users/images/Logo_neu.png" style="margin-bottom: 3rem;">
+              <img class="img-fluid" src="<?= $us_url_root ?>users/images/Logo_neu.png" style="margin-bottom: 1.5rem;">
             </div>
             <?php
             includeHook($hooks,'body');
@@ -142,6 +142,10 @@ if (!empty($_POST['login_hook'])) {
               <div class="col-sm-6"><br>
                 <a class="pull-right" href='../users/join.php'><i class="fa fa-plus-square"></i> <?=lang("SIGNUP_TEXT","");?></a><br><br>
               </div><?php } ?>
+              <br>
+              <a href="<?=$us_url_root?>users/verify_resend.php"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
+              <br>
+              <br>
               <?php   includeHook($hooks,'bottom');?>
                 <?php languageSwitcher();?>
             </div>
