@@ -39,7 +39,7 @@ require_once('sidebar.php');
                             <input name="stufe1" value="0" type="range" class="form-range" min="1" max="3" id="1">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="submit" name="einxeins" class="btn btn-sm btn-outline-secondary">Starten</button>
+                                    <button type="submit" name="einxeins" class="btn btn-sm btn-outline-secondary card-button">Starten</button>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ require_once('sidebar.php');
                             <input name="stufe2" value="0" type="range" class="form-range" min="1" max="3" id="2">
 
                             <div class="btn-group">
-                                <button type="submit" name="dreisatz" class="btn btn-sm btn-outline-secondary">Starten</button>
+                                <button type="submit" name="dreisatz" class="btn btn-sm btn-outline-secondary card-button">Starten</button>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ require_once('sidebar.php');
                             <input name="stufe3" value="0" type="range" class="form-range" min="1" max="3" id="3">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="submit" name="plus_minus" class="btn btn-sm btn-outline-secondary">Starten</button>
+                                    <button type="submit" name="plus_minus" class="btn btn-sm btn-outline-secondary card-button">Starten</button>
                                 </div>
                             </div>
                         </div>

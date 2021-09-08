@@ -2,12 +2,12 @@
 
 //Farbschemastruktur 0: Body 1:Sidebar/navabar 2:cardbody 3:useranzeige 4:Titel
 var colors = {
- blue : ['#f2f7f7', '#6FB3B8', '#BADFE7', '#C2EDCE', '#F6F6F2', 'blue'],
-rosa : ['#FAFAFB', '#EFB7BA', '#E5C0C8', '#C2EDCE', '#F6F6F2', 'rosa'],
-orange : ['#FAE5C7', '#FAC17A', '#DAB258', '#C2EDCE', '#F6F6F2', 'orange'],
-green : ['#EDF5E1', '#5CDB95', '#05386B', '#EDF5E1', '#05386B', 'green'],
-vampir : ['#1A1A1D', '#6F2232', '#950740', '#4E4E50', '#6F2232', 'vampir'],
-pink : ['#E3E2DF', '#EE4C7C', '#EE4C7C', '#E3AFBC', '#EE4C7C', 'pink']
+ blue : ['#f2f7f7', '#6FB3B8', '#BADFE7', '#C2EDCE', '#F6F6F2','#F6F6F2', 'blue'],
+rosa : ['#FAFAFB', '#EFB7BA', '#E5C0C8', '#C2EDCE', '#F6F6F2','#F6F6F2', 'rosa'],
+orange : ['#FAE5C7', '#FAC17A', '#DAB258', '#C2EDCE', '#F6F6F2','#f2f7f7', 'orange'],
+green : ['#EDF5E1', '#5CDB95', '#05386B', '#EDF5E1', '#05386B','#f2f7f7', 'green'],
+vampir : ['#1A1A1D', '#6F2232', '#950740', '#f2f7f7', '#f2f7f7','#f2f7f7', 'vampir'],
+pink : ['#E3E2DF', '#EE4C7C', '#EE4C7C', '#E3AFBC', '#EE4C7C','#f2f7f7', 'pink']
 };
 
 var root = document.querySelector(':root');
@@ -30,6 +30,7 @@ function initColor() {
     root.style.setProperty('--card_color', colors[2]);
     root.style.setProperty('--userfield_color', colors[3]);
     root.style.setProperty('--titel_color', colors[4]);
+    root.style.setProperty('--text_color', colors[5]);
     backColor = colors[0]
     setCookie(colors[5], 30);
 

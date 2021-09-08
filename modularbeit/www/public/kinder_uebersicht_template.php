@@ -27,7 +27,7 @@ Hauptbild wenn sich ein Kind anmeldet
                         <p class="card-text">Verbessere deine Mathe Skills</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/public/mathe_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/mathe_uebersicht_template.php" class="btn btn-sm btn-outline-secondary card-button">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ Hauptbild wenn sich ein Kind anmeldet
                         <p class="card-text">Werde ein Meister/in in Realien</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/public/realien_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/realien_uebersicht_template.php" class="btn btn-sm btn-outline-secondary card-button">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ Hauptbild wenn sich ein Kind anmeldet
                         <p class="card-text">Verbessere dein Deutsch</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/public/deutsch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/deutsch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary card-button">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ Hauptbild wenn sich ein Kind anmeldet
                         <p class="card-text">Improve your english</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="/public/englisch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                                <a href="/public/englisch_uebersicht_template.php" class="btn btn-sm btn-outline-secondary card-button">Öffnen</a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ Hauptbild wenn sich ein Kind anmeldet
                         <p class="card-text">apprendre le français</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                            <a href="/public/franz_uebersicht_template.php" class="btn btn-sm btn-outline-secondary">Öffnen</a>
+                            <a href="/public/franz_uebersicht_template.php" class="btn btn-sm btn-outline-secondary card-button">Öffnen</a>
                           
                             </div>
                         </div>
@@ -108,7 +108,7 @@ Hauptbild wenn sich ein Kind anmeldet
                         <p class="card-text">Hier findest du deinen Lernforschritt</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a type="button" class="btn btn-sm btn-outline-secondary" href="/features/kind/kinder_guthaben/guthaben_controller.php">Öffnen</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary card-button" href="/features/kind/kinder_guthaben/guthaben_controller.php">Öffnen</a>
                             </div>
                         </div>
                     </div>

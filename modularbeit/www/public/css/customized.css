@@ -8,6 +8,7 @@
 --card_color:#DAB258;
 --userfield_color:#C2EDCE;
 --titel_color:#F6F6F2;
+--text_color:#F6F6F2;
 
 /* Sidebar Navigation indicator */
 
@@ -246,6 +247,11 @@ color: #135589;
   background-color: var(--card_color);
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  color: var(--text_color);
+}
+
+.card-button{
+  color: var(--text_color);
 }
 
 .card{
