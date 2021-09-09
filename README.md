@@ -10,7 +10,8 @@ Wir wünschen Ihnen viel vergnügen beim durchstöbern unseres Projekts. Um Ihne
 
 Die einfachste Variante ist auf diesen Link zu klicken: [www.modularbeit.ch](https://www.modularbeit.ch)
 
-Wenn Sie es gerne lokal starten möchten, dann befolgen Sie folgende Schritte:
+Wenn Sie es dennoch gerne lokal starten möchten, dann befolgen Sie folgende Schritte:
+
 1. Klonen Sie dieses Repository auf Ihren Rechner
 2. Starten Sie Ihr Docker Engine
 3. Führen Sie das Batchfile start_mediengtuschein.bat aus
