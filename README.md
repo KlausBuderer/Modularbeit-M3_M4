@@ -4,7 +4,7 @@
 # Mediengutschein
 Herzlich Wilkommen im Repository der Modularbeit M3 M4 von Bruno Thurnherr und Klaus Buderer. 
 
-Wir wünschen Ihnen viel vergnügen beim durchstöbern unseres Projekts. Um Ihnen Zeit einzusparen haben wir die wichtigsten Projektabschnitte bezüglich den Vorgaben weiter unten verlinkt. 
+Wir wünschen Ihnen viel Vergnügen beim Durchstöbern unseres Projekts. Um Ihnen Zeit einzusparen haben wir die wichtigsten Projektabschnitte bezüglich den Vorgaben weiter unten verlinkt. 
 
 ## Wie starten Sie die Applikation
 
