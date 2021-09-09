@@ -2,6 +2,21 @@
 # <img src="./modularbeit/www/public/images/Logo.png" height=150 alt="Mediengutschein" />
 
 # Mediengutschein
+Herzlich Wilkommen im Repository der Modularbeit M3 M4 von Bruno Thurnherr und Klaus Buderer. 
+
+Wir wünschen Ihnen viel vergnügen beim durchstöbern unseres Projekts. Um Ihnen Zeit einzusparen haben wir die wichtigsten Projektabschnitte bezüglich den Vorgaben weiter unten verlinkt. 
+
+## Wie starten Sie die Applikation
+
+Die einfachste Variante ist auf diesen Link zu klicken: [www.modularbeit.ch](www.modularbeit.ch)
+
+Wenn Sie es gerne lokal starten möchten, dann befolgen Sie folgende Schritte:
+1. Klonen Sie dieses Repository auf Ihren Rechner
+2. Starten Sie Ihr Docker Engine
+3. Führen Sie das Batchfile start_mediengtuschein.bat aus
+
+Viel Spass!
+
 
 ## SWD
 ### Vorgabe Entwurfsmuster
@@ -29,6 +44,11 @@
 ### Vorgabe Automatismen
 - Github Actions Auswertung [link](https://github.com/KlausBuderer/Modularbeit-M3_M4/actions)
 - Github Actions Workflows [link](./.github/workflows/)
+
+### Vorgabe Sicherheit
+- Eingabevalidierung [link](./modularbeit/www/features/eltern/kind_hinzufuegen/kind_hinzufuegen_controller.php)
+- php.ini Einstellung [link](./modularbeit/php/php.ini)
+- php.ini Einstellung [link](./.github/workflows/vulnacheck.yml)
 
 ## WEG
 
