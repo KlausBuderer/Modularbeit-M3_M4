@@ -127,23 +127,22 @@ if (!empty($_POST['login_hook'])) {
                 <input type="hidden" name="login_hook" value="1">
                 <input type="hidden" name="csrf" value="<?=$token?>">
                 <input type="hidden" name="redirect" value="<?=Input::get('redirect')?>" />
-                <!-- <button class="submit btn  btn-primary" id="next_button" type="submit"><i class="fa fa-sign-in"></i> <?=lang("SIGNIN_BUTTONTEXT","");?></button>
-                 --><button class="btn btn-outline-primary" type="submit"><i class="fa fa-sign-in"></i> <?=lang("SIGNIN_BUTTONTEXT","");?></button>
+                <button class="btn btn-outline-primary" type="submit" style="color: black; border-color:rgba(83, 85, 87, 0.411)"><i class="fa fa-sign-in" ></i> <?=lang("SIGNIN_BUTTONTEXT","");?></button>
           
               </form>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-6"><br>
-              <a class="pull-left" href='../users/forgot_password.php'><i class="fa fa-wrench"></i> <?=lang("SIGNIN_FORGOTPASS","");?></a>
+              <a class="pull-left" href='../users/forgot_password.php' style="color: gray;"><i class="fa fa-wrench"></i> <?=lang("SIGNIN_FORGOTPASS","");?></a>
               <br><br>
             </div>
             <?php if($settings->registration==1) {?>
               <div class="col-sm-6"><br>
-                <a class="pull-right" href='../users/join.php'><i class="fa fa-plus-square"></i> <?=lang("SIGNUP_TEXT","");?></a><br><br>
+                <a class="pull-right" href='../users/join.php' style="color: gray;"><i class="fa fa-plus-square"></i> <?=lang("SIGNUP_TEXT","");?></a><br><br>
               </div><?php } ?>
               <br>
-              <a href="<?=$us_url_root?>users/verify_resend.php"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
+              <a class="pull-right" href="<?=$us_url_root?>users/verify_resend.php" style="color: gray;"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
               <br>
               <br>
               <?php   includeHook($hooks,'bottom');?>
