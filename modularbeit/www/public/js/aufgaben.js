@@ -16,7 +16,6 @@ var abbruch = false;
 
 
 $( document ).ready(function() {
-  console.log( data );
   console.log(questions);
   questions = data;
   $("#stufe").val(questions[0].stufe); 
