@@ -142,7 +142,7 @@ if (!empty($_POST['login_hook'])) {
                 <a class="pull-right" href='../users/join.php' style="color: gray;"><i class="fa fa-plus-square"></i> <?=lang("SIGNUP_TEXT","");?></a><br><br>
               </div><?php } ?>
               <br>
-              <a class="pull-right" href="<?=$us_url_root?>users/verify_resend.php" style="color: gray;"><i class="fa fa-exclamation-triangle"></i> Resend Activation Email</a>
+              <a class="pull-right" href="<?=$us_url_root?>users/verify_resend.php" style="color: gray;"><i class="fa fa-exclamation-triangle"></i> Emailverifizierung wiederholen</a>
               <br>
               <br>
               <?php   includeHook($hooks,'bottom');?>
