@@ -32,7 +32,7 @@ function initColor() {
     root.style.setProperty('--titel_color', colors[4]);
     root.style.setProperty('--text_color', colors[5]);
     backColor = colors[0]
-    setCookie(colors[5], 30);
+    setCookie(colors[6], 30);
 
   }
 
