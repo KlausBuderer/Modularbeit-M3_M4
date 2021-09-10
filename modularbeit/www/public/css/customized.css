@@ -239,6 +239,7 @@ color: #135589;
 /*main*/
 .haupt{
   background-color: var(--body_color);
+  color: var(--titel_color);
 }
 
 
@@ -262,4 +263,11 @@ border-radius: 2rem;
 .card-img-top{
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+}
+
+/*Footer*/
+
+.footer-style{
+
+  background-color: var(--body_color);
 }
